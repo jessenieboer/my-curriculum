@@ -1,0 +1,32 @@
+
+
+# commit message format:
+#
+#  changetype(scope): summary
+#  <blank line>
+#  body
+#
+# changetypes
+#   ddoc :: docs for developers
+#   dep :: dependencies
+#   exp :: experimental (no functional new feature yet)
+#   feat :: new chunk of functionality
+#   fix :: something was broken
+#   perf :: performance
+#   ref :: refactoring only; no new feature
+#   src :: source control stuff
+#   style :: code style, comments, etc...
+#   test :: testing stuff only
+#   testr :: test refactoring
+#   udoc :: user documentation
+#
+# scopes
+#   (none so far)
+#
+# summary
+#   - start with capital letter
+#   - present, imperative tense
+#   - no period at end
+#
+# body
+#   - explain why
