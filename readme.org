@@ -1,4 +1,5 @@
-#+html:<h1 align="center">Repo title</h1>
+#+html:<h1 align="center">Personal Curriculum for Jesse Nieboer</h1>
+
 * Table of Contents
 - [[#what][What]]
   - [[#features][Features]]
@@ -17,17 +18,2245 @@
 - [[#by-whom][By Whom]]
 
 * What
+A personalized curriculum to help me get up to speed on modern programming while synergizing with my personal interests.
+
 ** Features
+- Leveraging AI tools for coding and productivity
+- Refreshing algorithms and data structures with a functional programming focus
+- Using NixOS for reproducible setups and Emacs for efficient workflows
+- Learning functional design patterns and concepts
+- Learning Haskell (functional programming), Rust (systems programming), and Python (with functional style exploration)
+- Building a static personal website with Hakyll and org-mode
+- Exploring Neo4j, RDF, OWL, and SPARQL for knowledge representation and AI applications
+- Integrating relational databases, SDLC, debugging, testing, cloud computing, and security fundamentals
+
 * Why
+I need to update my skills after a long break in my career.
+
 * For Whom
+Me
+
 * How
 ** Requirements
+- A NixOS machine with Emacs (though others can probably follow most of the curriculum on their platform of choice)
+- Internet access for online courses and resources
+- Books and materials specified in the curriculum
+- Access to an AI to use as a "professor"
+  
 ** Installation
+- Each class might have its own platforms and tools to install
+
 ** Use
+- Follow the curriculum below according to the schedule below that
+
+*** Curriculum
+**** Foundational Skills
+***** class: Leveraging AI for Learning and Productivity
+- *Objective*: Learn how to effectively use AI tools to enhance your understanding of the curriculum and boost your productivity, while being mindful of ethical considerations and practical limitations.
+- *Setup*: Use Emacs for activities and note-taking, and install tools via NixOS where applicable.
+  - **GitHub Copilot**: Install the VS Code extension or an alternative like TabNine for code completion.
+  - **ChatGPT or Grok**: Access via web or API for explanations and examples.
+  - **Taskwarrior**: Install with `nix-env -i taskwarrior` for task management.
+  - **Emacs Configuration**: Use `org-mode` for notes and `company-mode` with AI backends (e.g., `company-tabnine`) for enhanced coding support.
+- *Duration*: Approximately 3 hours, broken into five subtopics (30-45 minutes each), fitting into a 10-15 hour weekly curriculum commitment.
+
+****** Topic: Introduction to AI for Learning and Productivity
+- *Description*: Get an overview of how AI can assist in learning complex concepts and managing tasks efficiently, especially when energy and focus are limited.
+- *Key Points*:
+  - AI can generate explanations, code snippets, and automate repetitive tasks.
+  - **Ethical Considerations**: Avoid over-reliance, recognize potential biases, and verify outputs.
+  - **Limitations**: AI lacks true understanding and may produce inaccuracies.
+- *Activity*:
+  - Reflect on a challenging curriculum concept (e.g., functional programming monads) and brainstorm how AI could simplify it.
+- *Resource*:
+  - [Nature: AI and the Future of Learning](https://www.nature.com/articles/d41586-021-01882-5)
+
+****** Topic: AI Tools for Learning
+- *Description*: Explore AI tools that support understanding and practicing curriculum topics.
+- *Tools*:
+  - **ChatGPT or Grok**: Generate explanations, examples, and answer questions.
+  - **GitHub Copilot**: Assist with code completion and learning new syntax or patterns.
+  - **AI Tutoring Platforms**: Explore options like Khan Academy’s AI features for personalized learning.
+- *Activity*:
+  - Use ChatGPT to explain a curriculum topic (e.g., RDF in Semantic Web Technologies), then cross-check with official documentation.
+  - Set up GitHub Copilot or TabNine in Emacs and use it to write a small program (e.g., in Haskell or Python).
+- *Setup*:
+  - Install GitHub Copilot or TabNine.
+  - Access ChatGPT or Grok via web or API.
+
+****** Topic: AI Tools for Productivity
+- *Description*: Discover how AI can streamline task management, scheduling, and automation within your NixOS and Emacs workflow.
+- *Tools*:
+  - **Taskwarrior**: A command-line task manager for prioritization and tracking (`nix-env -i taskwarrior`).
+  - **Emacs Plugins**: Use `company-mode` with AI backends for coding efficiency.
+  - **Automation Scripts**: Write Python scripts with AI libraries (e.g., OpenAI API) to automate tasks like summarizing documentation.
+- *Activity*:
+  - Configure Taskwarrior to manage curriculum tasks, prioritizing high-impact activities.
+  - Set up `company-mode` with an AI backend in Emacs for code completion.
+  - Create a Python script using an AI tool to summarize a long article or manual.
+- *Setup*:
+  - Install Taskwarrior.
+  - Configure `company-mode` with an AI backend.
+
+****** Topic: Best Practices for Using AI
+- *Description*: Develop strategies to use AI effectively without compromising independent learning or critical thinking.
+- *Key Practices*:
+  - **Verify Outputs**: Always cross-check AI-generated code or explanations with reliable sources.
+  - **Guidance, Not Solutions**: Use AI for hints or clarifications rather than full answers.
+  - **Balance**: Limit AI use to after attempting tasks independently to maintain skill development.
+- *Activity*:
+  - Solve a small coding problem (e.g., graph traversal) on your own, then use AI for hints or alternative approaches.
+  - Reflect on how AI impacted your process—did it save time or introduce confusion?
+- *Resource*:
+  - [Inside Higher Ed: AI and the Future of Learning](https://www.insidehighered.com/digital-learning/article/2021/05/12/ai-and-future-learning)
+
+****** Topic: Hands-On Activity: Integrating AI into Your Workflow
+- *Description*: Apply AI tools to a real curriculum task and evaluate their effectiveness.
+- *Activity*:
+  - Pick a curriculum task (e.g., writing a Neo4j query or debugging a Python script).
+  - Use AI tools (e.g., ChatGPT for explanations, Copilot for code suggestions) to assist.
+  - Document your experience:
+    - What worked well?
+    - What challenges arose?
+    - How did AI affect your productivity and understanding?
+  - Optionally, discuss your findings with a peer or mentor.
+- *Setup*: Leverage your existing tools and AI integrations.
+***** class: Algorithms and Data Structures (Functional Focus)
+****** Topic: Introduction to Functional Programming for Knowledge Management
+- *Objective*: Learn how functional programming principles (pure functions, immutability, and referential transparency) enhance knowledge representation and ontology design.
+- *Resources*:
+  - ["Learn You a Haskell" Chapters 1-3](http://learnyouahaskell.com/chapters)
+  - [Ontology Engineering with Haskell](https://www.researchgate.net/publication/220424623_Ontology_Engineering_with_Haskell) (Research paper)
+- *Examples*:
+  - Use pure functions to transform ontology data (e.g., converting raw triples into a canonical form).
+  - Model immutable updates to a knowledge base (e.g., adding a new entity without mutating the original structure).
+- *Activity*:
+  - Build a small knowledge base in Haskell with functions to add and retrieve facts (e.g., a family tree ontology with immutable updates).
+- *Setup*: Install Haskell via Nix (`nix-env -i ghc`), use Emacs with `haskell-mode`.
+
+****** Topic: Recursion in Graph and Tree Structures
+- *Objective*: Master recursive techniques for traversing and querying hierarchical and graph-based structures central to ontologies and knowledge graphs.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 5](http://learnyouahaskell.com/recursion)
+  - [Recursive Queries in Graph Databases](https://neo4j.com/developer/guide-recursive-queries/) (Adapt to Haskell)
+- *Examples*:
+  - Recursively traverse an ontology to find all subclasses of a concept (e.g., taxonomic hierarchy in biology).
+  - Compute transitive relationships in a knowledge graph (e.g., “is-a” relationships).
+- *Activity*:
+  - Implement a recursive depth-first search (DFS) to explore a knowledge graph and identify connected concepts.
+- *Setup*: Use GHCi in Emacs for interactive testing.
+
+****** Topic: Higher-Order Functions for Data Processing in Knowledge Bases
+- *Objective*: Apply higher-order functions to query and transform data in functional knowledge management systems.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 6](http://learnyouahaskell.com/higher-order-functions)
+  - [Functional Programming for Knowledge Representation](https://arxiv.org/abs/2001.03731) (ArXiv paper)
+- *Examples*:
+  - Use `map` to extract all predicates from a set of RDF triples.
+  - Compose `filter` and `fold` to aggregate related entities in a knowledge base (e.g., counting instances of a class).
+- *Activity*:
+  - Create a query system using higher-order functions to filter and transform a knowledge base (e.g., find all entities related to “machine learning” in an ontology).
+- *Setup*: Add `intero` to Emacs for enhanced Haskell IDE support.
+
+****** Topic: Functional Data Structures for Knowledge Representation
+- *Objective*: Design and implement data structures optimized for ontologies and knowledge graphs, leveraging functional paradigms.
+- *Resources*:
+  - "Pearls of Functional Algorithm Design" by Richard Bird, Chapters 4-5 (Available via libraries or purchase)
+  - [Haskell Data Structures for Ontologies](https://wiki.haskell.org/Data_structures) (Adapt to ontologies)
+- *Examples*:
+  - Use a trie to store ontology terms for efficient prefix-based querying (e.g., autocomplete for “bio*” terms).
+  - Build a graph to represent a small knowledge base (e.g., entities like “Person” and “Organization” with “works-for” edges).
+- *Activity*:
+  - Implement an RDF-like triple store using Haskell’s `Map` and `Set`, with functions to query subjects, predicates, or objects, and visualize connections.
+- *Setup*: Use `cabal` or `stack` to manage a Haskell project with multiple modules.
+
+****** Topic: Sorting and Searching in Functional Style for AI and Knowledge Bases
+- *Objective*: Use functional sorting and searching algorithms to manage and query knowledge systems effectively.
+- *Resources*:
+  - "Pearls of Functional Algorithm Design" Chapters 6-7 (Available via libraries or purchase)
+  - [Functional Algorithms for AI](https://www.youtube.com/watch?v=6X7fX7X4o7s) (YouTube video)
+- *Examples*:
+  - Sort ontology concepts by relevance (e.g., ranking “disease” subclasses by frequency in a knowledge base).
+  - Search for a concept in a sorted list of ontology terms using binary search.
+- *Activity*:
+  - Implement quicksort to order entities in a knowledge graph by a computed score (e.g., centrality), then search for a specific entity.
+- *Setup*: Add `criterion` for benchmarking performance.
+
+****** Topic: Graph Algorithms for Knowledge Graphs
+- *Objective*: Explore graph algorithms critical for analyzing and querying knowledge graphs and ontologies.
+- *Resources*:
+  - "Pearls of Functional Algorithm Design" Chapter 8 (Available via libraries or purchase)
+  - [Graph Traversals in Haskell](https://wiki.haskell.org/Graph_traversals)
+- *Examples*:
+  - Use Dijkstra’s algorithm to find the shortest path between concepts (e.g., “cat” to “mammal” in an ontology).
+  - Apply community detection to cluster related entities (e.g., grouping “AI” and “machine learning” topics).
+- *Activity*:
+  - Build a function to compute the shortest path between two nodes in a knowledge graph and detect cycles in an ontology hierarchy.
+- *Setup*: Use Haskell’s `Data.Graph` library for graph representation.
+
+****** Topic: Dynamic Programming and Memoization for Efficient Knowledge Processing
+- *Objective*: Optimize computations in knowledge management and AI using dynamic programming and memoization.
+- *Resources*:
+  - "Pearls of Functional Algorithm Design" Chapter 9 (Available via libraries or purchase)
+  - [Memoization in Haskell](https://wiki.haskell.org/Memoization)
+- *Examples*:
+  - Use dynamic programming to align two ontology versions (e.g., longest common subsequence of terms).
+  - Memoize a function computing transitive closure in a knowledge graph (e.g., all reachable nodes from “vehicle”).
+- *Activity*:
+  - Implement a memoized recursive function to query a large knowledge base efficiently (e.g., caching paths in a graph).
+- *Setup*: Leverage Haskell’s lazy evaluation or use the `memoize` library.
+
+****** Topic: Declarative Querying for Knowledge Bases (Synergistic Topic)
+- *Objective*: Use functional programming to design declarative query systems for ontologies and knowledge graphs, inspired by domain-specific languages (DSLs).
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 9 (Functors)](http://learnyouahaskell.com/functors-applicative-functors-and-monoids)
+  - [hsparql: SPARQL-like Queries in Haskell](https://hackage.haskell.org/package/hsparql)
+- *Examples*:
+  - Define a simple DSL for querying a knowledge base (e.g., “find all entities where predicate = ‘is-a’ and object = ‘mammal’”).
+  - Use monads to chain query operations on a graph structure.
+- *Activity*:
+  - Create a declarative query engine in Haskell to extract and combine data from a knowledge graph (e.g., list all “researchers” connected to “AI”).
+- *Setup*: Add the `hsparql` package via `cabal` or `stack`.
+***** class: Functional Design Patterns
+****** Topic: Introduction to Functional Design Patterns
+- *Objective*: Understand what functional design patterns are, how they differ from object-oriented patterns, and their role in knowledge representation and AI.
+- *Resources*:
+  - [[https://fsharpforfunandprofit.com/posts/design-patterns-intro/][Functional Design Patterns by Scott Wlaschin]] (Article)
+  - [[https://www.youtube.com/watch?v=srQt1NAHYC0][Video: Functional Design Patterns by Scott Wlaschin]]
+- *Examples*:
+  - Build a pipeline using function composition to process ontology data (e.g., parsing, validating, and transforming RDF triples).
+  - Replace imperative loops with recursion or higher-order functions to traverse a knowledge graph.
+- *Activity*:
+  - Refactor an imperative-style function (e.g., a loop filtering and mapping a list of entities) into a functional pipeline using `map`, `filter`, and `fold`.
+- *Setup*: Install Haskell via Nix (`nix-env -i ghc`) and use Emacs with `haskell-mode`.
+
+****** Topic: Monoids and Foldables for Data Aggregation
+- *Objective*: Learn how monoids and foldables provide a general way to combine and reduce data, essential for querying and summarizing knowledge bases.
+- *Resources*:
+  - [[http://learnyouahaskell.com/functors-applicative-functors-and-monoids][Learn You a Haskell Chapter 11: Functors, Applicative Functors, and Monoids]]
+  - [[https://wiki.haskell.org/Monoid][Monoids in Haskell]]
+- *Examples*:
+  - Use the `Sum` monoid to aggregate counts of entities in a knowledge base (e.g., total "Person" instances).
+  - Apply `foldMap` to combine properties across ontology concepts (e.g., merging sets of subclasses).
+- *Activity*:
+  - Implement a function using `foldMap` to compute summary statistics for a knowledge base (e.g., count entities by type or calculate average graph connectivity).
+- *Setup*: Use GHCi in Emacs for interactive monoid experimentation.
+
+****** Topic: Functors and Applicatives for Data Transformation
+- *Objective*: Master functors and applicatives to transform and combine data functionally, with applications in knowledge representation.
+- *Resources*:
+  - [[http://learnyouahaskell.com/functors-applicative-functors-and-monoids][Learn You a Haskell Chapter 11: Functors, Applicative Functors, and Monoids]]
+  - [[https://www.youtube.com/watch?v=OiC26GmscFA][Functors and Applicatives in Haskell (YouTube)]]
+- *Examples*:
+  - Use `fmap` to normalize entity names in a knowledge graph.
+  - Apply applicatives to validate and combine multiple properties of an ontology entity.
+- *Activity*:
+  - Create a functor to map over a custom ontology concept data type, and use applicatives to merge data from multiple sources (e.g., combining entity attributes).
+- *Setup*: Add `intero` to Emacs for enhanced Haskell IDE support.
+
+****** Topic: Monads for Sequencing Computations in Knowledge Systems
+- *Objective*: Understand how monads sequence computations and manage side effects, key for building robust knowledge management tools.
+- *Resources*:
+  - [[http://learnyouahaskell.com/a-fistful-of-monads][Learn You a Haskell Chapter 12: A Fistful of Monads]]
+  - [[https://wiki.haskell.org/Monad][Monads in Haskell]]
+- *Examples*:
+  - Use the `Maybe` monad to handle missing data in a knowledge base query (e.g., retrieving an optional property).
+  - Apply the `State` monad to manage updates to a knowledge graph without mutation (e.g., adding a relationship).
+- *Activity*:
+  - Build a simple query engine using `Maybe` for optional data and `State` for simulated updates.
+- *Setup*: Use `cabal` or `stack` to manage a Haskell project with monadic code.
+
+****** Topic: Lenses for Immutable Data Manipulation
+- *Objective*: Learn how lenses provide a functional way to access and update nested data, ideal for complex knowledge representations.
+- *Resources*:
+  - [[https://hackage.haskell.org/package/lens-tutorial][Lenses in Haskell (Hackage)]]
+  - [[https://www.youtube.com/watch?v=cefnmjtAolY][Video: Lenses in Functional Programming]]
+- *Examples*:
+  - Use lenses to update nested properties in an ontology concept (e.g., modifying a subattribute).
+  - Transform parts of a knowledge graph immutably with lenses (e.g., updating node attributes).
+- *Activity*:
+  - Define lenses for an ontology concept data type and use them to update nested fields (e.g., a "Person" entity’s subproperty).
+- *Setup*: Add the `lens` package via `cabal` or `stack`.
+
+****** Topic: Type Classes and Higher-Kinded Types for Abstraction
+- *Objective*: Explore how type classes and higher-kinded types enable powerful abstractions, useful for flexible knowledge management systems.
+- *Resources*:
+  - [[http://learnyouahaskell.com/making-our-own-types-and-typeclasses][Learn You a Haskell Chapter 8: Making Our Own Types and Typeclasses]]
+  - [[https://wiki.haskell.org/Typeclassopedia][Type Classes in Haskell (Typeclassopedia)]]
+- *Examples*:
+  - Define a type class for serializing ontology data to formats like JSON or RDF.
+  - Use higher-kinded types for generic functions across knowledge structures.
+- *Activity*:
+  - Create a type class for querying different knowledge bases (e.g., in-memory graphs, databases) and implement instances for two structures.
+- *Setup*: Manage type class implementations with `cabal` or `stack`.
+
+****** Topic: Composing Patterns for Knowledge Management Systems
+- *Objective*: Combine multiple functional patterns to build a cohesive system for managing and querying knowledge.
+- *Resources*:
+  - ["Functional Programming in Scala" by Paul Chiusano and Rúnar Bjarnason](https://www.manning.com/books/functional-programming-in-scala) (Adapt to Haskell)
+  - [[https://fsharpforfunandprofit.com/posts/monad-patterns/][Composing Functional Patterns]]
+- *Examples*:
+  - Use monads, functors, and lenses to create a pipeline for ingesting, transforming, and querying ontology data.
+  - Apply foldables and monoids to aggregate query results from a knowledge graph.
+- *Activity*:
+  - Build a small knowledge management tool that loads ontology data, updates it with lenses, and queries it using monads and higher-order functions.
+- *Setup*: Structure the project with multiple modules using `cabal` or `stack`.
+
+****** Topic: Domain-Specific Languages (DSLs) in Haskell (Synergistic Topic)
+- *Objective*: Learn to design and implement DSLs in Haskell for specialized tasks like querying or transforming knowledge bases.
+- *Resources*:
+  - [[http://learnyouahaskell.com/functionally-solving-problems][Learn You a Haskell Chapter 10: Functionally Solving Problems]]
+  - [[https://wiki.haskell.org/Embedded_domain_specific_languages][DSLs in Haskell (Wiki)]]
+- *Examples*:
+  - Create a DSL for defining ontology schemas (e.g., classes and properties).
+  - Build a query language DSL for a knowledge graph (e.g., "select entities where type = 'Person'").
+- *Activity*:
+  - Implement a simple DSL for querying a knowledge base, using monads or applicatives to compose operations.
+- *Setup*: Add packages like `parsec` for parsing via `cabal` or `stack`.
+
+***** class: Tools and Practices
+****** Topic: Version Control with Git for Knowledge Projects
+- **Objective**: Master Git for version control, with a focus on managing projects related to ontologies, knowledge bases, and functional programming.
+- **Resources**:
+  - [[https://www.atlassian.com/git/tutorials][Atlassian Git Tutorials]]
+  - [[https://git-scm.com/book/en/v2][Pro Git Book]] (Chapters 1-3)
+- **Examples**:
+  - Track changes in an ontology file (e.g., OWL or RDF) using Git to manage versions and collaborations.
+  - Use branches to experiment with different knowledge graph structures without affecting the main project.
+- **Activity**:
+  - Set up a Git repository for a sample ontology project. Practice committing changes, creating branches for new features (e.g., adding a new subclass), and merging them.
+  - Simulate a conflict by editing the same ontology term in two branches and resolve it.
+- **Setup**: Ensure Git is installed via Nix (`nix-env -i git`), and use Emacs with `magit` for Git operations.
+
+****** Topic: Environment Management with Nix for Functional Programming
+- **Objective**: Learn to create reproducible development environments using Nix, tailored for functional programming and AI projects.
+- **Resources**:
+  - [[https://nixos.org/guides/nix-pills/][Nix Pills]] (Chapters 1-5)
+  - [[https://nixos.wiki/wiki/Haskell][Haskell Development with Nix]]
+- **Examples**:
+  - Set up a Nix environment for a Haskell project with specific library versions (e.g., `lens`, `QuickCheck`).
+  - Create a Nix shell for a Python project with dependencies for AI (e.g., `numpy`, `pandas`).
+- **Activity**:
+  - Write a `default.nix` file for a Haskell project that includes dependencies like `criterion` for benchmarking.
+  - Use `nix-shell` to enter the environment and compile a simple Haskell program.
+- **Setup**: Use NixOS’s built-in Nix tools, and integrate with Emacs by setting up `nix-buffer` for managing environments.
+
+****** Topic: Continuous Integration and Deployment (CI/CD) with GitHub Actions
+- **Objective**: Automate testing and deployment workflows for functional programming projects using GitHub Actions.
+- **Resources**:
+  - [[https://docs.github.com/en/actions][GitHub Actions Documentation]]
+  - [[https://github.com/marketplace/actions/setup-nix][Setup Nix in GitHub Actions]]
+- **Examples**:
+  - Create a CI pipeline to lint and test a Haskell project on each push.
+  - Set up a workflow to deploy a static site (e.g., your personal website) built with Hakyll.
+- **Activity**:
+  - Write a GitHub Actions workflow file (`.github/workflows/ci.yml`) to:
+    - Install Nix and Cachix for caching dependencies.
+    - Build and test a Haskell project.
+    - Deploy a static site to GitHub Pages if on the main branch.
+- **Setup**: Use your GitHub account, and ensure the repository is set up with Nix and Haskell.
+
+****** Topic: Advanced Emacs for Productivity in Functional Programming
+- **Objective**: Enhance your Emacs setup for functional programming, knowledge management, and ontology development.
+- **Resources**:
+  - [[https://www.gnu.org/software/emacs/manual/html_node/emacs/][Emacs Manual]]
+  - [[https://orgmode.org/manual/][Org-mode Manual]]
+  - [[https://magit.vc/manual/magit/][Magit User Manual]]
+- **Examples**:
+  - Use Org-mode to organize your learning curriculum, track progress, and manage knowledge notes.
+  - Integrate `haskell-mode` with `intero` or `dante` for Haskell development, including type checking and code completion.
+- **Activity**:
+  - Configure Emacs to:
+    - Use `org-mode` for writing and exporting notes on functional design patterns.
+    - Set up `magit` for Git operations within Emacs.
+    - Enable `company-mode` for code completion in Haskell.
+  - Write a small Haskell function in Emacs, use `intero` to check types, and commit the changes with `magit`.
+- **Setup**: Install necessary Emacs packages via Nix or `use-package`, ensuring compatibility with your custom configuration.
+  - Git: Atlassian tutorials
+  - CI/CD: GitHub Actions
+  - NixOS: Nix Pills
+  - Emacs: "An Introduction to Programming in Emacs Lisp"
+***** class: Relational Databases and SQL
+****** Topic: Introduction to Relational Databases
+- **Objective**: Understand the relational model, including tables, keys, relationships, and the basics of normalization.
+- **Resources**:
+  - [[https://www.postgresql.org/docs/current/tutorial-start.html][PostgreSQL Documentation: Getting Started]]
+  - [[https://sqlzoo.net/wiki/SQL_Tutorial][SQLZoo: Interactive SQL Tutorial]]
+- **Examples**:
+  - Model a simple ontology (e.g., a family tree) using tables for entities (e.g., `Person`) and relationships (e.g., `ParentChild`).
+  - Identify primary and foreign keys to enforce data integrity in a knowledge base.
+- **Activity**:
+  - Design a small database schema for an ontology of your choice (e.g., a taxonomy of animals or a hierarchy of concepts). Create tables for classes and relationships, and define keys.
+- **Setup**: Install PostgreSQL via Nix (`nix-env -i postgresql`), and use Emacs with `sql-mode` for writing queries.
+
+****** Topic: SQL Basics: CRUD Operations
+- **Objective**: Master Create, Read, Update, and Delete (CRUD) operations to manage data in a relational database.
+- **Resources**:
+  - [[https://www.w3schools.com/sql/][W3Schools SQL Tutorial]]
+  - [[https://mode.com/sql-tutorial/][Mode Analytics SQL Tutorial]]
+- **Examples**:
+  - Insert new entities into an ontology database (e.g., adding a new concept like "Mammal").
+  - Update existing relationships (e.g., changing a "subclass" relationship).
+  - Query the database to retrieve specific entities or relationships (e.g., "Find all subclasses of 'Animal'").
+- **Activity**:
+  - Write SQL queries to:
+    - Insert at least 10 entities and relationships into your ontology database.
+    - Update a relationship (e.g., correct a misclassified entity).
+    - Retrieve a list of all entities with a specific property (e.g., all entities with "is-a" relationships).
+- **Setup**: Use PostgreSQL or SQLite (installed via Nix), and write queries in Emacs using `sql-mode`.
+
+****** Topic: Advanced Querying: Joins, Subqueries, and Aggregates
+- **Objective**: Learn to perform complex queries using joins, subqueries, and aggregate functions, with a focus on knowledge management tasks.
+- **Resources**:
+  - [[https://use-the-index-luke.com/][Use The Index, Luke: A Guide to Database Performance]]
+  - [[https://sqlbolt.com/][SQLBolt: Interactive SQL Lessons]]
+- **Examples**:
+  - Use joins to retrieve hierarchical relationships in an ontology (e.g., joining `Class` and `Subclass` tables).
+  - Apply aggregate functions to count entities (e.g., number of subclasses per class).
+  - Use subqueries to find entities meeting specific criteria (e.g., classes with more than 5 subclasses).
+- **Activity**:
+  - Write queries to:
+    - Join tables to list all parent-child relationships in your ontology.
+    - Calculate the total number of entities in each class using aggregation.
+    - Use a subquery to find the top-level classes (those with no parents).
+- **Setup**: Continue using PostgreSQL or SQLite, and explore indexing for performance with larger datasets.
+
+****** Topic: Database Design for Knowledge Management
+- **Objective**: Design normalized database schemas for knowledge management systems, balancing normalization and query efficiency.
+- **Resources**:
+  - [[https://opentextbc.ca/dbdesign01/][Database Design Book (Open Textbook)]]
+  - [[https://www.vertabelo.com/blog/database-design-101/][Vertabelo Blog: Database Design 101]]
+- **Examples**:
+  - Normalize a knowledge base schema to eliminate redundancy (e.g., separating entities and relationships into distinct tables).
+  - Denormalize parts of the schema for performance (e.g., adding redundant columns for frequently queried data like entity counts).
+- **Activity**:
+  - Design a normalized schema for a small knowledge management system (e.g., a personal knowledge base with notes, tags, and relationships). Include at least three tables and define relationships.
+  - Optionally, denormalize one part of the schema (e.g., precompute tag counts) and justify the decision.
+- **Setup**: Use a schema design tool like `pgModeler` (installed via Nix) or sketch the schema in Emacs using `org-mode`.
+
+****** Topic: Transactions and Concurrency in Collaborative Knowledge Bases
+- **Objective**: Understand transactions, ACID properties, and concurrency control to ensure data consistency in multi-user knowledge systems.
+- **Resources**:
+  - [[https://www.postgresql.org/docs/current/tutorial-transactions.html][PostgreSQL Documentation: Transactions]]
+  - [[https://www.sqlite.org/lang_transaction.html][SQLite Documentation: Transactions]]
+- **Examples**:
+  - Use transactions to ensure atomic updates to a knowledge base (e.g., adding a new entity and its relationships in one go).
+  - Handle concurrent updates to shared resources (e.g., two users editing the same ontology term).
+- **Activity**:
+  - Write a transaction that inserts a new entity and its relationships, ensuring all or none are committed.
+  - Simulate a concurrency scenario by manually locking a table or using transaction isolation levels to prevent conflicts.
+- **Setup**: Use PostgreSQL for its robust transaction support, and experiment with different isolation levels.
+
+****** Topic: Integrating SQL with Programming for AI and Knowledge Applications
+- **Objective**: Connect to relational databases from Python or Haskell to build applications that interact with knowledge bases.
+- **Resources**:
+  - [[https://www.psycopg.org/docs/][Psycopg2 Documentation (Python)]]
+  - [[https://hackage.haskell.org/package/HDBC][HDBC: Haskell Database Connectivity]]
+- **Examples**:
+  - Use Python to query a knowledge base and generate a report (e.g., list all entities with a certain tag).
+  - Use Haskell to insert data into the database and retrieve it for processing (e.g., compute graph statistics).
+- **Activity**:
+  - Write a Python script that connects to your database, queries for entities with specific properties, and prints a formatted report.
+  - Optionally, write a Haskell program that inserts a batch of new entities and relationships into the database.
+- **Setup**: Install `psycopg2` for Python or `HDBC` for Haskell via Nix, and use Emacs with appropriate modes (`python-mode` or `haskell-mode`).
+
+****** Topic: SQL for Knowledge Management and Ontologies
+- **Objective**: Explore how SQL can be used to manage and query ontologies and knowledge graphs stored in relational databases.
+- **Resources**:
+  - [[https://www.w3.org/TR/rdb-direct-mapping/][W3C RDB to RDF Mapping]]
+  - [[https://www.researchgate.net/publication/220424623_Ontology_Engineering_with_Haskell][Ontology Engineering with Haskell (Research Paper)]]
+- **Examples**:
+  - Map RDF triples to relational tables (e.g., using a triple table with columns for subject, predicate, and object).
+  - Write SQL queries to perform SPARQL-like operations (e.g., finding all triples with a specific predicate).
+- **Activity**:
+  - Design a schema to store RDF triples in a relational database.
+  - Write SQL queries to:
+    - Retrieve all triples where the predicate is "subclassOf."
+    - Find all entities that are instances of a particular class.
+- **Setup**: Use PostgreSQL for its advanced querying capabilities, and consider using `rdf2rdb` tools if needed.
+
+
+**** Language-Specific Learning
+***** class: Python
+****** Topic: Python Basics
+- *Objective*: Master Python’s syntax, data types, control structures, and basic functions to build a strong foundation.
+- *Resources*:
+  - [[https://docs.python.org/3/tutorial/][Python Official Tutorial]]
+  - [[https://www.codecademy.com/learn/learn-python-3][Codecademy Python Course]]
+- *Examples*:
+  - Calculate the area of a circle given its radius.
+  - Convert temperatures between Celsius and Fahrenheit.
+- *Activity*:
+  - Write a program like a simple calculator or a guessing game.
+- *Setup*: Install Python via Nix (`nix-env -i python3`), use Emacs with `python-mode`.
+
+****** Topic: Data Structures
+- *Objective*: Understand and use Python’s built-in data structures (lists, tuples, sets, dictionaries) effectively.
+- *Resources*:
+  - [[https://docs.python.org/3/tutorial/datastructures.html][Python Data Structures Tutorial]]
+  - [[https://realpython.com/python-data-structures/][Real Python: Python Data Structures]]
+- *Examples*:
+  - Store and process a list of ontology terms.
+  - Use a dictionary to map entity relationships.
+- *Activity*:
+  - Build a program to organize and summarize a dataset (e.g., a list of terms from a CSV).
+- *Setup*: Continue using Python in Emacs.
+
+****** Topic: File Handling
+- *Objective*: Learn to read from and write to files for data persistence.
+- *Resources*:
+  - [[https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files][Python File I/O]]
+  - [[https://realpython.com/working-with-files-in-python/][Real Python: Working with Files]]
+- *Examples*:
+  - Read a text file of ontology terms and count occurrences.
+  - Write processed data to a new file.
+- *Activity*:
+  - Create a script to read a CSV file and output a summary to another file.
+- *Setup*: No additional setup needed.
+
+****** Topic: Functions and Modules
+- *Objective*: Write reusable code using functions and organize it into modules.
+- *Resources*:
+  - [[https://docs.python.org/3/tutorial/controlflow.html#defining-functions][Python Functions]]
+  - [[https://docs.python.org/3/tutorial/modules.html][Python Modules]]
+- *Examples*:
+  - Define a function to validate ontology terms.
+  - Create a module for common data processing utilities.
+- *Activity*:
+  - Refactor a script into functions and split it into a module.
+- *Setup*: Use Emacs to manage multiple Python files.
+
+****** Topic: Object-Oriented Programming
+- *Objective*: Apply OOP concepts (classes, objects, inheritance) to structure code logically.
+- *Resources*:
+  - [[https://docs.python.org/3/tutorial/classes.html][Python Classes and Objects]]
+  - [[https://realpython.com/python3-object-oriented-programming/][Real Python: OOP]]
+- *Examples*:
+  - Model a knowledge graph node as a class.
+  - Use inheritance for different entity types.
+- *Activity*:
+  - Build a small OOP project, like a library system or ontology manager.
+- *Setup*: Continue using Python in Emacs.
+
+****** Topic: Functional Programming in Python
+- *Objective*: Explore functional programming techniques like lambdas, map, filter, and pure functions.
+- *Resources*:
+  - [[https://docs.python.org/3/howto/functional.html][Python Functional Programming HOWTO]]
+  - ["Functional Python Programming" by Steven Lott](https://www.packtpub.com/product/functional-python-programming/9781788627061)
+- *Examples*:
+  - Process a list of ontology terms using `map` and `filter`.
+  - Write a pure function to compute entity distances.
+- *Activity*:
+  - Build a data pipeline using functional techniques (e.g., with `itertools`).
+- *Setup*: Ensure Python is installed, use Emacs.
+
+****** Topic: Error Handling
+- *Objective*: Handle exceptions gracefully to make code robust.
+- *Resources*:
+  - [[https://docs.python.org/3/tutorial/errors.html][Python Errors and Exceptions]]
+  - [[https://realpython.com/python-exceptions/][Real Python: Exceptions]]
+- *Examples*:
+  - Catch file not found errors when loading data.
+  - Handle invalid input in a calculator program.
+- *Activity*:
+  - Add error handling to a previous project (e.g., file reading).
+- *Setup*: No additional setup needed.
+
+****** Topic: Testing
+- *Objective*: Write unit tests to ensure code reliability.
+- *Resources*:
+  - [[https://docs.python.org/3/library/unittest.html][Python unittest]]
+  - [[https://pytest.org/en/stable/][Pytest Documentation]]
+- *Examples*:
+  - Test a function that processes ontology terms.
+  - Verify error handling logic.
+- *Activity*:
+  - Write a test suite for a small project.
+- *Setup*: Install `pytest` via Nix (`nix-env -i python3Packages.pytest`), use Emacs.
+
+****** Topic: Debugging
+- *Objective*: Use debugging tools to identify and fix code issues.
+- *Resources*:
+  - [[https://docs.python.org/3/library/pdb.html][Python Debugger (pdb)]]
+  - [[https://realpython.com/python-debugging-pdb/][Real Python: Debugging with pdb]]
+- *Examples*:
+  - Step through a function that fails to parse data.
+  - Debug a loop processing ontology terms.
+- *Activity*:
+  - Debug a provided buggy program.
+- *Setup*: Use Python’s built-in `pdb`, accessible in Emacs.
+
+****** Topic: Performance Optimization
+- *Objective*: Profile and optimize Python code for efficiency.
+- *Resources*:
+  - [[https://docs.python.org/3/library/profile.html][Python Profiling]]
+  - [[https://realpython.com/python-profiling/][Real Python: Profiling]]
+- *Examples*:
+  - Profile a slow function processing large datasets.
+  - Optimize a loop with list comprehensions.
+- *Activity*:
+  - Optimize a previous project for better performance.
+- *Setup*: Use `cProfile` and `timeit`, built into Python.
+
+****** Topic: Secure Coding Practices
+- *Objective*: Avoid common security pitfalls in Python code.
+- *Resources*:
+  - [[https://owasp.org/www-project-top-ten/][OWASP Top Ten]]
+  - [[https://docs.python.org/3/library/security.html][Python Security Documentation]]
+- *Examples*:
+  - Sanitize input to prevent injection attacks.
+  - Avoid unsafe use of `eval`.
+- *Activity*:
+  - Review and secure a previous project.
+- *Setup*: No additional setup needed.
+
+****** Topic: Working with Databases
+- *Objective*: Interact with relational databases using SQL and Python.
+- *Resources*:
+  - [[https://www.sqlitetutorial.net/][SQLite Tutorial]]
+  - [[https://docs.sqlalchemy.org/en/14/][SQLAlchemy Documentation]]
+- *Examples*:
+  - Store ontology terms in a SQLite database.
+  - Query relationships between entities.
+- *Activity*:
+  - Build a CRUD app for managing ontology data.
+- *Setup*: Install `sqlite` via Nix, use `sqlalchemy` (`nix-env -i python3Packages.sqlalchemy`).
+
+****** Topic: Web Development with Flask
+- *Objective*: Create web applications using Flask.
+- *Resources*:
+  - [[https://flask.palletsprojects.com/en/2.0.x/][Flask Documentation]]
+  - [[https://realpython.com/flask-by-example-part-1-project-setup/][Real Python: Flask by Example]]
+- *Examples*:
+  - Build a web interface to display ontology terms.
+  - Create a form to add new entities.
+- *Activity*:
+  - Develop a web app for querying a knowledge base.
+- *Setup*: Install `flask` via Nix (`nix-env -i python3Packages.flask`), use Emacs.
+
+****** Topic: Data Analysis and AI
+- *Objective*: Perform data analysis and basic machine learning with Python.
+- *Resources*:
+  - [[https://numpy.org/doc/stable/user/quickstart.html][NumPy Quickstart]]
+  - [[https://pandas.pydata.org/docs/getting_started/index.html][Pandas Getting Started]]
+  - [[https://scikit-learn.org/stable/getting_started.html][Scikit-Learn Getting Started]]
+- *Examples*:
+  - Analyze a dataset of entity relationships.
+  - Train a classifier for ontology term categorization.
+- *Activity*:
+  - Complete a data analysis project or simple ML model (e.g., decision tree).
+- *Setup*: Install `numpy`, `pandas`, `scikit-learn` via Nix, use Emacs.
+
+****** Topic: Knowledge Management and Ontologies
+- *Objective*: Work with RDF, OWL, and knowledge graphs in Python.
+- *Resources*:
+  - [[https://rdflib.readthedocs.io/en/stable/][RDFLib Documentation]]
+  - [[https://owlready2.readthedocs.io/en/latest/][Owlready2 Documentation]]
+- *Examples*:
+  - Parse an RDF file of ontology data.
+  - Query a knowledge graph for entity relationships.
+- *Activity*:
+  - Build a knowledge management system to query ontologies.
+- *Setup*: Install `rdflib` and `owlready2` via Nix, use Emacs.
+
+****** Topic: Advanced Topics
+- *Objective*: Explore concurrency, parallelism, and asynchronous programming.
+- *Resources*:
+  - [[https://docs.python.org/3/library/threading.html][Python Threading]]
+  - [[https://docs.python.org/3/library/multiprocessing.html][Python Multiprocessing]]
+  - [[https://docs.python.org/3/library/asyncio.html][Python Asyncio]]
+- *Examples*:
+  - Use threading to process multiple ontology files.
+  - Build an async scraper for ontology data.
+- *Activity*:
+  - Refactor a project with concurrency or write an async program.
+- *Setup*: Use Python’s built-in libraries, accessible in Emacs.    
+***** class: Haskell
+****** Topic: Introduction to Haskell
+- *Objective*: Understand the basics of Haskell, including its history, features, and advantages for functional programming and knowledge management.
+- *Resources*:
+  - [[http://learnyouahaskell.com/chapters][Learn You a Haskell for Great Good!]] Chapter 1
+  - [[https://www.haskell.org/documentation/][Haskell Documentation]]
+- *Examples*:
+  - Evaluate simple expressions in GHCi (e.g., arithmetic operations or list manipulations).
+  - Define basic types for ontology concepts (e.g., `data Concept = Concept String`).
+- *Activity*:
+  - Install Haskell and write a "Hello, World!" program.
+  - Experiment with GHCi by defining and using simple functions.
+- *Setup*: Install Haskell via Nix (`nix-env -i ghc`), use Emacs with `haskell-mode`.
+
+****** Topic: Basic Syntax and Types
+- *Objective*: Master Haskell's syntax and type system, including pattern matching and type inference.
+- *Resources*:
+  - [[http://learnyouahaskell.com/chapters][Learn You a Haskell]] Chapters 2-3
+  - [[https://www.haskell.org/tutorial/][A Gentle Introduction to Haskell]] Chapters 2-3
+- *Examples*:
+  - Define data types for ontology entities (e.g., `data Entity = Entity { name :: String, properties :: [Property] }`).
+  - Use pattern matching to deconstruct and process entity data.
+- *Activity*:
+  - Write functions to create and manipulate ontology entities (e.g., adding properties or checking for specific attributes).
+- *Setup*: Use GHCi in Emacs for interactive development.
+
+****** Topic: Functions and Recursion
+- *Objective*: Learn to write recursive functions and understand their role in functional programming.
+- *Resources*:
+  - [[http://learnyouahaskell.com/recursion][Learn You a Haskell]] Chapter 5
+  - [[https://www.haskell.org/tutorial/functions.html][A Gentle Introduction to Haskell]] Chapter 4
+- *Examples*:
+  - Implement recursive functions for graph traversal (e.g., depth-first search on a knowledge graph).
+  - Write a function to compute the depth of an ontology hierarchy.
+- *Activity*:
+  - Create a recursive function to traverse a tree structure representing an ontology hierarchy and collect all leaf nodes.
+- *Setup*: Continue using GHCi and Emacs.
+
+****** Topic: Higher-Order Functions
+- *Objective*: Understand and use higher-order functions for data processing.
+- *Resources*:
+  - [[http://learnyouahaskell.com/higher-order-functions][Learn You a Haskell]] Chapter 6
+  - [[https://www.haskell.org/tutorial/functions.html][A Gentle Introduction to Haskell]] Chapter 5
+- *Examples*:
+  - Use `map`, `filter`, and `fold` to process data from a knowledge base (e.g., extracting entity names or filtering by property).
+- *Activity*:
+  - Write functions to query and transform a list of entities in a knowledge graph (e.g., find all entities with a specific property).
+- *Setup*: Use `cabal` or `stack` to manage a small Haskell project.
+
+****** Topic: Type Classes
+- *Objective*: Learn about type classes and how they enable polymorphism and code reuse.
+- *Resources*:
+  - [[http://learnyouahaskell.com/making-our-own-types-and-typeclasses][Learn You a Haskell]] Chapter 8
+  - [[https://www.haskell.org/tutorial/classes.html][A Gentle Introduction to Haskell]] Chapter 6
+- *Examples*:
+  - Define a type class for serializing ontology data to different formats (e.g., JSON, RDF).
+- *Activity*:
+  - Create a type class for querying different knowledge bases (e.g., in-memory graphs, databases) and implement instances for two structures.
+- *Setup*: Use `cabal` or `stack` for project management.
+
+****** Topic: Monads
+- *Objective*: Understand monads and their use in sequencing computations and managing side effects.
+- *Resources*:
+  - [[http://learnyouahaskell.com/a-fistful-of-monads][Learn You a Haskell]] Chapter 12
+  - [[https://www.haskell.org/tutorial/monads.html][A Gentle Introduction to Haskell]] Chapter 7
+- *Examples*:
+  - Use the `Maybe` monad to handle missing data in a knowledge base query.
+  - Apply the `State` monad to manage updates to a knowledge graph without mutation.
+- *Activity*:
+  - Build a simple query engine using `Maybe` for optional data and `State` for simulated updates.
+- *Setup*: Continue using `cabal` or `stack`.
+
+****** Topic: Functors and Applicatives
+- *Objective*: Learn about functors and applicatives and their applications in data transformation.
+- *Resources*:
+  - [[http://learnyouahaskell.com/functors-applicative-functors-and-monoids][Learn You a Haskell]] Chapter 11
+  - [[https://www.haskell.org/tutorial/functors.html][A Gentle Introduction to Haskell]] Chapter 8
+- *Examples*:
+  - Use functors to map over data structures representing ontology concepts.
+  - Apply applicatives to combine data from multiple sources (e.g., merging entity attributes).
+- *Activity*:
+  - Implement a functor for a custom data type and use applicatives to merge data from two knowledge sources.
+- *Setup*: Use `cabal` or `stack`.
+
+****** Topic: Practical Haskell: IO and Libraries
+- *Objective*: Perform input and output operations, work with files, and use common Haskell libraries.
+- *Resources*:
+  - [[http://learnyouahaskell.com/input-and-output][Learn You a Haskell]] Chapter 9
+  - [[https://www.haskell.org/tutorial/io.html][A Gentle Introduction to Haskell]] Chapter 9
+- *Examples*:
+  - Read and write ontology files (e.g., parse a CSV of triples).
+  - Use libraries like `cassava` for CSV parsing or `aeson` for JSON handling.
+- *Activity*:
+  - Write a program to read a CSV file containing entity relationships and build a simple knowledge graph in memory.
+- *Setup*: Install necessary libraries via `cabal` or `stack` (e.g., `cabal install cassava`).
+
+****** Topic: Building DSLs in Haskell
+- *Objective*: Learn to design and implement domain-specific languages (DSLs) in Haskell for specialized tasks.
+- *Resources*:
+  - [[https://wiki.haskell.org/Embedded_domain_specific_languages][Haskell Wiki: Embedded DSLs]]
+  - [[https://www.schoolofhaskell.com/school/starting-with-haskell/basics-of-haskell/14-creating-a-simple-dsl][School of Haskell: Creating a Simple DSL]]
+- *Examples*:
+  - Create a DSL for defining simple ontologies (e.g., classes and properties).
+  - Build a query language DSL for a knowledge graph (e.g., "select entities where type = 'Person'").
+- *Activity*:
+  - Implement a basic DSL for a calculator, then extend it to a simple query language for a knowledge base.
+- *Setup*: Install parsing libraries like `parsec` via `cabal` or `stack`.
+***** class: Rust
+****** Topic: Introduction to Rust
+- *Objective*: Understand Rust's philosophy, syntax, and basic features, including its advantages for systems programming and functional paradigms.
+- *Resources*:
+  - [[https://doc.rust-lang.org/book/title-page.html][The Rust Programming Language Book]] (Chapters 1-3)
+  - [[https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html][Asynchronous Programming in Rust]] (Chapter 1)
+- *Examples*:
+  - Write a "Hello, World!" program and explore basic syntax like variables and functions.
+  - Define a simple struct for an ontology concept (e.g., `struct Concept { name: String }`).
+- *Activity*:
+  - Install Rust and write a program that prints a greeting and defines a basic data type.
+  - Experiment with Cargo to create and run a new project.
+- *Setup*: Install Rust via Nix (`nix-env -i rustc cargo`), use Emacs with `rust-mode` and `racer` for completion.
+
+****** Topic: Ownership and Borrowing
+- *Objective*: Master Rust's ownership model, including borrowing and lifetimes, to manage memory safely.
+- *Resources*:
+  - [[https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html][The Rust Book: Understanding Ownership]] (Chapter 4)
+  - [[https://doc.rust-lang.org/rust-by-example/scope.html][Rust By Example: Scope and Ownership]]
+- *Examples*:
+  - Create a function that takes ownership of a string and modifies it.
+  - Use borrowing to read data without taking ownership (e.g., in a function that prints an ontology concept).
+- *Activity*:
+  - Write a program that demonstrates ownership transfer and borrowing with mutable and immutable references.
+  - Implement a simple reference-counted smart pointer (`Rc`) for shared ownership in a knowledge graph.
+- *Setup*: Use Cargo to manage dependencies and build the project.
+
+****** Topic: Structs and Enums
+- *Objective*: Define and use custom data types with structs and enums, leveraging pattern matching for control flow.
+- *Resources*:
+  - [[https://doc.rust-lang.org/book/ch05-00-structs.html][The Rust Book: Using Structs to Structure Related Data]] (Chapter 5)
+  - [[https://doc.rust-lang.org/book/ch06-00-enums.html][The Rust Book: Enums and Pattern Matching]] (Chapter 6)
+- *Examples*:
+  - Define a struct for a knowledge graph node with fields like `id`, `label`, and `properties`.
+  - Use an enum to represent different types of relationships (e.g., `Enum Relationship { IsA, PartOf }`).
+- *Activity*:
+  - Create a small program that defines structs for nodes and edges in a knowledge graph, and uses pattern matching to handle different relationship types.
+- *Setup*: Continue using Cargo and Emacs.
+
+****** Topic: Error Handling
+- *Objective*: Implement robust error handling using `Result`, `Option`, and custom error types.
+- *Resources*:
+  - [[https://doc.rust-lang.org/book/ch09-00-error-handling.html][The Rust Book: Error Handling]] (Chapter 9)
+  - [[https://doc.rust-lang.org/rust-by-example/error.html][Rust By Example: Error Handling]]
+- *Examples*:
+  - Parse a string into an ontology concept, returning an error if the format is invalid.
+  - Use `Option` to handle missing data in a knowledge base query.
+- *Activity*:
+  - Write a function that reads from a file and handles potential errors (e.g., file not found, invalid data).
+  - Implement a custom error type for ontology parsing errors.
+- *Setup*: Use Emacs with `rust-mode` for syntax highlighting and error checking.
+
+****** Topic: Generics and Traits
+- *Objective*: Write flexible and reusable code using generics and traits, emphasizing functional programming principles.
+- *Resources*:
+  - [[https://doc.rust-lang.org/book/ch10-00-generics.html][The Rust Book: Generic Types, Traits, and Lifetimes]] (Chapter 10)
+  - [[https://doc.rust-lang.org/rust-by-example/generics.html][Rust By Example: Generics]]
+- *Examples*:
+  - Define a generic function to find the maximum element in a list.
+  - Create a trait for serializing ontology data to different formats (e.g., JSON, RDF).
+- *Activity*:
+  - Implement a generic data structure (e.g., a tree) that can hold different types of nodes.
+  - Define a trait for querying a knowledge base and implement it for two different data structures.
+- *Setup*: Use Cargo to manage dependencies and build the project.
+
+****** Topic: Concurrency
+- *Objective*: Leverage Rust's concurrency features for safe parallel programming, with applications in AI and data processing.
+- *Resources*:
+  - [[https://doc.rust-lang.org/book/ch16-00-concurrency.html][The Rust Book: Fearless Concurrency]] (Chapter 16)
+  - [[https://doc.rust-lang.org/rust-by-example/concurrency.html][Rust By Example: Concurrency]]
+- *Examples*:
+  - Use threads to process multiple ontology files simultaneously.
+  - Implement a concurrent queue for handling asynchronous data ingestion.
+- *Activity*:
+  - Write a program that uses multiple threads to process a large dataset (e.g., parsing ontology files).
+  - Use Rust's `std::sync` module to manage shared state safely.
+- *Setup*: Continue using Cargo and Emacs.
+
+****** Topic: Testing
+- *Objective*: Write and run tests to ensure code reliability and correctness.
+- *Resources*:
+  - [[https://doc.rust-lang.org/book/ch11-00-testing.html][The Rust Book: Testing]] (Chapter 11)
+  - [[https://doc.rust-lang.org/rust-by-example/testing.html][Rust By Example: Testing]]
+- *Examples*:
+  - Write unit tests for a function that validates ontology terms.
+  - Use integration tests to verify the correctness of a knowledge graph parser.
+- *Activity*:
+  - Add tests to a previous project, covering both unit and integration testing.
+  - Use Cargo's testing framework to run and debug tests.
+- *Setup*: Use Cargo for testing and Emacs for writing test code.
+
+****** Topic: Interfacing with Other Languages
+- *Objective*: Use Rust with C or Python for broader applications, especially in AI and knowledge management.
+- *Resources*:
+  - [[https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html][The Rust Book: Unsafe Rust]] (Chapter 19)
+  - [[https://docs.python.org/3/extending/extending.html][Python C Extensions]]
+- *Examples*:
+  - Call a C library from Rust for performance-critical tasks (e.g., numerical computations).
+  - Expose a Rust function to Python for use in an AI pipeline.
+- *Activity*:
+  - Write a Rust function that can be called from Python using `ctypes` or `pyo3`.
+  - Optionally, integrate a C library into a Rust project for additional functionality.
+- *Setup*: Install necessary tools via Nix (e.g., `nix-env -i python3`), use Emacs with appropriate modes.
+
+****** Topic: Building Real-World Applications
+- *Objective*: Apply Rust to practical projects, focusing on knowledge management and AI.
+- *Resources*:
+  - [[https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html][Asynchronous Programming in Rust]]
+  - [[https://doc.rust-lang.org/cargo/guide/][Cargo Guide]]
+- *Examples*:
+  - Build a command-line tool to parse and query an ontology file.
+  - Create a web server using Rocket or Actix to serve knowledge graph data.
+- *Activity*:
+  - Develop a small application that reads an ontology file, processes it, and outputs a summary or visualization.
+  - Optionally, integrate with an AI library or service for additional functionality.
+- *Setup*: Use Cargo to manage dependencies and build the application, use Emacs for development.
+
+**** Web Development
+***** class: General Web Development
+***** class: HTML and CSS
+****** Topic: HTML Basics
+- *Objective*: Learn the fundamentals of HTML, including elements, attributes, and document structure.
+- *Resources*:
+  - [[https://www.w3schools.com/html/][W3Schools HTML Tutorial]]
+  - [[https://developer.mozilla.org/en-US/docs/Web/HTML][MDN Web Docs: HTML]]
+- *Examples*:
+  - Create a simple web page with headings, paragraphs, lists, links, and images.
+- *Activity*:
+  - Build a basic personal homepage with your name, a short bio, and links to your interests or projects.
+
+****** Topic: CSS Basics
+- *Objective*: Understand how to style HTML elements with CSS, including selectors, properties, and values.
+- *Resources*:
+  - [[https://www.w3schools.com/css/][W3Schools CSS Tutorial]]
+  - [[https://css-tricks.com/][CSS-Tricks]]
+- *Examples*:
+  - Style the personal homepage with custom colors, fonts, and backgrounds.
+- *Activity*:
+  - Add CSS to your personal homepage to enhance its appearance (e.g., center content, change text colors).
+
+****** Topic: HTML Forms and Validation
+- *Objective*: Learn to create forms, handle user input, and understand basic security considerations for form data.
+- *Resources*:
+  - [[https://developer.mozilla.org/en-US/docs/Learn/Forms][MDN Web Docs: Forms]]
+  - [[https://owasp.org/www-community/attacks/xss/][OWASP: Cross-Site Scripting (XSS)]]
+- *Examples*:
+  - Create a contact form with fields like name, email, and message.
+- *Activity*:
+  - Add a form to your personal homepage (e.g., a contact or feedback form) with basic client-side validation (e.g., required fields).
+- *Security Consideration*: Client-side validation improves user experience but doesn’t stop malicious input. Always validate and sanitize data on the server side to prevent attacks like XSS. (More details in the web security class.)
+
+****** Topic: CSS Layout
+- *Objective*: Master CSS layout techniques, including the box model, flexbox, and grid.
+- *Resources*:
+  - [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][CSS-Tricks Flexbox Guide]]
+  - [[https://gridbyexample.com/][Grid by Example]]
+- *Examples*:
+  - Create a multi-column layout for a blog or portfolio section.
+- *Activity*:
+  - Implement a responsive layout for your personal homepage using flexbox or grid (e.g., a header, main content, and footer).
+
+****** Topic: Responsive Design
+- *Objective*: Make web pages adapt to different screen sizes using media queries and responsive design principles.
+- *Resources*:
+  - [[https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/responsive_design_building_blocks][MDN Web Docs: Responsive Design]]
+  - [[https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/][Smashing Magazine: Responsive Web Design]]
+- *Examples*:
+  - Adjust layouts and font sizes for mobile devices.
+- *Activity*:
+  - Use media queries to make your personal homepage responsive, ensuring it looks good on desktop and mobile.
+
+****** Topic: CSS Animations and Transitions
+- *Objective*: Add animations and transitions to enhance user experience without JavaScript.
+- *Resources*:
+  - [[https://css-tricks.com/almanac/properties/a/animation/][CSS-Tricks Animations Guide]]
+  - [[https://animate.style/][Animate.css]]
+- *Examples*:
+  - Create a hover effect for buttons or a fade-in animation for page elements.
+- *Activity*:
+  - Add simple animations to your personal homepage (e.g., fade in the main content or animate navigation links on hover).
+
+****** Topic: Best Practices and Accessibility
+- *Objective*: Learn best practices for writing clean, maintainable, and accessible HTML and CSS, with a note on securing external resources.
+- *Resources*:
+  - [[https://developers.google.com/web/fundamentals][Google Web Fundamentals]]
+  - [[https://a11yproject.com/][A11Y Project]]
+  - [[https://developer.mozilla.org/en-US/docs/Web/Security][MDN Web Docs: Web Security]]
+- *Examples*:
+  - Use semantic HTML elements and ARIA roles to improve accessibility.
+- *Activity*:
+  - Audit your personal homepage for accessibility using tools like axe, fixing issues like missing alt text or heading structure.
+- *Security Consideration*: When using external resources (e.g., stylesheets or scripts), host them on secure servers and use HTTPS to prevent tampering. Be cautious with third-party content. (More in the web security class.)
+
+
+***** class: Javascript
+****** Topic: JavaScript Basics
+- *Objective*: Master syntax, variables, data types, operators, and control flow.
+- *Resources*:
+  - [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide][MDN JavaScript Guide]]
+  - [[https://javascript.info/][JavaScript.info]]
+- *Examples*:
+  - Validate a string as an ontology term using conditionals.
+- *Activity*:
+  - Write a script to filter a list of terms (e.g., terms starting with "A").
+- *Setup*: Use Node.js (`nix-env -i nodejs`), code in Emacs with `js-mode`.
+
+****** Topic: Functions in JavaScript
+- *Objective*: Understand first-class functions, closures, and higher-order functions.
+- *Resources*:
+  - [[https://eloquentjavascript.net/03_functions.html][Eloquent JavaScript: Functions]]
+  - [[https://www.youtube.com/watch?v=BMUiFMZr Polar][Higher-Order Functions (YouTube)]]
+- *Examples*:
+  - Transform an array of terms (e.g., `terms.map(term => term.toUpperCase())`).
+- *Activity*:
+  - Create a higher-order function to apply transformations to entities.
+- *Setup*: Continue with Node.js and Emacs.
+
+****** Topic: Asynchronous Programming in JavaScript
+- *Objective*: Handle async operations with callbacks, promises, and async/await.
+- *Resources*:
+  - [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous][MDN: Asynchronous JavaScript]]
+  - [[https://javascript.info/async][JavaScript.info: Async/Await]]
+- *Examples*:
+  - Fetch terms from a mock API using promises.
+- *Activity*:
+  - Write a script to merge data from two mock sources.
+- *Setup*: Install `node-fetch` (`npm install node-fetch`), use Emacs.
+
+****** Topic: Working with the DOM
+- *Objective*: Manipulate the DOM to create dynamic web pages.
+- *Resources*:
+  - [[https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model][MDN: DOM]]
+  - [[https://eloquentjavascript.net/14_dom.html][Eloquent JavaScript: DOM]]
+- *Examples*:
+  - Add an event listener to toggle a knowledge base section.
+- *Activity*:
+  - Build a page to add/remove terms from a list.
+- *Setup*: Use a local HTML file with JavaScript, test in Firefox.
+
+****** Topic: Introduction to PureScript
+- *Objective*: Learn PureScript basics: syntax, types, and functional concepts.
+- *Resources*:
+  - [[https://book.purescript.org/][PureScript Book]]
+  - [[https://github.com/purescript/documentation][PureScript Documentation]]
+- *Examples*:
+  - Define a type for ontology concepts (e.g., `data Concept = Concept String`).
+- *Activity*:
+  - Translate a JavaScript function to PureScript.
+- *Setup*: Install PureScript (`nix-env -i purescript`), use `spago` (`nix-env -i spago`), code in Emacs with `purescript-mode`.
+
+****** Topic: PureScript and the DOM
+- *Objective*: Manipulate the DOM using PureScript's FFI.
+- *Resources*:
+  - [[https://book.purescript.org/chapter10.html][PureScript Book: DOM]]
+  - [[https://github.com/purescript-contrib/purescript-dom][PureScript DOM Library]]
+- *Examples*:
+  - Modify DOM elements functionally.
+- *Activity*:
+  - Rewrite the DOM activity from Topic 4 in PureScript.
+- *Setup*: Use `spago` to manage the project, test in Firefox.
+
+****** Topic: Advanced PureScript Concepts
+- *Objective*: Explore type classes, effects, and JavaScript integration.
+- *Resources*:
+  - [[https://book.purescript.org/chapter11.html][PureScript Book: Type Classes]]
+  - [[https://book.purescript.org/chapter12.html][PureScript Book: Effects and Aff]]
+- *Examples*:
+  - Define a type class for serializing ontology data.
+- *Activity*:
+  - Build a PureScript module to query a knowledge base and display results.
+- *Setup*: Use `spago`, integrate with JavaScript if needed.
+
+****** Topic: Basic Web Security Considerations
+- *Objective*: Understand basic security principles for JavaScript and PureScript.
+- *Resources*:
+  - [[https://developer.mozilla.org/en-US/docs/Web/Security][MDN: Web Security]]
+  - [[https://owasp.org/www-community/attacks/xss/][OWASP: XSS]]
+- *Examples*:
+  - Sanitize input to prevent XSS.
+- *Activity*:
+  - Review a small project for XSS risks and add sanitization.
+- *Setup*: No additional tools needed.
+
+
+***** class: Web Accessibility
+****** Topic: Introduction to Web Accessibility
+- *Objective*: Understand the importance of web accessibility and the WCAG principles (Perceivable, Operable, Understandable, Robust).
+- *Resources*:
+  - [[https://www.w3.org/WAI/fundamentals/accessibility-intro/][WAI: Introduction to Web Accessibility]]
+  - [[https://www.w3.org/WAI/WCAG21/quickref/][WCAG 2.1 at a Glance]]
+- *Examples*:
+  - Review a website that fails accessibility checks (e.g., missing alt text) and discuss the impact on users.
+- *Activity*:
+  - Write a short reflection (1-2 paragraphs) on why accessibility matters, using an example from your own experience or interests.
+- *Setup*: No additional tools needed.
+
+****** Topic: Semantic HTML
+- *Objective*: Use HTML elements correctly to convey meaning and structure, improving accessibility for screen readers and other assistive technologies.
+- *Resources*:
+  - [[https://developer.mozilla.org/en-US/docs/Web/HTML/Element][MDN: HTML Elements Reference]]
+  - [[https://www.w3.org/WAI/tutorials/page-structure/][WAI: Page Structure Tutorial]]
+- *Examples*:
+  - Use `<nav>`, `<main>`, `<article>`, and `<footer>` to structure a homepage.
+- *Activity*:
+  - Refactor a section of your personal homepage to use semantic elements (e.g., replace `<div>` with `<nav>` for navigation).
+  - Test the page with a screen reader simulator (e.g., Firefox’s Accessibility Inspector).
+- *Setup*: Use Firefox’s developer tools for inspection.
+
+****** Topic: ARIA (Accessible Rich Internet Applications)
+- *Objective*: Learn when and how to use ARIA roles, states, and properties to enhance accessibility, especially for dynamic content.
+- *Resources*:
+  - [[https://www.w3.org/WAI/standards-guidelines/aria/][WAI-ARIA Overview]]
+  - [[https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA][MDN: ARIA Guide]]
+- *Examples*:
+  - Add `role="navigation"` to a menu or `aria-label` to describe interactive elements.
+- *Activity*:
+  - Add ARIA attributes to interactive elements on your homepage (e.g., a collapsible section or a modal dialog).
+  - Validate the usage with Firefox’s Accessibility Inspector.
+- *Setup*: No additional tools needed.
+
+****** Topic: Color and Contrast
+- *Objective*: Ensure sufficient color contrast and avoid relying solely on color to convey information.
+- *Resources*:
+  - [[https://webaim.org/resources/contrastchecker/][WebAIM Contrast Checker]]
+  - [[https://www.w3.org/WAI/tutorials/visual-contrast/][WAI: Visual Presentation Tutorial]]
+- *Examples*:
+  - Check the contrast ratio of text over a background image on your homepage.
+- *Activity*:
+  - Use the WebAIM Contrast Checker to evaluate and adjust the colors on your homepage (aim for at least 4.5:1 for normal text).
+  - Ensure that color isn’t the only way to distinguish elements (e.g., add underlines to links).
+- *Setup*: Use the online WebAIM tool or install a browser extension.
+
+****** Topic: Keyboard Navigation
+- *Objective*: Make all interactive elements accessible via keyboard, ensuring usability for users with motor disabilities.
+- *Resources*:
+  - [[https://www.w3.org/WAI/WCAG21/Understanding/keyboard-accessible.html][WCAG: Keyboard Accessibility]]
+  - [[https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets][MDN: Keyboard-Navigable Widgets]]
+- *Examples*:
+  - Ensure that all buttons and links can be focused and activated with the keyboard.
+- *Activity*:
+  - Test your homepage using only the keyboard (Tab, Enter, Space). Fix any issues (e.g., skip links for long navigation).
+  - Add visible focus indicators to interactive elements using CSS.
+- *Setup*: No additional tools needed.
+
+****** Topic: Forms and Labels
+- *Objective*: Create accessible forms with proper labels, instructions, and error handling.
+- *Resources*:
+  - [[https://www.w3.org/WAI/tutorials/forms/][WAI: Forms Tutorial]]
+  - [[https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms][MDN: ARIA Forms Guide]]
+- *Examples*:
+  - Use `<label>` elements and `aria-describedby` for form fields.
+- *Activity*:
+  - If your homepage has a form (e.g., contact or search), ensure it’s fully accessible:
+    - Add labels, use ARIA for instructions, and provide clear error messages.
+  - If no form exists, create a simple accessible form (e.g., newsletter signup).
+- *Setup*: No additional tools needed.
+
+****** Topic: Testing for Accessibility
+- *Objective*: Learn to use tools and techniques to evaluate and improve web accessibility.
+- *Resources*:
+  - [[https://www.deque.com/axe/][axe DevTools]]
+  - [[https://wave.webaim.org/][WAVE Evaluation Tool]]
+  - [[https://www.w3.org/WAI/test-evaluate/][WAI: Evaluating Accessibility]]
+- *Examples*:
+  - Run axe on a webpage and interpret the results (e.g., missing alt text).
+- *Activity*:
+  - Use axe or WAVE to audit your homepage for accessibility issues.
+  - Fix at least three identified issues (e.g., add alt text, improve heading structure).
+- *Setup*: Install axe DevTools browser extension or use the online WAVE tool.
+
+****** Topic: Accessibility in Single-Page Applications (SPAs)
+- *Objective*: Understand the unique accessibility challenges of SPAs and how to address them.
+- *Resources*:
+  - [[https://www.w3.org/WAI/ARIA/apg/patterns/][WAI-ARIA Authoring Practices: Patterns]]
+  - [[https://www.smashingmagazine.com/2018/10/accessibility-single-page-apps/][Smashing Magazine: Accessibility in SPAs]]
+- *Examples*:
+  - Manage focus when navigating between views in an SPA.
+- *Activity*:
+  - If your homepage is an SPA, implement accessible routing (e.g., focus management on route changes).
+  - If not, review an example SPA (e.g., a React app) and suggest accessibility improvements.
+- *Setup*: No additional tools needed.
+
+
+***** class: Static Site Generation with Hakyll
+****** Topic: Introduction to Static Site Generators
+- *Objective*: Understand the concept of static site generators, their advantages, and how Hakyll fits into the ecosystem.
+- *Resources*:
+  - [[https://jaspervdj.be/hakyll/tutorials/01-installation.html][Hakyll Documentation: Installation]]
+  - [[https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/][Smashing Magazine: Static Site Generators]]
+- *Examples*:
+  - Compare Hakyll to other generators like Jekyll or Hugo.
+- *Activity*:
+  - Write a short reflection (1-2 paragraphs) on why static sites are beneficial for knowledge management (e.g., simplicity, version control).
+- *Setup*: Ensure Haskell and Hakyll are installed (`nix-env -i ghc hakyll`).
+
+****** Topic: Setting Up a Hakyll Project
+- *Objective*: Create a new Hakyll project and understand its structure.
+- *Resources*:
+  - [[https://jaspervdj.be/hakyll/tutorials/02-basics.html][Hakyll Tutorial: Basics]]
+  - [[https://github.com/jaspervdj/hakyll-examples][Hakyll Examples on GitHub]]
+- *Examples*:
+  - Initialize a Hakyll project and explore the default files (e.g., `site.hs`, `templates/`).
+- *Activity*:
+  - Set up a new Hakyll project for your personal homepage or a knowledge base.
+  - Compile and view the default site.
+- *Setup*: Use `hakyll-init` to create the project, compile with `stack build` or `cabal build`.
+
+****** Topic: Writing Content in Markdown
+- *Objective*: Learn to write content using Markdown and convert it to HTML with Pandoc.
+- *Resources*:
+  - [[https://daringfireball.net/projects/markdown/][Markdown Guide]]
+  - [[https://pandoc.org/MANUAL.html][Pandoc User’s Guide]]
+- *Examples*:
+  - Write a Markdown file for a blog post or an ontology concept description.
+- *Activity*:
+  - Create a Markdown file (e.g., `about.md`) and use Pandoc to convert it to HTML.
+  - Add the generated HTML to your Hakyll site.
+- *Setup*: Install Pandoc (`nix-env -i pandoc`), use Emacs with `markdown-mode`.
+
+****** Topic: Hakyll Templates and Routing
+- *Objective*: Understand how Hakyll uses templates and routing to generate pages.
+- *Resources*:
+  - [[https://jaspervdj.be/hakyll/tutorials/03-templates.html][Hakyll Tutorial: Templates]]
+  - [[https://jaspervdj.be/hakyll/reference/Hakyll-Web-Template.html][Hakyll Documentation: Templates]]
+- *Examples*:
+  - Create a template for blog posts with placeholders for title and content.
+- *Activity*:
+  - Write a Hakyll route to generate HTML pages from Markdown files.
+  - Create a template (`post.html`) and apply it to your Markdown content.
+- *Setup*: Edit `site.hs` to define routes and compilers.
+
+****** Topic: Managing Metadata and Context
+- *Objective*: Use metadata in Markdown files and Hakyll’s context system to customize content.
+- *Resources*:
+  - [[https://jaspervdj.be/hakyll/tutorials/04-metadata.html][Hakyll Tutorial: Metadata]]
+  - [[https://jaspervdj.be/hakyll/reference/Hakyll-Web-Template-Context.html][Hakyll Documentation: Context]]
+- *Examples*:
+  - Add metadata (e.g., title, date) to a Markdown file and display it in the template.
+- *Activity*:
+  - Add metadata to your Markdown files and update the template to show the title and date.
+  - Use Hakyll’s context to include dynamic data (e.g., site title).
+- *Setup*: Modify `site.hs` to include metadata fields in the context.
+
+****** Topic: Generating Lists and Indexes
+- *Objective*: Create dynamic lists of content, such as blog post indexes or tag pages.
+- *Resources*:
+  - [[https://jaspervdj.be/hakyll/tutorials/05-indexes.html][Hakyll Tutorial: Indexes]]
+  - [[https://jaspervdj.be/hakyll/reference/Hakyll-Web-Tags.html][Hakyll Documentation: Tags]]
+- *Examples*:
+  - Generate an index page listing all blog posts.
+- *Activity*:
+  - Create an index page for your site that lists all posts with links.
+  - Optionally, add tags to your posts and generate tag-specific pages.
+- *Setup*: Use Hakyll’s `tagsRules` and `buildTags` for tag management.
+
+****** Topic: Customizing Hakyll with Haskell
+- *Objective*: Leverage Haskell to extend Hakyll’s functionality for custom needs.
+- *Resources*:
+  - [[https://jaspervdj.be/hakyll/tutorials/06-custom-compilers.html][Hakyll Tutorial: Custom Compilers]]
+  - [[https://hackage.haskell.org/package/hakyll][Hakyll on Hackage]]
+- *Examples*:
+  - Write a custom compiler to generate a sitemap or RSS feed.
+- *Activity*:
+  - Create a custom Hakyll compiler to generate a JSON file of all posts (e.g., for a search index).
+  - Optionally, integrate Pandoc options for custom Markdown processing.
+- *Setup*: Write Haskell functions in `site.hs` to define custom behavior.
+
+****** Topic: Deploying a Hakyll Site
+- *Objective*: Learn to deploy your static site to a hosting platform.
+- *Resources*:
+  - [[https://docs.github.com/en/pages][GitHub Pages Documentation]]
+  - [[https://jaspervdj.be/hakyll/tutorials/github-pages.html][Hakyll Tutorial: GitHub Pages]]
+- *Examples*:
+  - Deploy a Hakyll site to GitHub Pages.
+- *Activity*:
+  - Set up a GitHub repository for your site and configure GitHub Pages to serve it.
+  - Automate deployment using a script or GitHub Actions.
+- *Setup*: Use Git (`nix-env -i git`), push to GitHub, and enable GitHub Pages.
+***** class: Cloud Deployment
+****** Topic: Introduction to Cloud Computing
+- *Objective*: Understand the basics of cloud computing and its benefits.
+- *Resources*:
+  - [[https://aws.amazon.com/what-is-cloud-computing/][AWS: What is Cloud Computing?]]
+  - [[https://azure.microsoft.com/en-us/overview/what-is-cloud-computing/][Azure: What is Cloud Computing?]]
+- *Examples*:
+  - Compare on-premises hosting vs. cloud hosting for a web application.
+- *Activity*:
+  - Write a short essay on how cloud computing could benefit a small business.
+- *Setup*: No additional setup needed.
+
+****** Topic: Cloud Deployment Models
+- *Objective*: Learn about different cloud deployment models and their use cases.
+- *Resources*:
+  - [[https://www.ibm.com/cloud/learn/public-cloud][IBM: Public Cloud]]
+  - [[https://www.redhat.com/en/topics/cloud-computing/what-is-hybrid-cloud][Red Hat: Hybrid Cloud]]
+- *Examples*:
+  - Discuss scenarios where a private cloud might be preferable.
+- *Activity*:
+  - Create a decision tree for choosing a deployment model based on project requirements.
+- *Setup*: No additional setup needed.
+
+****** Topic: Cloud Services for Web Deployment
+- *Objective*: Explore managed and unmanaged cloud services for deploying web applications.
+- *Resources*:
+  - [[https://aws.amazon.com/elasticbeanstalk/][AWS Elastic Beanstalk]]
+  - [[https://azure.microsoft.com/en-us/services/app-service/][Azure App Service]]
+- *Examples*:
+  - Compare ease of use between AWS Elastic Beanstalk and EC2 instances.
+- *Activity*:
+  - Write a comparison of two cloud services, highlighting pros and cons.
+- *Setup*: Sign up for a free-tier account on a cloud platform (e.g., AWS, Azure).
+
+****** Topic: Containerization and Orchestration
+- *Objective*: Understand how to use Docker and Kubernetes for deploying applications.
+- *Resources*:
+  - [[https://docs.docker.com/get-started/][Docker Get Started]]
+  - [[https://kubernetes.io/docs/tutorials/kubernetes-basics/][Kubernetes Basics]]
+- *Examples*:
+  - Containerize a simple web application using Docker.
+- *Activity*:
+  - Create a Docker image for a sample web app and run it locally.
+- *Setup*: Install Docker (`nix-env -i docker`), use Emacs to write Dockerfiles.
+
+****** Topic: Continuous Integration and Continuous Deployment (CI/CD)
+- *Objective*: Implement CI/CD pipelines for automated testing and deployment.
+- *Resources*:
+  - [[https://docs.github.com/en/actions][GitHub Actions Documentation]]
+  - [[https://jenkins.io/doc/][Jenkins Documentation]]
+- *Examples*:
+  - Set up a GitHub Actions workflow to build and test a web application.
+- *Activity*:
+  - Create a CI/CD pipeline for a sample project, including building, testing, and deploying to a cloud service.
+- *Setup*: Use GitHub for version control and GitHub Actions for CI/CD.
+
+****** Topic: Infrastructure as Code (IaC)
+- *Objective*: Learn to manage cloud infrastructure using code.
+- *Resources*:
+  - [[https://www.terraform.io/intro][Terraform Introduction]]
+  - [[https://docs.aws.amazon.com/cloudformation/index.html][AWS CloudFormation Documentation]]
+- *Examples*:
+  - Write a Terraform configuration to provision an EC2 instance.
+- *Activity*:
+  - Use Terraform to deploy a simple web server on AWS.
+- *Setup*: Install Terraform (`nix-env -i terraform`), use Emacs to write configuration files.
+
+****** Topic: Monitoring and Logging
+- *Objective*: Implement monitoring and logging for cloud-deployed applications.
+- *Resources*:
+  - [[https://prometheus.io/docs/introduction/overview/][Prometheus Overview]]
+  - [[https://grafana.com/docs/grafana/latest/][Grafana Documentation]]
+- *Examples*:
+  - Set up Prometheus to monitor a web application's performance.
+- *Activity*:
+  - Configure monitoring for a sample application and create a dashboard in Grafana.
+- *Setup*: Install Prometheus and Grafana via Nix or Docker.
+
+****** Topic: Security in Cloud Deployment
+- *Objective*: Apply security best practices to cloud-deployed applications.
+- *Resources*:
+  - [[https://aws.amazon.com/security/][AWS Security]]
+  - [[https://cloud.google.com/security][Google Cloud Security]]
+- *Examples*:
+  - Implement IAM roles to restrict access to cloud resources.
+- *Activity*:
+  - Secure a sample application by configuring firewalls, encryption, and access controls.
+- *Setup*: Use cloud provider’s security tools and services.
+
+****** Topic: Cost Management
+- *Objective*: Understand and optimize cloud costs.
+- *Resources*:
+  - [[https://aws.amazon.com/pricing/][AWS Pricing]]
+  - [[https://cloud.google.com/products/calculator][Google Cloud Pricing Calculator]]
+- *Examples*:
+  - Calculate the monthly cost for hosting a web application on different platforms.
+- *Activity*:
+  - Create a cost estimate for a sample project and suggest ways to reduce expenses.
+- *Setup*: Use cloud provider’s pricing calculators.
+
+****** Topic: Hands-on Project
+- *Objective*: Deploy a web application to the cloud, applying concepts learned in the class.
+- *Resources*:
+  - Project-specific documentation and tutorials.
+- *Examples*:
+  - Deploy a static site (e.g., Hakyll-generated) or a simple web app to a cloud platform.
+- *Activity*:
+  - Choose a project, deploy it to a cloud service, and set up CI/CD, monitoring, and security.
+- *Setup*: Use tools and services learned throughout the class.
+
+
+
+
+
+
+***** class: Basic Web Security
+
+- *Prerequisites*: Basic knowledge of HTML, CSS, JavaScript, and web development concepts.
+- *Setup*: Use Emacs for coding and configuration. Install tools via Nix where applicable:
+  - OWASP ZAP: Use the Docker image or install manually.
+  - ModSecurity: Install via Nix if available, or use a cloud-based WAF for practice.
+  - Web browser with developer tools (e.g., Firefox).
+
+****** Topic: Introduction to Web Security
+- *Objective*: Understand the importance of web security and the basic principles behind it.
+- *Resources*:
+  - [[https://owasp.org/www-project-top-ten/][OWASP Top Ten]]
+  - [[https://developer.mozilla.org/en-US/docs/Web/Security][MDN Web Docs: Web Security]]
+- *Examples*:
+  - Discuss the impact of a data breach on a small business.
+- *Activity*:
+  - Write a short essay (1-2 paragraphs) on why web security is crucial for modern applications.
+- *Setup*: No additional tools needed.
+
+****** Topic: Common Web Vulnerabilities
+- *Objective*: Identify and understand the most common web security vulnerabilities.
+- *Resources*:
+  - [[https://owasp.org/www-project-top-ten/][OWASP Top Ten]]
+  - [[https://portswigger.net/web-security][PortSwigger Web Security Academy]]
+- *Examples*:
+  - Demonstrate an SQL injection attack on a vulnerable login form.
+- *Activity*:
+  - Use a vulnerable web application (e.g., OWASP Juice Shop) to practice identifying vulnerabilities.
+- *Setup*: Install OWASP Juice Shop via Docker (`docker run -d -p 3000:3000 bkimminich/juice-shop`).
+
+****** Topic: Secure Coding Practices
+- *Objective*: Learn to write code that mitigates common security risks.
+- *Resources*:
+  - [[https://cheatsheetseries.owasp.org/][OWASP Cheat Sheet Series]]
+  - [[https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Coding_Guidelines][MDN: Secure Coding Guidelines]]
+- *Examples*:
+  - Implement input validation to prevent XSS attacks.
+- *Activity*:
+  - Refactor a sample web application to include secure coding practices (e.g., sanitize inputs, use parameterized queries).
+- *Setup*: Use Emacs to edit code, run a local web server (e.g., Python’s `http.server`).
+
+****** Topic: Authentication and Authorization
+- *Objective*: Understand the differences and implement secure authentication and authorization mechanisms.
+- *Resources*:
+  - [[https://auth0.com/docs/get-started][Auth0 Documentation]]
+  - [[https://developer.okta.com/docs/guides/implement-auth-code/][Okta: Implement Auth Code]]
+- *Examples*:
+  - Set up a simple login system with JWT tokens.
+- *Activity*:
+  - Integrate OAuth2 authentication into a sample application.
+- *Setup*: Install necessary libraries (e.g., `nix-env -i nodePackages.jwt` for Node.js).
+
+****** Topic: Data Protection
+- *Objective*: Learn to protect sensitive data through encryption and secure storage.
+- *Resources*:
+  - [[https://www.w3.org/2017/08/encryption-primer/][W3C Encryption Primer]]
+  - [[https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto][MDN: SubtleCrypto]]
+- *Examples*:
+  - Encrypt and decrypt a message using the Web Crypto API.
+- *Activity*:
+  - Implement client-side encryption for a form field in a web application.
+- *Setup*: Use a web browser with Web Crypto API support.
+
+****** Topic: Web Application Firewalls (WAF)
+- *Objective*: Understand the role of WAFs in protecting web applications.
+- *Resources*:
+  - [[https://owasp.org/www-project-web-application-firewall/][OWASP WAF Project]]
+  - [[https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html][AWS WAF Documentation]]
+- *Examples*:
+  - Configure a WAF to block SQL injection attempts.
+- *Activity*:
+  - Set up a simple WAF using a cloud service (e.g., AWS WAF free tier) or a local tool like ModSecurity.
+- *Setup*: Use a cloud platform’s free tier or install ModSecurity via Nix if available.
+
+****** Topic: Security Testing
+- *Objective*: Learn to test web applications for security vulnerabilities.
+- *Resources*:
+  - [[https://owasp.org/www-project-zap/][OWASP ZAP]]
+  - [[https://portswigger.net/burp][Burp Suite]]
+- *Examples*:
+  - Use OWASP ZAP to scan a web application for vulnerabilities.
+- *Activity*:
+  - Perform a security audit on a sample web application using OWASP ZAP.
+- *Setup*: Install OWASP ZAP via Docker (`docker run -p 8080:8080 owasp/zap2docker-stable`).
+
+****** Topic: Incident Response
+- *Objective*: Understand the basics of responding to security incidents.
+- *Resources*:
+  - [[https://www.sans.org/reading-room/whitepapers/incident/incident-handlers-handbook-33901][SANS Incident Handler's Handbook]]
+  - [[https://owasp.org/www-project-incident-response/][OWASP Incident Response Project]]
+- *Examples*:
+  - Create an incident response plan for a hypothetical data breach.
+- *Activity*:
+  - Simulate a security incident (e.g., XSS attack) and walk through the response process.
+- *Setup*: No additional tools needed.
+**** Graph Databases & Semantics
+***** class: Graph Theory Fundamentals
+****** Topic: Introduction to Graph Theory
+- *Description*: Understand the basic concepts of graph theory, including definitions and types of graphs.
+- *Resources*:
+  - [[https://www.westminstercollege.edu/student-life/the-myriad/introduction-to-graph-theory][Introduction to Graph Theory (Westminster College)]]
+  - [[https://www.youtube.com/watch?v=Mi6GqKE_RTU][Graph Theory Introduction (YouTube)]]
+- *Exercises*:
+  - Draw and label different types of graphs (e.g., directed, undirected, weighted).
+  - Identify real-world examples of graphs (e.g., social networks, transportation systems).
+
+****** Topic: Graph Representation
+- *Description*: Learn how to represent graphs using adjacency matrices, adjacency lists, and edge lists.
+- *Resources*:
+  - [[https://www.geeksforgeeks.org/graph-and-its-representations/][Graph Representations (GeeksforGeeks)]]
+  - [[https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs][Khan Academy: Representing Graphs]]
+- *Exercises*:
+  - Implement adjacency list and matrix representations in a programming language of choice.
+  - Compare the space complexity of different representations for sparse and dense graphs.
+
+****** Topic: Graph Traversal
+- *Description*: Explore BFS and DFS algorithms for traversing graphs.
+- *Resources*:
+  - [[https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/][BFS for Graphs (GeeksforGeeks)]]
+  - [[https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/][DFS for Graphs (GeeksforGeeks)]]
+- *Exercises*:
+  - Implement BFS and DFS on a sample graph.
+  - Use traversal algorithms to solve problems like finding connected components.
+
+****** Topic: Shortest Path Algorithms
+- *Description*: Study algorithms for finding the shortest path in graphs.
+- *Resources*:
+  - [[https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/][Dijkstra's Algorithm (GeeksforGeeks)]]
+  - [[https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/][Bellman-Ford Algorithm (GeeksforGeeks)]]
+- *Exercises*:
+  - Implement Dijkstra's algorithm and apply it to a weighted graph.
+  - Compare the performance of Dijkstra's and Bellman-Ford algorithms.
+
+****** Topic: Connectivity and Cycles
+- *Description*: Learn about graph connectivity, articulation points, bridges, and cycles.
+- *Resources*:
+  - [[https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/][Articulation Points (GeeksforGeeks)]]
+  - [[https://www.geeksforgeeks.org/detect-cycle-undirected-graph/][Cycle Detection (GeeksforGeeks)]]
+- *Exercises*:
+  - Write a program to detect cycles in an undirected graph.
+  - Identify articulation points in a sample graph.
+
+****** Topic: Graph Coloring
+- *Description*: Understand vertex and edge coloring and their applications.
+- *Resources*:
+  - [[https://www.geeksforgeeks.org/graph-coloring-applications/][Graph Coloring Applications (GeeksforGeeks)]]
+  - [[https://www.youtube.com/watch?v=miCYBJwt3vA][Graph Coloring (YouTube)]]
+- *Exercises*:
+  - Implement a greedy algorithm for vertex coloring.
+  - Solve a scheduling problem using graph coloring.
+
+****** Topic: Trees and Forests
+- *Description*: Study properties of trees, minimum spanning trees, and binary trees.
+- *Resources*:
+  - [[https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/][Kruskal's Algorithm (GeeksforGeeks)]]
+  - [[https://www.geeksforgeeks.org/binary-tree-data-structure/][Binary Trees (GeeksforGeeks)]]
+- *Exercises*:
+  - Implement Kruskal's algorithm for finding a minimum spanning tree.
+  - Traverse a binary tree using different methods (in-order, pre-order, post-order).
+
+****** Topic: Network Flows
+- *Description*: Learn about the maximum flow problem and the Ford-Fulkerson algorithm.
+- *Resources*:
+  - [[https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/][Ford-Fulkerson Algorithm (GeeksforGeeks)]]
+  - [[https://www.youtube.com/watch?v=Tl90tNtKvxs][Network Flow (YouTube)]]
+- *Exercises*:
+  - Implement the Ford-Fulkerson algorithm on a sample flow network.
+  - Apply the algorithm to solve a real-world problem (e.g., traffic flow).
+
+****** Topic: Graph Theory in Practice
+- *Description*: Explore practical applications of graph theory in various fields.
+- *Resources*:
+  - [[https://www.geeksforgeeks.org/applications-of-graph-theory/][Applications of Graph Theory (GeeksforGeeks)]]
+  - [[https://neo4j.com/blog/using-graph-theory-to-analyze-drama/][Graph Theory in Drama Analysis (Neo4j Blog)]]
+- *Exercises*:
+  - Analyze a social network graph to find communities or influencers.
+  - Use graph theory to model and solve a recommendation system problem.
+
+****** Topic: Advanced Topics (Optional)
+- *Description*: Delve into more complex areas of graph theory for deeper understanding.
+- *Resources*:
+  - [[https://www.geeksforgeeks.org/planar-graphs-and-graph-coloring/][Planar Graphs and Coloring (GeeksforGeeks)]]
+  - [[https://www.youtube.com/watch?v=Mi6GqKE_RTU][Graph Isomorphism (YouTube)]]
+- *Exercises*:
+  - Determine if a graph is planar and embed it if possible.
+  - Explore spectral graph theory concepts like eigenvalues and eigenvectors.
+
+
+***** class: Neo4j and Cypher
+****** Topic: Introduction to Graph Databases
+- *Objective*: Understand what graph databases are, their advantages, and when to use them.
+- *Resources*:
+  - [[https://neo4j.com/developer/graph-database/][Neo4j: What is a Graph Database?]]
+  - [[https://www.youtube.com/watch?v=8jzbCdg5lZI][Graph Databases 101 (YouTube)]]
+- *Examples*:
+  - Compare a graph database to a relational database for a social network application.
+- *Activity*:
+  - Write a short essay (1-2 paragraphs) on a scenario where a graph database would be more suitable than a relational database.
+- *Setup*: No additional tools needed.
+
+****** Topic: Getting Started with Neo4j
+- *Objective*: Set up Neo4j and understand its basic components (nodes, relationships, properties).
+- *Resources*:
+  - [[https://neo4j.com/docs/getting-started/current/][Neo4j Getting Started Guide]]
+  - [[https://neo4j.com/developer/get-started/][Neo4j Developer: Get Started]]
+- *Examples*:
+  - Create a simple graph with nodes representing people and relationships representing friendships.
+- *Activity*:
+  - Install Neo4j Desktop or use the Docker image.
+  - Create a new database and add a few nodes and relationships using the Neo4j Browser.
+- *Setup*: Install Neo4j Desktop or use Docker, access via browser at `http://localhost:7474`.
+
+****** Topic: Cypher Query Language Basics
+- *Objective*: Learn the fundamentals of Cypher for creating and querying graph data.
+- *Resources*:
+  - [[https://neo4j.com/docs/cypher-manual/current/][Neo4j Cypher Manual]]
+  - [[https://neo4j.com/developer/cypher-query-language/][Neo4j Developer: Cypher]]
+- *Examples*:
+  - Write Cypher queries to create nodes and relationships (e.g., `CREATE (p:Person {name: 'Alice'})-[:FRIENDS_WITH]->(q:Person {name: 'Bob'})`).
+  - Query for all friends of a person (e.g., `MATCH (p:Person {name: 'Alice'})-[:FRIENDS_WITH]->(friend) RETURN friend`).
+- *Activity*:
+  - Create a small graph representing a movie database (movies, actors, directors).
+  - Write Cypher queries to retrieve data (e.g., find all movies starring a particular actor).
+- *Setup*: Use Neo4j Browser or Cypher Shell (`cypher-shell`).
+
+****** Topic: Advanced Cypher Queries
+- *Objective*: Master more complex Cypher queries, including pattern matching, aggregation, and pathfinding.
+- *Resources*:
+  - [[https://neo4j.com/docs/cypher-manual/current/clauses/][Neo4j Cypher Clauses]]
+  - [[https://neo4j.com/developer/cypher-querying/][Neo4j Developer: Advanced Cypher]]
+- *Examples*:
+  - Use `MATCH` with patterns to find complex relationships (e.g., friends of friends).
+  - Aggregate data with `COUNT`, `SUM`, etc. (e.g., count the number of movies per director).
+- *Activity*:
+  - Extend the movie database with more relationships (e.g., genres, ratings).
+  - Write queries to find the most prolific directors or the highest-rated movies in a genre.
+- *Setup*: Continue using Neo4j Browser or Cypher Shell.
+
+****** Topic: Data Modeling with Neo4j
+- *Objective*: Learn how to model data effectively in a graph database.
+- *Resources*:
+  - [[https://neo4j.com/developer/data-modeling/][Neo4j Developer: Data Modeling]]
+  - [[https://www.youtube.com/watch?v=8jzbCdg5lZI][Data Modeling with Neo4j (YouTube)]]
+- *Examples*:
+  - Model a recommendation system where users rate products.
+- *Activity*:
+  - Design a graph data model for a simple knowledge management system (e.g., a personal knowledge base with notes and tags).
+  - Implement the model in Neo4j and populate it with sample data.
+- *Setup*: Use Neo4j Browser to create the schema and data.
+
+****** Topic: Neo4j with Programming Languages
+- *Objective*: Connect to Neo4j from Python or Haskell to build applications.
+- *Resources*:
+  - [[https://neo4j.com/developer/python/][Neo4j Python Driver]]
+  - [[https://github.com/neo4j/neo4j-haskell][Neo4j Haskell Driver]]
+- *Examples*:
+  - Write a Python script to query the movie database and print the results.
+- *Activity*:
+  - Choose Python or Haskell and write a small program to:
+    - Connect to your Neo4j database.
+    - Insert new data (e.g., add a new movie).
+    - Query for data (e.g., find all movies by a director).
+- *Setup*: Install the necessary drivers (e.g., `nix-env -i python3Packages.neo4j` for Python).
+***** class: Semantic Web Technologies
+
+- *Setup*: Use Emacs for coding and configuration. Install tools via Nix:
+  - Apache Jena: `nix-env -i apache-jena`
+  - Protégé: Download from the official site (Java-based, runs on NixOS).
+  - RDFLib for Python: `nix-env -i python3Packages.rdflib`
+  - Emacs: Install `n3-mode` for Turtle, `xml-mode` for RDF/XML, and `sparql-mode` for SPARQL (via MELPA).
+
+****** Topic: Introduction to Semantic Web
+- *Objective*: Understand the concept, significance, and goals of the Semantic Web.
+- *Resources*:
+  - [[https://www.w3.org/standards/semanticweb/][W3C: Semantic Web Introduction]]
+  - [[https://www.youtube.com/watch?v=OGg8A2zfWKg][Tim Berners-Lee: The Next Web (TED Talk)]]
+- *Activity*:
+  - Write a short essay (1-2 paragraphs) on how the Semantic Web could impact a specific industry or domain (e.g., healthcare, education, or knowledge management).
+- *Setup*: No additional tools needed.
+
+****** Topic: RDF (Resource Description Framework)
+- *Objective*: Learn the basics of RDF, including triples, serialization formats (Turtle, RDF/XML), and how to model data.
+- *Resources*:
+  - [[https://www.w3.org/TR/rdf11-primer/][W3C RDF 1.1 Primer]]
+  - [[https://jena.apache.org/tutorials/rdf_api.html][Apache Jena RDF Tutorial]]
+- *Activity*:
+  - Create an RDF document in Turtle format describing a simple domain (e.g., a personal library with books, authors, and genres).
+  - Use Apache Jena’s `riot` tool to validate and convert your RDF to other formats (e.g., RDF/XML).
+- *Setup*: Install Apache Jena (`nix-env -i apache-jena`), use Emacs with `n3-mode` for Turtle.
+
+****** Topic: OWL (Web Ontology Language)
+- *Objective*: Understand ontologies and how to create them using OWL.
+- *Resources*:
+  - [[https://www.w3.org/TR/owl2-primer/][W3C OWL 2 Primer]]
+  - [[https://protege.stanford.edu/publications/ontology_development/ontology101.pdf][Protégé Ontology 101]]
+- *Activity*:
+  - Build a small ontology for a domain of interest (e.g., a family tree or a classification of animals) using Protégé.
+  - Define classes, properties, and instances, and visualize the ontology.
+- *Setup*: Download and run Protégé (Java-based, works on NixOS).
+
+****** Topic: SPARQL (SPARQL Protocol and RDF Query Language)
+- *Objective*: Master querying RDF data with SPARQL.
+- *Resources*:
+  - [[https://www.w3.org/TR/sparql11-query/][W3C SPARQL 1.1 Query Language]]
+  - [[https://jena.apache.org/tutorials/sparql.html][Apache Jena SPARQL Tutorial]]
+- *Activity*:
+  - Set up a local SPARQL endpoint with Apache Jena Fuseki and load a sample RDF dataset (e.g., your RDF document from Topic 2).
+  - Write SPARQL queries to retrieve specific data (e.g., all books by a certain author or all instances of a class).
+- *Setup*: Install Apache Jena Fuseki (`nix-env -i apache-jena-fuseki`), run it locally, and use Emacs with `sparql-mode`.
+
+****** Topic: Linked Data Principles
+- *Objective*: Learn the principles of publishing and consuming linked data.
+- *Resources*:
+  - [[https://www.w3.org/DesignIssues/LinkedData.html][Tim Berners-Lee: Linked Data]]
+  - [[https://www.w3.org/TR/ld-bp/][W3C Linked Data Best Practices]]
+- *Activity*:
+  - Publish your RDF dataset as linked data by hosting it on a local web server (e.g., Apache or Nginx).
+  - Ensure the data follows linked data principles (e.g., use dereferenceable URIs).
+- *Setup*: Install Apache (`nix-env -i apacheHttpd`) or Nginx (`nix-env -i nginx`), configure to serve static files.
+
+****** Topic: Semantic Web Tools
+- *Objective*: Get familiar with tools used in Semantic Web development.
+- *Resources*:
+  - [[https://jena.apache.org/documentation/rdf/index.html][Apache Jena RDF API]]
+  - [[https://protege.stanford.edu/][Protégé Ontology Editor]]
+- *Activity*:
+  - Use Apache Jena to load and query your RDF dataset programmatically (e.g., with Java or Python).
+  - Use Protégé to edit and extend your ontology from Topic 3.
+- *Setup*: Use Apache Jena’s command-line tools or RDFLib in Python (`nix-env -i python3Packages.rdflib`).
+
+****** Topic: Applications of Semantic Web Technologies
+- *Objective*: Explore real-world applications and use cases of Semantic Web technologies.
+- *Resources*:
+  - [[https://www.w3.org/2001/sw/sweo/public/UseCases/][W3C Semantic Web Use Cases]]
+  - [[https://www.ontotext.com/knowledgehub/fundamentals/semantic-web-technologies/][Ontotext: Semantic Web Technologies]]
+- *Activity*:
+  - Research and present a case study on a Semantic Web application (e.g., in healthcare, e-commerce, or digital libraries).
+  - Optionally, extend your RDF dataset or ontology to mimic a simplified version of the case study.
+- *Setup*: No additional tools needed.
+***** class: Linked Data Exploration
+****** Topic: Introduction to Linked Data
+- *Objective*: Understand the principles of linked data and its benefits for connecting data across the web.
+- *Resources*:
+  - [[https://www.w3.org/DesignIssues/LinkedData.html][Tim Berners-Lee: Linked Data]]
+  - [[https://www.youtube.com/watch?v=4x_xzT5eF5Q][Linked Data Introduction (YouTube)]]
+- *Examples*:
+  - Explore how DBpedia links structured data from Wikipedia.
+- *Activity*:
+  - Write a short essay (1-2 paragraphs) on how linked data could enhance a knowledge management system or ontology project.
+- *Setup*: No additional tools needed.
+
+****** Topic: RDF and Turtle Syntax
+- *Objective*: Learn the basics of RDF (Resource Description Framework) and Turtle syntax for representing linked data.
+- *Resources*:
+  - [[https://www.w3.org/TR/rdf11-primer/][W3C RDF 1.1 Primer]]
+  - [[https://www.w3.org/TeamSubmission/turtle/][Turtle Syntax Guide]]
+- *Examples*:
+  - Represent a simple entity (e.g., a person or a concept) as an RDF triple.
+- *Activity*:
+  - Create a small RDF dataset in Turtle format (e.g., describing yourself, your interests, and links to related concepts).
+- *Setup*: Use Emacs with `ttl-mode` for Turtle syntax highlighting.
+
+****** Topic: Publishing Linked Data
+- *Objective*: Understand best practices for publishing linked data on the web.
+- *Resources*:
+  - [[https://www.w3.org/TR/ld-bp/][W3C Linked Data Best Practices]]
+  - [[https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/][Linked Data Publishing Blog Post]]
+- *Examples*:
+  - Host a Turtle file on a web server and make it accessible via a URL.
+- *Activity*:
+  - Publish your RDF dataset from the previous activity on a local web server (e.g., Apache or Nginx).
+  - Ensure the data is accessible via HTTP and follows linked data principles (e.g., dereferenceable URIs).
+- *Setup*: Install Apache (`nix-env -i apacheHttpd`) or Nginx (`nix-env -i nginx`), configure to serve static files.
+
+****** Topic: Consuming Linked Data
+- *Objective*: Learn techniques for querying and integrating linked data from various sources.
+- *Resources*:
+  - [[https://www.w3.org/TR/sparql11-query/][W3C SPARQL 1.1 Query Language]]
+  - [[https://rdflib.readthedocs.io/en/stable/][RDFLib Documentation (Python)]]
+- *Examples*:
+  - Use RDFLib to load and query a remote RDF dataset (e.g., from DBpedia).
+- *Activity*:
+  - Write a Python script using RDFLib to query a public SPARQL endpoint (e.g., DBpedia) and display results (e.g., list all books by a specific author).
+- *Setup*: Install RDFLib (`nix-env -i python3Packages.rdflib`), use Emacs with `python-mode`.
+
+****** Topic: SPARQL Queries
+- *Objective*: Master the SPARQL query language for retrieving and manipulating linked data.
+- *Resources*:
+  - [[https://www.w3.org/TR/sparql11-query/][W3C SPARQL 1.1 Query Language]]
+  - [[https://jena.apache.org/tutorials/sparql.html][Apache Jena SPARQL Tutorial]]
+- *Examples*:
+  - Write a SPARQL query to find all entities of a certain type (e.g., all instances of "Person").
+- *Activity*:
+  - Set up a local SPARQL endpoint with Apache Jena Fuseki and load your RDF dataset.
+  - Write SPARQL queries to retrieve specific data (e.g., all entities linked by a certain relationship).
+- *Setup*: Install Apache Jena Fuseki (`nix-env -i apache-jena-fuseki`), run it locally.
+
+****** Topic: Linked Data Applications
+- *Objective*: Explore real-world applications and use cases of linked data.
+- *Resources*:
+  - [[https://dbpedia.org/][DBpedia]]
+  - [[https://www.wikidata.org/wiki/Wikidata:Main_Page][Wikidata]]
+- *Examples*:
+  - Use DBpedia to enrich a dataset with additional information (e.g., adding birthplace data to a list of authors).
+- *Activity*:
+  - Choose a public linked data source (e.g., DBpedia, Wikidata) and integrate it with your dataset.
+  - Write a brief report (1-2 pages) on how this integration enhances your project.
+- *Setup*: Use RDFLib or SPARQLWrapper in Python to query external sources.
+
+****** Topic: Project: Connecting to the Broader Web
+- *Objective*: Publish your own linked data and consume data from external sources to create a connected web of information.
+- *Resources*:
+  - Project-specific documentation and tutorials.
+- *Examples*:
+  - Publish a personal knowledge base as linked data and link it to external datasets (e.g., Wikidata entities).
+- *Activity*:
+  - Expand your RDF dataset to include links to external resources (e.g., use `owl:sameAs` to connect to DBpedia).
+  - Write a SPARQL query that combines your data with external data (e.g., retrieve additional properties from linked entities).
+  - Optionally, set up a simple web interface to display the integrated data.
+- *Setup*: Use Apache Jena Fuseki for the SPARQL endpoint, Apache or Nginx for serving static files, and Python with RDFLib for querying.
+***** class: Capstone: Knowledge Management Project
+
+- *Prerequisites*: Completion of "Graph Theory Fundamentals," "Neo4j and Cypher," "Semantic Web Technologies," and "Web Development" classes.
+- *Setup*: Use Emacs for coding and project management. Install tools via Nix:
+  - Neo4j: `nix-env -i neo4j` or use Docker (`docker run -d -p 7474:7474 -p 7687:7687 neo4j`).
+  - Apache Jena Fuseki: `nix-env -i apache-jena-fuseki`.
+  - Python with RDFLib: `nix-env -i python3Packages.rdflib`.
+  - Hakyll (for static site generation): `nix-env -i hakyll`.
+  - Emacs: Use `org-mode` for project planning, `python-mode`, `haskell-mode`, and `web-mode`.
+
+****** Project Phase: Planning and Design
+- *Objective*: Define the scope, requirements, and architecture of your knowledge management system.
+- *Tools & Resources*:
+  - [[https://www.atlassian.com/software/jira][Jira]] or [[https://trello.com/][Trello]] for project management.
+  - [[https://www.lucidchart.com/][Lucidchart]] or [[https://draw.io/][draw.io]] for diagramming.
+- *Deliverables*:
+  - A project plan outlining goals, features, and timeline.
+  - A high-level architecture diagram showing components (e.g., database, frontend, APIs).
+  - User stories or use cases for key functionalities.
+- *Activity*:
+  - Choose a domain for your knowledge base (e.g., personal notes, a hobby, or a professional field).
+  - Define key features (e.g., data ingestion, querying, visualization, linked data integration).
+  - Sketch the data model (e.g., nodes and relationships for Neo4j or RDF schema).
+- *Setup*: Use Emacs `org-mode` for planning documents and task tracking.
+
+****** Project Phase: Data Modeling and Ingestion
+- *Objective*: Design the data model and implement data ingestion pipelines.
+- *Tools & Resources*:
+  - Neo4j or Apache Jena Fuseki for data storage.
+  - Python with Neo4j driver or RDFLib for data processing.
+- *Deliverables*:
+  - A populated graph database or RDF store with sample data.
+  - Scripts or code for data ingestion (e.g., CSV to Cypher or Turtle).
+- *Activity*:
+  - Create a data model for your domain (e.g., entities like "Note," "Tag," "Author").
+  - Write scripts to ingest data from sources (e.g., Markdown files, APIs, or manual entry).
+  - Ensure data consistency and handle duplicates.
+- *Setup*: Install Neo4j or Apache Jena Fuseki, use Emacs with `python-mode` for scripting.
+
+****** Project Phase: Querying and API Development
+- *Objective*: Implement querying mechanisms and expose data via APIs.
+- *Tools & Resources*:
+  - Cypher for Neo4j or SPARQL for RDF.
+  - Flask or FastAPI for Python-based APIs.
+- *Deliverables*:
+  - A set of predefined queries for common use cases.
+  - A RESTful API to query the knowledge base (e.g., `/search?query=term`).
+- *Activity*:
+  - Write Cypher or SPARQL queries to retrieve data (e.g., find all notes tagged with "AI").
+  - Develop an API to serve query results in JSON format.
+  - Optionally, implement authentication for API access.
+- *Setup*: Install Flask or FastAPI (`nix-env -i python3Packages.flask` or `nix-env -i python3Packages.fastapi`), use Emacs with `python-mode`.
+
+****** Project Phase: Frontend Development
+- *Objective*: Build a user-friendly interface to interact with the knowledge base.
+- *Tools & Resources*:
+  - Hakyll for static site generation or a JavaScript framework (e.g., React).
+  - Bootstrap or Tailwind CSS for styling.
+- *Deliverables*:
+  - A functional frontend with search, browse, and visualization features.
+- *Activity*:
+  - If using Hakyll, generate static pages from your data and add search functionality (e.g., with Lunr.js).
+  - If using a framework, create components to display query results and visualizations (e.g., graph views with D3.js).
+  - Ensure the interface is responsive and accessible.
+- *Setup*: For Hakyll, use `hakyll` and `pandoc`; for JavaScript, install Node.js (`nix-env -i nodejs`), use Emacs with `web-mode` or `js-mode`.
+
+****** Project Phase: Linked Data Integration
+- *Objective*: Connect your knowledge base to external linked data sources.
+- *Tools & Resources*:
+  - RDFLib or Apache Jena for linked data processing.
+  - Public SPARQL endpoints (e.g., DBpedia, Wikidata).
+- *Deliverables*:
+  - Enhanced data with links to external resources.
+  - Queries that combine local and external data.
+- *Activity*:
+  - Identify relevant external datasets (e.g., link authors to their DBpedia entries).
+  - Use `owl:sameAs` or similar predicates to connect entities.
+  - Write federated SPARQL queries or use RDFLib to merge data.
+- *Setup*: Use RDFLib in Python or Apache Jena for SPARQL queries.
+
+****** Project Phase: Testing and Deployment
+- *Objective*: Ensure the system is functional, secure, and deployed for use.
+- *Tools & Resources*:
+  - Docker for containerization.
+  - GitHub Actions or Jenkins for CI/CD.
+  - Cloud platforms (e.g., AWS, Heroku) for deployment.
+- *Deliverables*:
+  - A deployed, publicly accessible knowledge management system.
+  - Documentation and a user guide.
+- *Activity*:
+  - Write unit and integration tests for your API and frontend.
+  - Containerize the application using Docker.
+  - Set up a CI/CD pipeline to automate testing and deployment.
+  - Deploy to a cloud platform and ensure it’s secure (e.g., HTTPS, access controls).
+- *Setup*: Install Docker (`nix-env -i docker`), use GitHub for version control and CI/CD.
+
+****** Project Phase: Presentation and Reflection
+- *Objective*: Present your project and reflect on the learning experience.
+- *Tools & Resources*:
+  - Presentation software (e.g., LibreOffice Impress, Google Slides).
+  - Markdown or Org-mode for documentation.
+- *Deliverables*:
+  - A presentation (slides or video) showcasing your project.
+  - A reflection essay (2-3 pages) on challenges, solutions, and future improvements.
+- *Activity*:
+  - Prepare a 10-15 minute presentation covering your project’s goals, architecture, challenges, and outcomes.
+  - Write a reflection on what you learned and how you might extend the project (e.g., adding machine learning for recommendations).
+- *Setup*: Use Emacs `org-mode` for documentation and note.
+**** AI & Machine Learning
+***** class: Machine Learning Basics
+
+- *Setup*: Use Emacs for coding and note-taking. Install tools via Nix:
+  - Python: `nix-env -i python3`
+  - Scikit-learn: `nix-env -i python3Packages.scikit-learn`
+  - Pandas: `nix-env -i python3Packages.pandas`
+  - JupyterLab: `nix-env -i jupyterlab`
+  - Emacs: Use `python-mode` and `ein` (Emacs IPython Notebook) for interactive coding.
+
+****** Topic: Introduction to Machine Learning
+- *Objective*: Understand what machine learning is, its types (supervised, unsupervised, reinforcement), and its applications.
+- *Resources*:
+  - [[https://developers.google.com/machine-learning/crash-course/ml-intro][Google ML Crash Course: Introduction]]
+  - [[https://www.youtube.com/watch?v=ukzFI9rgwfU][Machine Learning Explained (YouTube)]]
+- *Activity*:
+  - Write a short essay (1-2 paragraphs) on how machine learning could be applied to a domain of interest (e.g., knowledge management).
+- *Setup*: No additional tools needed.
+
+****** Topic: Data Preprocessing
+- *Objective*: Learn techniques for cleaning, transforming, and preparing data for machine learning models.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/preprocessing.html][Scikit-learn Preprocessing Guide]]
+  - [[https://pandas.pydata.org/docs/user_guide/index.html][Pandas User Guide]]
+- *Activity*:
+  - Use Pandas to load a dataset (e.g., Iris dataset), handle missing values, and normalize features.
+  - Visualize the data using Matplotlib or Seaborn.
+- *Setup*: Install Pandas and Scikit-learn (`nix-env -i python3Packages.pandas python3Packages.scikit-learn`), use Emacs with `python-mode`.
+
+****** Topic: Supervised Learning: Linear Regression
+- *Objective*: Understand linear regression, its assumptions, and how to implement it.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/linear_model.html][Scikit-learn Linear Models]]
+  - [[https://realpython.com/linear-regression-in-python/][Real Python: Linear Regression]]
+- *Activity*:
+  - Implement linear regression on a dataset (e.g., Boston Housing) to predict a continuous variable (e.g., house prices).
+  - Evaluate the model using metrics like Mean Squared Error (MSE).
+- *Setup*: Use Scikit-learn and Pandas in a Jupyter notebook (`nix-env -i jupyterlab`), or code in Emacs with `ein`.
+
+****** Topic: Supervised Learning: Logistic Regression
+- *Objective*: Learn logistic regression for binary classification tasks.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html][Scikit-learn Logistic Regression]]
+  - [[https://www.youtube.com/watch?v=yIYKR4sgzI][Logistic Regression (YouTube)]]
+- *Activity*:
+  - Apply logistic regression to a dataset (e.g., Titanic survival prediction) to classify outcomes.
+  - Evaluate the model using accuracy, precision, recall, and ROC curves.
+- *Setup*: Continue using Scikit-learn and Pandas.
+
+****** Topic: Decision Trees and Random Forests
+- *Objective*: Understand decision trees, their strengths and weaknesses, and how random forests improve performance.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/tree.html][Scikit-learn Decision Trees]]
+  - [[https://www.kaggle.com/learn/intro-to-machine-learning][Kaggle: Intro to Machine Learning]]
+- *Activity*:
+  - Build a decision tree classifier for a dataset (e.g., Wine Quality).
+  - Compare its performance to a random forest model on the same dataset.
+- *Setup*: Use Scikit-learn for model building.
+
+****** Topic: Unsupervised Learning: Clustering
+- *Objective*: Learn about clustering algorithms, focusing on K-Means and hierarchical clustering.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/clustering.html][Scikit-learn Clustering Guide]]
+  - [[https://www.youtube.com/watch?v=4b5d3muPQmA][K-Means Clustering (YouTube)]]
+- *Activity*:
+  - Apply K-Means clustering to a dataset (e.g., customer segmentation) and visualize the clusters.
+  - Experiment with different numbers of clusters and evaluate using silhouette scores.
+- *Setup*: Use Scikit-learn and Matplotlib for visualization.
+
+****** Topic: Model Evaluation and Validation
+- *Objective*: Understand techniques for evaluating and validating machine learning models.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/model_evaluation.html][Scikit-learn Model Evaluation]]
+  - [[https://www.kaggle.com/alexisbcook/model-validation][Kaggle: Model Validation]]
+- *Activity*:
+  - Split a dataset into training and test sets, apply cross-validation, and compare model performance.
+  - Experiment with hyperparameter tuning using grid search.
+- *Setup*: Continue using Scikit-learn.
+
+****** Topic: Introduction to Neural Networks
+- *Objective*: Get a basic understanding of neural networks and how to build one using TensorFlow or PyTorch.
+- *Resources*:
+  - [[https://www.tensorflow.org/tutorials/quickstart/beginner][TensorFlow Quickstart]]
+  - [[https://pytorch.org/tutorials/beginner/basics/intro.html][PyTorch Basics]]
+- *Activity*:
+  - Build a simple neural network to classify handwritten digits (MNIST dataset).
+  - Experiment with different architectures (e.g., number of layers, activation functions).
+- *Setup*: Install TensorFlow (`nix-env -i python3Packages.tensorflow`) or PyTorch (`nix-env -i python3Packages.pytorch`), use Emacs with `python-mode`.
+
+****** Topic: Ethics in Machine Learning
+- *Objective*: Explore ethical considerations in machine learning, including bias, fairness, and transparency.
+- *Resources*:
+  - [[https://developers.google.com/machine-learning/fairness-overview/][Google: Fairness in ML]]
+  - [[https://www.youtube.com/watch?v=QxuyfWoVV98][Ethics in AI (YouTube)]]
+- *Activity*:
+  - Analyze a case study of bias in machine learning (e.g., facial recognition) and propose mitigation strategies.
+  - Write a reflection (1-2 pages) on the ethical implications of using machine learning in your domain of interest.
+- *Setup*: No additional tools needed.
+***** class: Natural Language Processing
+
+- *Setup*: Use Emacs for coding and note-taking. Install tools via Nix:
+  - Python: `nix-env -i python3`
+  - NLP Libraries: `nix-env -i python3Packages.nltk python3Packages.spacy python3Packages.transformers`
+  - Datasets: Use `nltk.download()` for NLTK datasets, or fetch from Kaggle.
+  - JupyterLab (optional): `nix-env -i jupyterlab`
+  - Emacs: Use `python-mode` and `ein` (Emacs IPython Notebook) for interactive coding.
+
+****** Topic: Introduction to NLP
+- *Objective*: Understand what NLP is, its history, and current applications.
+- *Resources*:
+  - [[https://en.wikipedia.org/wiki/Natural_language_processing][Wikipedia: Natural Language Processing]]
+  - [[https://www.ted.com/talks/deb_roy_the_birth_of_a_word][TED Talk: The Birth of a Word]]
+  - [[https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1][Towards Data Science: Guide to NLP]]
+- *Activity*:
+  - Write a short essay (1-2 paragraphs) on how NLP could enhance a knowledge management system or ontology project.
+- *Setup*: No additional tools needed.
+
+****** Topic: NLP Libraries and Tools
+- *Objective*: Get familiar with popular NLP libraries like NLTK, SpaCy, and Hugging Face.
+- *Resources*:
+  - [[https://www.nltk.org/][NLTK Documentation]]
+  - [[https://spacy.io/usage][SpaCy Usage Guide]]
+  - [[https://huggingface.co/docs/transformers/index][Hugging Face Transformers]]
+- *Activity*:
+  - Install the libraries and run a simple example from each:
+    - Tokenize a sentence with NLTK.
+    - Perform named entity recognition with SpaCy.
+    - Use a pre-trained model from Hugging Face for sentiment analysis.
+- *Setup*: Install libraries (`nix-env -i python3Packages.nltk python3Packages.spacy python3Packages.transformers`), use Emacs with `python-mode`.
+
+****** Topic: Text Preprocessing
+- *Objective*: Learn techniques for cleaning and preparing text data, including tokenization, stemming, lemmatization, and stop word removal.
+- *Resources*:
+  - [[https://www.nltk.org/book/ch03.html][NLTK Book: Processing Raw Text]]
+  - [[https://spacy.io/usage/linguistic-features#tokenization][SpaCy: Tokenization]]
+- *Activity*:
+  - Implement a preprocessing pipeline for a dataset (e.g., Twitter Sentiment Analysis dataset from Kaggle).
+  - Compare the effects of different preprocessing techniques on a sample text.
+- *Setup*: Use NLTK or SpaCy in a Python script or Jupyter notebook.
+
+****** Topic: Text Representation
+- *Objective*: Understand how to represent text for machine learning, including bag-of-words, TF-IDF, and word embeddings.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction][Scikit-learn: Text Feature Extraction]]
+  - [[https://jalammar.github.io/illustrated-word2vec/][Illustrated Word2Vec]]
+- *Activity*:
+  - Convert a text dataset (e.g., 20 Newsgroups) into TF-IDF features.
+  - Visualize word embeddings for a set of terms related to knowledge management (e.g., "ontology," "taxonomy").
+- *Setup*: Install Scikit-learn (`nix-env -i python3Packages.scikit-learn`), use Gensim for embeddings (`nix-env -i python3Packages.gensim`).
+
+****** Topic: Linguistic Annotation
+- *Objective*: Learn about part-of-speech tagging and named entity recognition.
+- *Resources*:
+  - [[https://www.nltk.org/book/ch05.html][NLTK Book: Categorizing and Tagging Words]]
+  - [[https://spacy.io/usage/linguistic-features#named-entities][SpaCy: Named Entity Recognition]]
+- *Activity*:
+  - Annotate a sample text (e.g., a news article) with POS tags and named entities using SpaCy.
+  - Evaluate the accuracy of the annotations manually or with a gold standard dataset.
+- *Setup*: Use SpaCy in a Python script.
+
+****** Topic: Sentiment Analysis
+- *Objective*: Understand sentiment analysis techniques and tools.
+- *Resources*:
+  - [[https://github.com/cjhutto/vaderSentiment][VADER Sentiment Analysis]]
+  - [[https://huggingface.co/blog/sentiment-analysis-python][Hugging Face: Sentiment Analysis]]
+- *Activity*:
+  - Build a sentiment classifier for movie reviews or tweets using VADER or a pre-trained transformer model.
+  - Compare the performance of different models on a small test set.
+- *Setup*: Install VADER (`nix-env -i python3Packages.vaderSentiment`), use Hugging Face Transformers.
+
+****** Topic: Machine Learning for NLP
+- *Objective*: Apply machine learning algorithms to NLP tasks.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html][Scikit-learn: Working with Text Data]]
+  - [[https://course.fast.ai/lessons/lesson4.html][fast.ai: NLP Lesson]]
+- *Activity*:
+  - Train a text classifier on the 20 Newsgroups dataset to categorize articles into topics.
+  - Experiment with different classifiers (e.g., Naive Bayes, SVM) and evaluate their performance.
+- *Setup*: Use Scikit-learn for classification, Pandas for data handling (`nix-env -i python3Packages.pandas`).
+
+****** Topic: Advanced NLP Applications
+- *Objective*: Explore cutting-edge NLP techniques like transformers and language models.
+- *Resources*:
+  - [[https://huggingface.co/transformers/pretrained_models.html][Hugging Face: Pretrained Models]]
+  - [[https://jalammar.github.io/illustrated-transformer/][The Illustrated Transformer]]
+- *Activity*:
+  - Use a pre-trained transformer model (e.g., BERT) for a task like question answering or text generation.
+  - Optionally, fine-tune a model on a small dataset related to knowledge management (e.g., classifying research papers).
+- *Setup*: Install Hugging Face Transformers and PyTorch (`nix-env -i python3Packages.transformers python3Packages.pytorch`).
+
+****** Topic: Ethics in NLP
+- *Objective*: Understand ethical considerations in NLP, including bias, privacy, and fairness.
+- *Resources*:
+  - [[https://arxiv.org/abs/1906.05596][Bias in NLP (Paper)]]
+  - [[https://developers.google.com/machine-learning/fairness-overview/][Google: Fairness in ML]]
+- *Activity*:
+  - Analyze a case study of bias in NLP (e.g., gender bias in word embeddings).
+  - Propose mitigation strategies and write a reflection (1-2 pages) on the ethical implications of using NLP in your domain.
+- *Setup*: No additional tools needed.
+***** class: Critical Thinking with AI
+
+- *Setup*: Use Emacs for activities and note-taking. Install tools via Nix where needed:
+  - Python: `nix-env -i python3`
+  - AI Tools: Depending on activities, install packages like `openai` for GPT-3 API access or `scikit-learn` for ML models.
+  - Emacs: Use `org-mode` for notes and `python-mode` for scripting.
+
+****** Topic: Foundations of Critical Thinking
+- *Objective*: Review key concepts in critical thinking, including logical fallacies, cognitive biases, and evidence evaluation.
+- *Resources*:
+  - [[https://www.criticalthinking.org/pages/defining-critical-thinking/766][Defining Critical Thinking]]
+  - [[https://yourlogicalfallacyis.com/][Your Logical Fallacy Is]]
+  - [[https://www.lesswrong.com/posts/9kcTJiBpu4ktTjy2t/list-of-common-human-goals][LessWrong: Cognitive Biases]]
+- *Activity*:
+  - Identify logical fallacies in a set of statements or arguments (e.g., from news articles or opinion pieces).
+  - Reflect on how these fallacies might appear in AI-generated content.
+- *Setup*: No additional tools needed.
+
+****** Topic: Evaluating AI-Generated Text
+- *Objective*: Critically assess the quality, accuracy, and reliability of AI-generated text.
+- *Resources*:
+  - [[https://openai.com/blog/gpt-3-apps/][OpenAI: GPT-3 Applications]]
+  - [[https://www.poynter.org/fact-checking/2020/how-to-spot-ai-generated-text/][Poynter: Spotting AI-Generated Text]]
+  - [[https://www.snopes.com/][Snopes Fact-Checking]]
+- *Activity*:
+  - Use an AI language model (e.g., GPT-3) to generate a short article on a topic of interest.
+  - Compare it to a human-written article on the same topic, evaluating for accuracy, coherence, and potential biases.
+  - Discuss how to verify the information presented.
+- *Setup*: Access to an AI language model (e.g., OpenAI API or a local model like GPT-Neo).
+
+****** Topic: Evaluating AI-Generated Images and Media
+- *Objective*: Assess the credibility and authenticity of AI-generated images and media.
+- *Resources*:
+  - [[https://www.wired.com/story/how-to-spot-ai-generated-fakes/][Wired: Spotting AI-Generated Fakes]]
+  - [[https://www.deeplearning.ai/blog/deepfakes-and-ai-generated-media/][DeepLearning.AI: Deepfakes]]
+  - [[https://www.forbes.com/sites/forbestechcouncil/2020/01/21/how-to-spot-ai-generated-images/][Forbes: Spotting AI-Generated Images]]
+- *Activity*:
+  - Generate an image using an AI tool (e.g., DALL-E mini) and analyze it for signs of manipulation or inauthenticity.
+  - Discuss the implications of AI-generated media in journalism or social media.
+- *Setup*: Use an online AI image generator (e.g., DALL-E mini) or install a local tool if available.
+
+****** Topic: Understanding AI's Decision-Making
+- *Objective*: Explore how AI models make decisions and recognize their limitations.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/tree.html][Scikit-learn: Decision Trees]]
+  - [[https://christophm.github.io/interpretable-ml-book/][Interpretable Machine Learning Book]]
+  - [[https://www.youtube.com/watch?v=x2iV-04is9g][Explainable AI (YouTube)]]
+- *Activity*:
+  - Train a simple decision tree model on a dataset (e.g., Iris dataset) and interpret its decision-making process.
+  - Discuss the model's limitations and potential biases based on the training data.
+- *Setup*: Install Scikit-learn (`nix-env -i python3Packages.scikit-learn`), use Emacs with `python-mode`.
+
+****** Topic: AI as a Critical Thinking Tool
+- *Objective*: Use AI to enhance critical thinking skills, such as evaluating arguments or generating ideas.
+- *Resources*:
+  - [[https://www.ibm.com/watson][IBM Watson]]
+  - [[https://openai.com/blog/openai-api/][OpenAI API]]
+  - [[https://www.kialo.com/][Kialo: Structured Debates]]
+- *Activity*:
+  - Use an AI tool (e.g., GPT-3) to generate counterarguments for a given position.
+  - Evaluate the quality of the counterarguments and refine your original position.
+- *Setup*: Access to an AI language model or install a local tool.
+
+****** Topic: Ethical Implications of AI
+- *Objective*: Discuss ethical considerations in AI, including bias, privacy, and accountability.
+- *Resources*:
+  - [[https://www.markkula.edu/ethics-in-technology-practice/ethics-in-ai.html][Markkula Center: Ethics in AI]]
+  - [[https://www.acm.org/code-of-ethics][ACM Code of Ethics]]
+  - [[https://www.youtube.com/watch?v=QxuyfWoVV98][Ethics in AI (YouTube)]]
+- *Activity*:
+  - Debate the ethical use of AI in a specific scenario (e.g., facial recognition in public spaces).
+  - Propose guidelines for ethical AI deployment in your chosen domain.
+- *Setup*: No additional tools needed.
+
+****** Topic: Capstone Project: Critical Analysis of an AI System
+- *Objective*: Apply critical thinking skills to evaluate an AI system comprehensively.
+- *Resources*:
+  - Documentation of the chosen AI system (e.g., [[https://openai.com/api/][OpenAI API Docs]] or [[https://cloud.google.com/vision/docs][Google Vision API Docs]]).
+  - [[https://www.partnershiponai.org/][Partnership on AI]]
+- *Activity*:
+  - Choose an AI system (e.g., a language model, image classifier, or recommendation engine).
+  - Write a report (3-5 pages) analyzing its strengths, weaknesses, potential biases, and ethical implications.
+  - Suggest improvements or alternative approaches.
+- *Setup*: Access to the AI system's documentation and, if possible, the system itself for testing.
+*** Schedule
+[ ] 1. Leveraging AI for Learning and Productivity
+  - Equips you with AI tools (e.g., GitHub Copilot, ChatGPT) to enhance learning and productivity across your studies.
+
+[ ] 2. Python
+  - Covers Python basics, data structures, functions, databases, and web development for immediate job-relevant skills.
+
+[ ] 3. Algorithms and Data Structures (Functional Focus)
+  - Strengthens core programming skills with a functional programming approach, foundational for efficient coding.
+
+[ ] 4. Functional Design Patterns
+  - Introduces functional design patterns (e.g., monads, functors) to write clean, maintainable code.
+
+[ ] 5. HTML and CSS
+  - Teaches the basics of structuring and styling web pages, essential for web development.
+
+[ ] 6. JavaScript
+  - Adds interactivity to web projects, building on HTML and CSS for dynamic websites.
+
+[ ] 7. Web Accessibility
+  - Ensures your web projects meet accessibility standards, enhancing inclusivity.
+
+[ ] 8. Static Site Generation with Hakyll
+  - Combines Haskell with web development to build static sites functionally.
+
+[ ] 9. Cloud Deployment
+  - Teaches you to deploy web projects live, using modern hosting techniques.
+
+[ ] 10. Relational Databases and SQL
+  - Introduces data management with relational databases, a key skill for many applications.
+
+[ ] 11. Graph Theory Fundamentals
+  - Provides the theoretical basis for graph databases and knowledge graphs.
+
+[ ] 12. Neo4j and Cypher
+  - Applies graph theory practically with Neo4j to manage complex relationships.
+
+[ ] 13. Semantic Web Technologies
+  - Covers RDF, OWL, and SPARQL for structured knowledge representation.
+
+[ ] 14. Linked Data Exploration
+  - Teaches you to publish and consume linked data, connecting projects to the broader web.
+
+[ ] 15. Basic Web Security
+  - Ensures your web applications are secure, addressing critical safety considerations.
+
+[ ] 16. Machine Learning Basics
+  - Introduces machine learning fundamentals, relevant to AI-driven tools and knowledge management.
+
+[ ] 17. Natural Language Processing
+  - Applies machine learning to text data for applications like text analysis.
+
+[ ] 18. Critical Thinking with AI
+  - Develops skills to evaluate AI systems critically, focusing on strengths, weaknesses, and ethics.
+
+[ ] 19. Capstone: Knowledge Management Project
+  - Integrates all skills into a comprehensive knowledge management project.
 *** License
+This learning program is for personal use but can be freely adapted by others.
+
 ** Development
 *** Process
+- Fed an initial prompt to an AI language model
+- Iterated with the AI to refine the curriculum based on my goals
+
 *** Important Decisions
+- Chose to make this repo public for transparency and feedback
+- Decided to forego advanced topics like language design for now
+  
 *** To do
+- Individual class content may be refined and updated as I go along
+
 *** Contributing
+- Open to suggestions for improving the curriculum
+
 * By Whom
+Me, with structure and guidance from an AI language model, tailored to my unique background and aspirations.
+
