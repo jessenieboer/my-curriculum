@@ -1,0 +1,2357 @@
+* Curriculum
+** Foundational Skills
+i'm going to start by fleshing out the leveraging ai class. i'm uploading a template for you to fill out. look at the content for this class in my github and fit it into the template i give you, making edits as necessary. produce an org mode code block with the results
+
+*** Class: Leveraging AI for Learning and Productivity
+- *Objective*: Learn how to effectively use AI tools to enhance your understanding of the curriculum, boost your productivity, and support your goals in functional programming, knowledge management, and AI, while being mindful of ethical considerations and practical limitations.
+- *Setup*: Use Emacs for activities and note-taking, and install tools via NixOS where applicable.
+  - **GitHub Copilot**: Install the VS Code extension or an alternative like TabNine for code completion.
+  - **ChatGPT or Grok**: Access via web or API for explanations and examples.
+  - **Taskwarrior**: Install with `nix-env -i taskwarrior` for task management.
+  - **Emacs Configuration**: Use `org-mode` for notes and `company-mode` with AI backends (e.g., `company-tabnine`) for enhanced coding support.
+  - **Additional Tools**: Consider installing `org-roam` for knowledge management, `jupyter` for interactive AI experiments, and `haskell-mode` for functional programming support.
+**** Topic: Introduction to AI for Learning and Productivity
+- *Description*: Gain a comprehensive understanding of how AI can assist in learning complex concepts, managing tasks, and automating workflows, tailored to scenarios where energy and focus are limited.
+- *Key Ideas*:
+  - AI can generate explanations, code snippets, automate repetitive tasks, and help prioritize work based on cognitive load.
+  - Ethical Considerations: Avoid over-reliance, recognize biases in AI outputs, and ensure verification of critical information.
+  - Limitations: AI lacks true contextual understanding, may produce hallucinated or inaccurate outputs, and can reinforce existing biases.
+- *Activities*:
+  1. Identify a challenging concept from your curriculum (e.g., monads in functional programming or RDF in Semantic Web Technologies).
+  2. Reflect on why it’s challenging—consider cognitive barriers, prior knowledge gaps, or practical application difficulties.
+  3. Brainstorm specific ways AI tools could assist (e.g., generating examples, breaking down concepts into smaller parts, suggesting analogies, or creating visualizations).
+  4. Use an AI tool like ChatGPT or Grok to request an explanation of the concept tailored to your learning style (e.g., visual, textual, or code-based).
+  5. Compare the AI explanation to a trusted resource (e.g., a textbook or official documentation).
+  6. Write a detailed reflection (2-3 paragraphs) analyzing how AI helped or hindered your understanding, including any surprises or limitations you encountered.
+  7. Bonus: Create a simple visual representation (e.g., a mind map in `org-mode` or a diagram using Graphviz) of the concept, with AI assistance if desired.
+- *Resources*:
+  - [Nature: AI and the Future of Learning](https://www.nature.com/articles/d41586-021-01882-5)
+  - [AI in Education: A Review of the Literature](https://www.frontiersin.org/articles/10.3389/frai.2020.00043/full)
+  - [Graphviz](https://graphviz.org/) for visualizations
+
+**** Topic: AI Tools for Learning Functional Programming and Knowledge Management
+- *Description*: Dive deep into AI tools tailored to support learning functional programming and knowledge management, with a focus on practical application and critical evaluation.
+- *Key Ideas*:
+  - ChatGPT or Grok: Generate detailed explanations, examples, and answer nuanced questions about functional programming or knowledge management.
+  - GitHub Copilot or TabNine: Assist with code completion for languages like Haskell, Rust, or Python, emphasizing functional paradigms.
+  - AI Tutoring Platforms: Leverage interactive platforms for guided exercises in functional programming or ontology design.
+- *Activities*:
+  1. Select a functional programming concept (e.g., monads in Haskell, pattern matching in Rust) or a knowledge management topic (e.g., RDF triples, ontology design).
+  2. Use ChatGPT or Grok to generate a multi-level explanation (beginner, intermediate, advanced) and concrete examples.
+  3. Cross-check the AI-generated content with authoritative sources (e.g., [Haskell Documentation](https://www.haskell.org/documentation/) or [W3C RDF Primer](https://www.w3.org/TR/rdf11-primer/)).
+  4. Install and configure GitHub Copilot or TabNine in Emacs with `company-mode`.
+  5. Write a functional program (e.g., a Haskell function to manipulate RDF triples or a Rust program using monadic error handling), using AI for code completion and suggestions.
+  6. Debug and refine the program, noting where AI suggestions were helpful or misleading.
+  7. Reflect (2-3 paragraphs) on the AI’s impact on your learning and coding process, including accuracy, creativity, and potential over-reliance risks.
+  8. Bonus: Use an AI tutoring platform (e.g., Replit with AI features) to complete a guided exercise and compare it to self-directed learning with AI tools.
+- *Resources*:
+  - ChatGPT or Grok (web or API access)
+  - GitHub Copilot or TabNine (installation required)
+  - [Replit](https://replit.com/) or [Codecademy](https://www.codecademy.com/)
+  - [Haskell Documentation](https://www.haskell.org/documentation/)
+  - [Rust Book](https://doc.rust-lang.org/book/)
+  - [W3C RDF Primer](https://www.w3.org/TR/rdf11-primer/)
+
+**** Topic: AI Tools for Productivity in Programming and Knowledge Work
+- *Description*: Explore a wide range of AI tools to enhance task management, coding efficiency, automation, and knowledge organization within your NixOS and Emacs environment.
+- *Key Ideas*:
+  - Taskwarrior: Manage and prioritize tasks with command-line efficiency, integrating with AI for prioritization suggestions.
+  - Emacs Plugins: Use `company-mode` with AI backends for coding and `org-roam` for networked note-taking and knowledge management.
+  - Automation Scripts: Leverage AI libraries (e.g., OpenAI API, Hugging Face) to automate repetitive tasks like summarization, code generation, or data processing.
+  - Writing Tools: Experiment with AI-driven tools to refine documentation or blog posts.
+- *Activities*:
+  1. Install and configure Taskwarrior and add your curriculum tasks, prioritizing them based on impact, deadlines, and your energy levels.
+  2. Use ChatGPT or Grok to suggest a prioritization strategy for your tasks and compare it to your own approach.
+  3. Set up `company-mode` with an AI backend (e.g., `company-tabnine`) in Emacs for enhanced coding support.
+  4. Install and configure `org-roam` to create a networked knowledge base for your curriculum notes.
+  5. Write a Python script using an AI library (e.g., OpenAI API) to automate a task, such as summarizing a long documentation page or generating a code template.
+  6. Test the script on a curriculum resource (e.g., [Haskell Documentation](https://www.haskell.org/documentation/)) and evaluate its accuracy and usefulness.
+  7. Experiment with AI writing tools like Grammarly or Hemingway to polish a piece of writing (e.g., a reflection or documentation).
+  8. Reflect (2-3 paragraphs) on how these tools improved your productivity, including specific time savings or challenges.
+  9. Bonus: Integrate Taskwarrior with `org-mode` using a script (AI-assisted if desired) to sync tasks and notes seamlessly.
+- *Resources*:
+  - Taskwarrior (`nix-env -i taskwarrior`)
+  - Emacs `company-mode` with AI backends (e.g., `company-tabnine`)
+  - Emacs `org-roam` (install via MELPA)
+  - OpenAI API or [Hugging Face Transformers](https://huggingface.co/transformers/)
+  - [Grammarly](https://www.grammarly.com/) or [Hemingway](http://www.hemingwayapp.com/)
+  - [Org-mode and Taskwarrior Integration](https://orgmode.org/worg/org-contrib/org-taskwarrior.html)
+
+**** Topic: Best Practices for Using AI in Learning and Programming
+- *Description*: Develop robust strategies to maximize AI’s benefits while preserving independent learning, critical thinking, and ethical integrity.
+- *Key Ideas*:
+  - Verify Outputs: Cross-check AI-generated content with primary sources to ensure accuracy.
+  - Guidance, Not Solutions: Use AI for scaffolding (hints, examples, alternative perspectives) rather than complete answers.
+  - Balance: Attempt tasks independently first to build foundational skills before seeking AI assistance.
+  - Ethical Use: Address intellectual property, privacy, and bias concerns in AI usage.
+- *Activities*:
+  1. Select a moderately complex coding problem from your curriculum (e.g., implementing a graph traversal algorithm in Haskell or a parser in Rust).
+  2. Solve the problem independently, documenting your thought process and challenges in `org-mode`.
+  3. Use an AI tool (e.g., ChatGPT or Copilot) to get hints, alternative approaches, or optimizations after your initial attempt.
+  4. Compare your solution to the AI’s suggestions, noting differences in approach, efficiency, or readability.
+  5. Write a reflection (2-3 paragraphs) on how AI influenced your problem-solving process, including time savings, learning gains, or ethical considerations (e.g., over-reliance risks).
+  6. Experiment with a second problem, this time using AI from the start, and compare the experiences in an additional paragraph.
+  7. Bonus: Share your reflection with a peer or online community (e.g., Haskell subreddit) for feedback and alternative perspectives.
+- *Resources*:
+  - [Inside Higher Ed: AI and the Future of Learning](https://www.insidehighered.com/digital-learning/article/2021/05/12/ai-and-future-learning)
+  - [Project Euler](https://projecteuler.net/) or [LeetCode](https://leetcode.com/) for coding problems
+  - [ACM Code of Ethics](https://www.acm.org/code-of-ethics)
+
+**** Topic: AI in Knowledge Management and Ontologies
+- *Description*: Investigate how AI can enhance knowledge management systems, ontology development, and linked data applications, with hands-on experimentation.
+- *Key Ideas*:
+  - AI can automate ontology creation, entity classification, relationship extraction, and query generation.
+  - NLP Tools: Use models like SpaCy or Hugging Face Transformers for tagging, summarization, and semantic analysis.
+  - Ethical Considerations: Ensure AI-generated classifications and relationships are accurate and unbiased.
+- *Activities*:
+  1. Choose a small dataset or knowledge base (e.g., personal notes in `org-roam`, a public dataset like Wikidata snippets).
+  2. Install and use an NLP tool (e.g., SpaCy or Hugging Face) to automatically tag entities or extract relationships.
+  3. Evaluate the AI’s output for accuracy and completeness against manual tagging or a gold standard.
+  4. Use AI to suggest relationships between entities (e.g., via similarity metrics or clustering) and integrate them into your knowledge base.
+  5. Write a report (2-3 pages) on how AI could enhance a knowledge management system, detailing benefits (e.g., scalability) and pitfalls (e.g., bias or errors).
+  6. Experiment with generating SPARQL queries using AI for your knowledge base and test their effectiveness.
+  7. Bonus: Build a small ontology using a tool like Protégé, with AI assistance for entity and relationship suggestions.
+- *Resources*:
+  - [SpaCy](https://spacy.io/)
+  - [Hugging Face Transformers](https://huggingface.co/transformers/)
+  - [Wikidata](https://www.wikidata.org/)
+  - [Protégé](https://protege.stanford.edu/)
+  - [W3C SPARQL Query Language](https://www.w3.org/TR/sparql11-query/)
+
+**** Topic: Ethical AI Use in Programming and Knowledge Work
+- *Description*: Explore the ethical dimensions of AI in depth, focusing on bias, intellectual property, and privacy, with actionable mitigation strategies.
+- *Key Ideas*:
+  - Bias in AI Models: Understand how training data biases affect outputs and downstream decisions.
+  - Intellectual Property: Navigate copyright and licensing issues with AI-generated code or content.
+  - Privacy: Protect sensitive data when using AI tools that process personal or proprietary information.
+- *Activities*:
+  1. Research a documented case of AI bias (e.g., gender bias in NLP models, racial bias in predictive policing).
+  2. Write an essay (3-4 paragraphs) on the ethical implications of using AI in your domain (e.g., programming or knowledge management), citing your case study.
+  3. Propose at least three concrete strategies to mitigate ethical risks (e.g., auditing AI outputs, using diverse datasets, implementing transparency).
+  4. Apply one strategy to an AI tool you’ve used (e.g., audit ChatGPT’s output for bias in a specific explanation).
+  5. Reflect (1-2 paragraphs) on the feasibility and impact of your mitigation strategies.
+  6. Bonus: Join an online discussion (e.g., r/MachineLearning on Reddit) to debate AI ethics and gather diverse viewpoints.
+- *Resources*:
+  - [AI Now Institute: Bias in AI](https://ainowinstitute.org/publication/ai-now-2018-report)
+  - [ACM Code of Ethics](https://www.acm.org/code-of-ethics)
+  - [Ethics in AI (YouTube)](https://www.youtube.com/watch?v=QxuyfWoVV98)
+  - [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/)
+
+**** Topic: Hands-On Project: Building an AI-Assisted Knowledge Base
+- *Description*: Synthesize your learning by creating a functional, AI-assisted knowledge base, integrating programming, knowledge management, and AI tools.
+- *Key Ideas*:
+  - Design and implement a knowledge base with AI assistance for structure, content generation, and querying.
+  - Choose a domain of personal or professional interest (e.g., programming notes, a hobby, or a research topic).
+  - Critically evaluate AI’s role throughout the project.
+- *Activities*:
+  1. Define the scope and purpose of your knowledge base (e.g., a system for tracking programming concepts with tags and relationships).
+  2. Use AI tools (e.g., ChatGPT) to design the data model (entities, relationships, metadata).
+  3. Implement the knowledge base using a functional language (e.g., Haskell) or Python, leveraging AI for code completion and debugging.
+  4. Populate it with data, using AI to generate sample entries, summarize content, or auto-tag items.
+  5. Write queries (e.g., SPARQL, SQL, or custom functions) to retrieve information, optimizing them with AI if applicable.
+  6. Create a visualization (e.g., a graph using Graphviz or a web interface with Flask) to explore the knowledge base.
+  7. Write a detailed project report (3-4 pages) covering:
+     - Design and implementation details.
+     - How AI tools were integrated and their specific contributions.
+     - Challenges encountered and solutions devised.
+     - Lessons learned and potential future enhancements.
+  8. Bonus: Publish your project on GitHub or a blog, soliciting feedback from peers or mentors to refine it further.
+- *Resources*:
+  - Your existing AI tools (ChatGPT, GitHub Copilot, etc.)
+  - [Learn You a Haskell](http://learnyouahaskell.com/) or [Python Documentation](https://docs.python.org/3/)
+  - [org-roam](https://www.orgroam.com/) or [Neo4j](https://neo4j.com/)
+  - [Graphviz](https://graphviz.org/) or [Flask](https://flask.palletsprojects.com/)
+*** Class: Functional Programming for Algorithms and Knowledge Management
+- *Objective*: Master functional programming principles, algorithms, and design patterns with a focus on immutability, recursion, and higher-order abstractions, applied to knowledge management and AI.
+- *Setup*:
+  - **Environment**: Use Emacs for coding and note-taking, with tools managed via NixOS.
+  - **Languages**: Haskell as the primary language, with optional comparisons to Python or Rust.
+  - **Tools**:
+    - Install Haskell: `nix-env -i ghc`
+    - Configure Emacs with `haskell-mode`, `intero` (or `dante`), and `company-mode`.
+    - Optional: Install `stack` or `cabal` for project management, and `criterion` for benchmarking.
+
+**** Topic: Introduction to Functional Programming Principles
+- *Description*: Establish foundational functional programming concepts for knowledge management.
+- *Key Ideas*:
+  - Pure functions for predictable transformations.
+  - Immutability for consistent knowledge bases.
+  - Composability for modular system design.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapters 1-3.
+  2. Implement a simple knowledge base (e.g., entities and relationships as data types).
+  3. Write pure functions to add and retrieve facts.
+  4. Reflect (2-3 paragraphs) on functional vs. imperative approaches.
+- *Resources*:
+  - ["Learn You a Haskell" Chapters 1-3](http://learnyouahaskell.com/chapters)
+
+**** Topic: Recursion in Functional Programming
+- *Description*: Learn recursion for traversing data structures and sequencing computations.
+- *Key Ideas*:
+  - Recursion as a loop replacement.
+  - Tail recursion for performance.
+  - Recursive patterns in algorithms and abstractions.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapter 5.
+  2. Implement recursive traversals (e.g., DFS on a graph, tree traversals).
+  3. Optimize a recursive function (e.g., Fibonacci) with tail recursion.
+  4. Reflect (2-3 paragraphs) on recursion’s role in functional programming.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 5](http://learnyouahaskell.com/recursion)
+
+**** Topic: Immutable Data Structures and Manipulation
+- *Description*: Design and manipulate immutable data structures using functional techniques.
+- *Key Ideas*:
+  - Functional data structures (trees, graphs).
+  - Lenses for elegant updates.
+- *Activities*:
+  1. Read "Pearls of Functional Algorithm Design" Chapters 4-5.
+  2. Install `lens` package: `nix-env -iA nixpkgs.haskellPackages.lens`.
+  3. Implement a trie for terms and a graph for relationships.
+  4. Use lenses to update nested fields.
+  5. Reflect (2-3 paragraphs) on immutability trade-offs.
+- *Resources*:
+  - ["Pearls of Functional Algorithm Design" Chapters 4-5](https://www.cambridge.org/core/books/pearls-of-functional-algorithm-design/)
+  - [Lenses in Haskell](https://hackage.haskell.org/package/lens-tutorial)
+
+**** Topic: Higher-Order Functions and Functional Abstractions
+- *Description*: Process and transform data using higher-order functions and abstractions.
+- *Key Ideas*:
+  - Higher-order functions (`map`, `filter`, `fold`).
+  - Functors and applicatives for structured transformations.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapters 6 and 11.
+  2. Implement a pipeline with `map` and `filter` for data processing.
+  3. Use applicatives to combine data transformations.
+  4. Reflect (2-3 paragraphs) on abstraction benefits.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 6](http://learnyouahaskell.com/higher-order-functions)
+  - ["Learn You a Haskell" Chapter 11](http://learnyouahaskell.com/functors-applicative-functors-and-monoids)
+
+**** Topic: Algorithmic Techniques in Functional Programming
+- *Description*: Apply functional algorithms for common computational tasks.
+- *Key Ideas*:
+  - Sorting (merge sort), searching (binary search).
+  - Graph algorithms (DFS, BFS).
+  - Dynamic programming with memoization.
+- *Activities*:
+  1. Read "Pearls of Functional Algorithm Design" Chapters 6-9.
+  2. Implement merge sort and binary search.
+  3. Use DFS or BFS on a graph.
+  4. Apply memoization to a recursive algorithm.
+  5. Reflect (2-3 paragraphs) on functional algorithm design.
+- *Resources*:
+  - ["Pearls of Functional Algorithm Design" Chapters 6-9](https://www.cambridge.org/core/books/pearls-of-functional-algorithm-design/)
+
+**** Topic: Functional Design Patterns and Abstractions
+- *Description*: Use patterns like monoids and type classes for modular systems.
+- *Key Ideas*:
+  - Monoids and foldables for aggregation.
+  - Type classes for polymorphism.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapters 8 and 11.
+  2. Implement monoids for data aggregation.
+  3. Define a type class for entity serialization.
+  4. Reflect (2-3 paragraphs) on type class utility.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 8](http://learnyouahaskell.com/making-our-own-types-and-typeclasses)
+  - ["Learn You a Haskell" Chapter 11](http://learnyouahaskell.com/functors-applicative-functors-and-monoids)
+
+**** Topic: Declarative Querying and Domain-Specific Languages (DSLs)
+- *Description*: Build declarative query systems and DSLs for knowledge bases.
+- *Key Ideas*:
+  - Declarative querying for abstraction.
+  - DSLs for domain-tailored syntax.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapters 9 and 10.
+  2. Design a DSL for querying entities.
+  3. Implement the DSL with functional constructs.
+  4. Reflect (2-3 paragraphs) on declarative systems.
+- *Resources*:
+  - ["Learn You a Haskell" Chapters 9-10](http://learnyouahaskell.com/input-and-output)
+*** Class: Tools and Practices
+- *Objective*: Master a comprehensive set of tools and practices to enhance your programming workflow, focusing on version control, environment management, productivity, automation, and security. This class is customized for your NixOS and Emacs setup, supporting your interests in functional programming, knowledge management, and AI, while preparing you for professional re-entry.
+- *Setup*:
+  - **Core Tools**:
+    - **Git**: Install via `nix-env -i git` for version control.
+    - **Nix**: Pre-installed on NixOS for environment management.
+    - **Emacs**: Ensure `magit`, `org-mode`, `org-roam`, `company-mode`, and `lsp-mode` are configured for coding and productivity.
+  - **Optional Tools**:
+    - **Taskwarrior**: `nix-env -i taskwarrior` for additional task management.
+    - **AI Tools**: GitHub Copilot or TabNine (install via Emacs packages) for AI-assisted coding.
+    - **GPG**: `nix-env -i gnupg` for security practices.
+
+**** Topic: Version Control with Git
+- *Description*: Master Git for version control, focusing on advanced techniques and integration with Emacs to manage projects and collaborate effectively.
+- *Key Ideas*:
+  - Git’s branching model for feature development and experimentation.
+  - Rebasing vs. merging: choosing the right approach for clean histories.
+  - Git hooks for automation (e.g., linting, testing).
+  - Using Magit in Emacs for a seamless Git experience.
+- *Activities*:
+  1. Set up a Git repository for a small project (e.g., a knowledge base).
+  2. Create feature branches for different tasks or experiments.
+  3. Practice rebasing and merging branches to maintain a clean history.
+  4. Write a `pre-commit` Git hook to enforce commit message standards.
+  5. Use Magit in Emacs to stage, commit, and push changes.
+  6. Reflect (2-3 paragraphs) on how Git improves your workflow.
+  7. **Bonus**: Version control your `org-roam` notes with Git.
+- *Resources*:
+  - [Pro Git Book](https://git-scm.com/book/en/v2)
+  - [Magit User Manual](https://magit.vc/manual/magit/)
+  - [Git Hooks Documentation](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+
+**** Topic: Environment Management with Nix
+- *Description*: Learn to create reproducible development environments using Nix, tailored for functional programming and AI projects.
+- *Key Ideas*:
+  - Writing Nix expressions for packages and dependencies.
+  - Using `nix-shell` for isolated, temporary environments.
+  - Managing Haskell or Python projects with Nix.
+- *Activities*:
+  1. Write a Nix expression to install a specific Haskell version.
+  2. Create a `default.nix` file for a Haskell project with dependencies.
+  3. Use `nix-shell` to build and test the project.
+  4. Pin package versions for reproducibility.
+  5. Set up a Nix environment for a Python AI project (e.g., with TensorFlow).
+  6. Reflect (2-3 paragraphs) on Nix vs. other tools like virtualenv.
+  7. **Bonus**: Create a multi-language environment (e.g., Haskell + Python).
+- *Resources*:
+  - [Nix Pills](https://nixos.org/guides/nix-pills/)
+  - [Haskell Development with Nix](https://nixos.wiki/wiki/Haskell)
+  - [NixOS Manual](https://nixos.org/manual/nix/stable/)
+
+**** Topic: Emacs as a Productivity Hub
+- *Description*: Customize Emacs to become a powerful tool for coding, task management, and knowledge organization.
+- *Key Ideas*:
+  - Org-mode for tasks, notes, and agenda views.
+  - Magit for Git integration.
+  - LSP (Language Server Protocol) for code intelligence.
+- *Activities*:
+  1. Set up Org-mode with a TODO list for this class.
+  2. Use Org-agenda to manage tasks with deadlines.
+  3. Configure Magit for Git operations in Emacs.
+  4. Install LSP for Haskell or Python (e.g., autocompletion, go-to-definition).
+  5. Write a small program using LSP features.
+  6. Reflect (2-3 paragraphs) on Emacs vs. other editors.
+  7. **Bonus**: Link Org-mode with `org-roam` for networked notes.
+- *Resources*:
+  - [Org-mode Manual](https://orgmode.org/manual/)
+  - [Magit User Manual](https://magit.vc/manual/magit/)
+  - [LSP Mode for Emacs](https://emacs-lsp.github.io/lsp-mode/)
+
+**** Topic: Knowledge Management with Org-roam
+- *Description*: Build a personal knowledge base with Org-roam, linking notes and visualizing connections.
+- *Key Ideas*:
+  - Creating and linking notes with backlinks.
+  - Visualizing your knowledge graph.
+  - Integrating with Org-agenda for task-related notes.
+- *Activities*:
+  1. Install and set up Org-roam in Emacs.
+  2. Create notes for key concepts (e.g., "Functional Programming").
+  3. Link related notes and explore backlinks.
+  4. Visualize your knowledge graph with Org-roam’s tools.
+  5. Integrate with Org-agenda for task management.
+  6. Reflect (2-3 paragraphs) on how Org-roam aids learning.
+  7. **Bonus**: Document a project with Org-roam notes.
+- *Resources*:
+  - [Org-roam User Manual](https://www.orgroam.com/manual.html)
+  - [Org-roam Graph Visualization](https://www.orgroam.com/manual.html#Graphing)
+
+**** Topic: Automation and Scripting
+- *Description*: Automate repetitive tasks using shell scripts, Python, or Haskell to streamline your workflow.
+- *Key Ideas*:
+  - Shell scripts for system tasks.
+  - Python for data processing or APIs.
+  - Haskell for complex automation.
+- *Activities*:
+  1. Write a shell script to back up your Emacs config.
+  2. Create a Python script to fetch API data (e.g., weather).
+  3. Use Haskell to process a CSV file.
+  4. Schedule scripts with cron or systemd timers.
+  5. Reflect (2-3 paragraphs) on automation’s impact.
+  6. **Bonus**: Automate a knowledge base task (e.g., tagging).
+- *Resources*:
+  - [Bash Scripting Guide](https://www.gnu.org/software/bash/manual/bash.html)
+  - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+  - [Haskell IO](https://wiki.haskell.org/IO)
+
+**** Topic: Best Practices for Functional Programming
+- *Description*: Master functional programming best practices, focusing on immutability and pure functions.
+- *Key Ideas*:
+  - Pure functions for predictability.
+  - Immutable data structures for safety.
+  - Higher-order functions for abstraction.
+- *Activities*:
+  1. Refactor an imperative function into a pure one.
+  2. Use immutable structures in Haskell or Rust.
+  3. Write higher-order functions for abstraction.
+  4. Compare functional vs. imperative code.
+  5. Reflect (2-3 paragraphs) on code quality benefits.
+  6. **Bonus**: Apply to an AI task (e.g., data pipeline).
+- *Resources*:
+  - [Functional Programming Principles](https://www.coursera.org/learn/progfun1)
+  - [Haskell Best Practices](https://wiki.haskell.org/Best_practices)
+
+**** Topic: Testing and Debugging
+- *Description*: Learn testing and debugging techniques to ensure code reliability.
+- *Key Ideas*:
+  - Unit testing with HUnit or pytest.
+  - Property-based testing with QuickCheck.
+  - Debugging with gdb, pdb, or Haskell tools.
+- *Activities*:
+  1. Write unit tests for a module.
+  2. Use QuickCheck for property testing.
+  3. Debug a program with gdb or pdb.
+  4. Use Haskell’s `Debug.Trace` for logging.
+  5. Reflect (2-3 paragraphs) on reliability gains.
+  6. **Bonus**: Test a functional data structure.
+- *Resources*:
+  - [HUnit](https://hackage.haskell.org/package/HUnit)
+  - [QuickCheck](https://hackage.haskell.org/package/QuickCheck)
+  - [pdb Documentation](https://docs.python.org/3/library/pdb.html)
+
+**** Topic: AI-Assisted Coding
+- *Description*: Explore AI tools to enhance coding efficiency and debugging.
+- *Key Ideas*:
+  - Code completion with Copilot or TabNine.
+  - AI-driven debugging and code review.
+- *Activities*:
+  1. Install Copilot or TabNine in Emacs.
+  2. Write a program with AI assistance.
+  3. Debug code with an AI tool.
+  4. Review a snippet with an AI tool (e.g., DeepCode).
+  5. Reflect (2-3 paragraphs) on AI’s pros and cons.
+  6. **Bonus**: Generate tests or docs with AI.
+- *Resources*:
+  - [GitHub Copilot](https://copilot.github.com/)
+  - [TabNine](https://www.tabnine.com/)
+  - [DeepCode](https://www.deepcode.ai/)
+
+**** Topic: Project Management and Collaboration
+- *Description*: Learn workflows for managing projects and collaborating.
+- *Key Ideas*:
+  - Task tracking with GitHub Projects or Org-mode.
+  - Pull requests and code reviews.
+  - Clear documentation and commits.
+- *Activities*:
+  1. Set up a GitHub Project board.
+  2. Practice pull requests and reviews.
+  3. Write a README in Org-mode.
+  4. Use conventional commit messages.
+  5. Reflect (2-3 paragraphs) on collaboration benefits.
+  6. **Bonus**: Contribute to an open-source project.
+- *Resources*:
+  - [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
+  - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+**** Topic: Security Basics
+- *Description*: Understand fundamental security practices for coding and systems.
+- *Key Ideas*:
+  - Secure coding (e.g., input validation).
+  - HTTPS for secure communication.
+  - Managing secrets with GPG.
+- *Activities*:
+  1. Review OWASP Top 10 risks.
+  2. Set up HTTPS with Let’s Encrypt.
+  3. Encrypt a file with GPG.
+  4. Store API keys securely.
+  5. Reflect (2-3 paragraphs) on security’s importance.
+  6. **Bonus**: Add authentication to a web app.
+- *Resources*:
+  - [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
+  - [Let’s Encrypt](https://letsencrypt.org/)
+  - [GPG Documentation](https://www.gnupg.org/documentation/)
+
+*** Class: Relational Databases and SQL
+- *Objective*: Master relational databases and SQL to manage, query, and integrate structured data for knowledge management and AI applications. This class covers foundational concepts, advanced querying, database design, and programmatic integration, tailored to a NixOS and Emacs workflow.
+- *Setup*:
+  - **Database Tools**: Install PostgreSQL (`nix-env -i postgresql`) or SQLite (`nix-env -i sqlite`) for database management.
+  - **Emacs Configuration**: Enable `sql-mode` for writing queries, `org-mode` for notes, and `magit` for version control.
+  - **Programming Libraries**: Install `psycopg2` for Python (`nix-env -i python3Packages.psycopg2`) or `HDBC` for Haskell (`cabal install HDBC HDBC-postgresql`).
+
+**** Topic: Introduction to Relational Databases
+- *Description*: Learn the relational model, including tables, keys, and relationships, with a focus on structuring data for knowledge management systems.
+- *Key Ideas*:
+  - Tables represent entities (e.g., `Notes`, `Tags`), with rows as instances and columns as attributes.
+  - Primary keys uniquely identify rows; foreign keys link tables.
+  - Relationships (one-to-many, many-to-many) model real-world connections.
+- *Activities*:
+  1. Read the PostgreSQL "Getting Started" guide and SQLZoo’s tutorial on tables.
+  2. Design a schema for a note-taking app with tables: `Notes`, `Tags`, and `NoteTags` (for many-to-many relationships).
+  3. Define keys: `note_id` (primary key), `tag_id` (primary key), and foreign keys in `NoteTags`.
+  4. Document your schema in `org-mode` using tables or plain text.
+  5. Reflect (2-3 paragraphs) on how relational databases support knowledge organization.
+  6. **Bonus**: Explore how to represent a simple ontology (e.g., concepts and sub-concepts) in tables.
+- *Resources*:
+  - [PostgreSQL Documentation: Getting Started](https://www.postgresql.org/docs/current/tutorial-start.html)
+  - [SQLZoo: Tables and Keys](https://sqlzoo.net/wiki/SQL_Tutorial)
+  - [Relational Model Basics](https://www.tutorialspoint.com/dbms/relational_data_model.htm)
+
+**** Topic: SQL Basics: CRUD Operations
+- *Description*: Gain proficiency in Create, Read, Update, and Delete (CRUD) operations to manage data in relational databases.
+- *Key Ideas*:
+  - `INSERT` adds data, `SELECT` retrieves it, `UPDATE` modifies it, `DELETE` removes it.
+  - Use `WHERE`, `ORDER BY`, and `LIMIT` to refine queries.
+- *Activities*:
+  1. Create a PostgreSQL or SQLite database with your note-taking schema.
+  2. Write SQL queries to:
+     - Insert 5 notes and 10 tag associations.
+     - Select all notes with a specific tag.
+     - Update a note’s title.
+     - Delete a tag and its associations.
+  3. Run queries in Emacs using `sql-mode`.
+  4. Reflect (2-3 paragraphs) on how CRUD operations enable dynamic knowledge bases.
+  5. **Bonus**: Script a batch insert of notes from a text file.
+- *Resources*:
+  - [W3Schools SQL Tutorial](https://www.w3schools.com/sql/)
+  - [SQLite Documentation](https://www.sqlite.org/docs.html)
+  - [PostgreSQL SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html)
+
+**** Topic: Advanced Querying: Joins, Subqueries, and Aggregates
+- *Description*: Master complex SQL queries using joins, subqueries, and aggregates, applied to knowledge management scenarios.
+- *Key Ideas*:
+  - Joins (`INNER`, `LEFT`, etc.) combine data across tables.
+  - Subqueries filter or compute within a query.
+  - Aggregates (`COUNT`, `AVG`, `SUM`) summarize data.
+- *Activities*:
+  1. Read "SQL Joins Explained" and PostgreSQL’s query guide.
+  2. Write queries to:
+     - Join `Notes` and `Tags` via `NoteTags` to list tagged notes.
+     - Use a subquery to find notes with more than 2 tags.
+     - Count tags per note using `GROUP BY`.
+  3. Test query performance with and without indexes.
+  4. Reflect (2-3 paragraphs) on extracting insights from structured data.
+  5. **Bonus**: Query the most common tag across notes.
+- *Resources*:
+  - [SQL Joins Explained](https://www.sql-join.com/)
+  - [PostgreSQL Queries](https://www.postgresql.org/docs/current/queries.html)
+  - [SQLBolt: Joins and Aggregates](https://sqlbolt.com/)
+
+**** Topic: Database Design for Knowledge Management
+- *Description*: Design efficient, normalized schemas for knowledge systems, optimizing for querying and maintenance.
+- *Key Ideas*:
+  - Normalization (1NF to 3NF) reduces redundancy.
+  - Indexes speed up queries.
+  - Denormalization boosts performance for specific use cases.
+- *Activities*:
+  1. Read "Database Normalization Explained" and PostgreSQL’s indexing docs.
+  2. Normalize a denormalized table (e.g., notes with tags in one column).
+  3. Add indexes on `note_id` and `tag_name`.
+  4. Denormalize by adding a `tag_count` column and compare query times.
+  5. Reflect (2-3 paragraphs) on normalization vs. performance trade-offs.
+  6. **Bonus**: Research B-trees vs. hash indexes.
+- *Resources*:
+  - [Database Normalization Explained](https://www.essentialsql.com/get-ready-to-learn-sql-database-normalization-explained-in-simple-english/)
+  - [PostgreSQL Indexes](https://www.postgresql.org/docs/current/indexes.html)
+  - [Database Design Basics](https://www.vertabelo.com/blog/database-design-101/)
+
+**** Topic: Transactions and Concurrency in Collaborative Systems
+- *Description*: Learn transactions and concurrency to ensure data consistency in multi-user knowledge bases.
+- *Key Ideas*:
+  - Transactions ensure ACID properties (Atomicity, Consistency, Isolation, Durability).
+  - Concurrency controls (locks, isolation levels) manage simultaneous access.
+- *Activities*:
+  1. Read PostgreSQL’s transaction guide.
+  2. Write a transaction to insert a note and tags atomically.
+  3. Simulate two users updating a note; test `SERIALIZABLE` isolation.
+  4. Reflect (2-3 paragraphs) on maintaining integrity in collaborative tools.
+  5. **Bonus**: Add a `version` column for optimistic concurrency.
+- *Resources*:
+  - [PostgreSQL Transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html)
+  - [Concurrency Control](https://en.wikipedia.org/wiki/Concurrency_control)
+  - [SQLite Transactions](https://www.sqlite.org/lang_transaction.html)
+
+**** Topic: Integrating SQL with Programming Languages
+- *Description*: Connect databases to Python or Haskell for building knowledge-driven applications.
+- *Key Ideas*:
+  - Libraries like `psycopg2` (Python) and `HDBC` (Haskell) enable SQL integration.
+  - ORMs (e.g., SQLAlchemy) abstract database operations.
+- *Activities*:
+  1. Install `psycopg2` or `HDBC`.
+  2. Write a Python script to:
+     - Connect to your database.
+     - Insert a note and tags.
+     - Query and display notes by tag.
+  3. Optionally, replicate in Haskell.
+  4. Reflect (2-3 paragraphs) on programming with databases for AI.
+  5. **Bonus**: Use SQLAlchemy to map your schema.
+- *Resources*:
+  - [Psycopg2 Docs](https://www.psycopg.org/docs/)
+  - [HDBC Docs](https://hackage.haskell.org/package/HDBC)
+  - [SQLAlchemy Tutorial](https://docs.sqlalchemy.org/en/14/tutorial/)
+
+**** Topic: SQL for Knowledge Management and Ontologies
+- *Description*: Use SQL to model and query ontologies or RDF-like data in relational databases.
+- *Key Ideas*:
+  - Triple tables (subject, predicate, object) store graph-like data.
+  - Recursive queries traverse hierarchies.
+- *Activities*:
+  1. Read about RDB to RDF mapping.
+  2. Create a triple table for an ontology (e.g., concepts, relationships).
+  3. Query:
+     - All subjects with a specific predicate.
+     - Hierarchy with a recursive CTE.
+  4. Reflect (2-3 paragraphs) on relational vs. graph databases.
+  5. **Bonus**: Import a small RDF dataset.
+- *Resources*:
+  - [W3C RDB to RDF](https://www.w3.org/TR/rdb-direct-mapping/)
+  - [PostgreSQL Recursive Queries](https://www.postgresql.org/docs/current/queries-with.html)
+  - [Ontology Basics](https://www.ontotext.com/knowledgehub/fundamentals/what-is-an-ontology/)
+
+*** Class: Designing Domain-Specific Languages (DSLs)
+- *Objective*: Learn the principles and techniques of designing and implementing your own Domain-Specific Language (DSL), with a focus on functional programming and practical applications.
+- *Target Audience*: Programmers interested in language design, functional programming, and creating tailored solutions for specific domains, using NixOS and Emacs.
+- *Structure*: 7 topics, each building on the previous one, with descriptions, key ideas, hands-on activities, and curated resources.
+**** Setup Instructions
+- *Tools* (Install via NixOS):
+  - *Haskell*: Install with `nix-env -i ghc` (ideal for DSL design due to its strong type system and parser libraries).
+  - *Racket*: Optional, install with `nix-env -i racket` for exploring alternative approaches.
+- *Emacs Configuration*:
+  - Install `haskell-mode` for syntax highlighting and Haskell development.
+  - Optional: Install `racket-mode` if using Racket.
+  - Use `org-mode` for organizing notes and code snippets.
+
+**** Topic 1: Introduction to Domain-Specific Languages (DSLs)
+- *Description*: Understand what DSLs are, their benefits, and examples in various domains.
+- *Key Ideas*:
+  - DSLs are specialized languages tailored to specific problem domains.
+  - Benefits include increased productivity, readability, and fewer errors.
+  - Examples: SQL (databases), LaTeX (documents), GraphQL (APIs).
+- *Activities*:
+  1. Read [Martin Fowler’s article on DSLs](https://martinfowler.com/bliki/DomainSpecificLanguage.html).
+  2. Explore examples like SQL, LaTeX, or GraphQL online.
+  3. Write a short reflection (2-3 paragraphs): How could a DSL help your projects?
+- *Resources*:
+  - [Martin Fowler on DSLs](https://martinfowler.com/bliki/DomainSpecificLanguage.html)
+  - [DSLs in Action by Debasish Ghosh](https://www.manning.com/books/dsls-in-action)
+
+**** Topic 2: Language Design Principles
+- *Description*: Learn the core principles of designing a programming language.
+- *Key Ideas*:
+  - Syntax: structure of language statements.
+  - Semantics: meaning behind statements.
+  - Pragmatics: usability and user experience.
+  - Balancing simplicity and expressiveness.
+- *Activities*:
+  1. Read [Chapter 1 of "Programming Language Pragmatics"](https://www.cs.rochester.edu/~scott/pragmatics/).
+  2. Analyze the syntax/semantics of a simple language (e.g., arithmetic).
+  3. Sketch a basic syntax for your own DSL idea.
+- *Resources*:
+  - [Programming Language Pragmatics](https://www.cs.rochester.edu/~scott/pragmatics/)
+  - [Language Design Principles](https://www.cs.cmu.edu/~rwh/courses/ppl/)
+
+**** Topic 3: Syntax and Parsing
+- *Description*: Define your language’s syntax and build a parser.
+- *Key Ideas*:
+  - Use context-free grammars to specify syntax.
+  - Parsing techniques: recursive descent, parser combinators.
+  - Tools like Parsec (Haskell) for parsing.
+- *Activities*:
+  1. Read [Parsec Tutorial](https://wiki.haskell.org/Parsec).
+  2. Write a Haskell parser for simple arithmetic expressions.
+  3. Extend it to parse a command from your DSL (e.g., `add 2 3`).
+- *Resources*:
+  - [Parsec Documentation](https://hackage.haskell.org/package/parsec)
+  - [Write Yourself a Scheme in 48 Hours](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours)
+
+**** Topic 4: Semantics and Interpretation
+- *Description*: Define your language’s meaning and create an interpreter.
+- *Key Ideas*:
+  - Operational semantics: step-by-step execution.
+  - Interpreters run DSL code directly.
+  - Mapping syntax to behavior.
+- *Activities*:
+  1. Read [Chapter 2 of "Essentials of Programming Languages"](https://www.cs.indiana.edu/eopl/).
+  2. Build a Haskell interpreter for your arithmetic parser.
+  3. Add interpretation for one DSL command (e.g., evaluate `add 2 3`).
+- *Resources*:
+  - [Essentials of Programming Languages](https://www.cs.indiana.edu/eopl/)
+  - [Interpreter Pattern](https://en.wikipedia.org/wiki/Interpreter_pattern)
+
+**** Topic 5: Type Systems for DSLs
+- *Description*: Explore type systems and add typing to your DSL.
+- *Key Ideas*:
+  - Static vs. dynamic typing.
+  - Type checking ensures correctness.
+  - Designing domain-specific types.
+- *Activities*:
+  1. Read [Type Systems for Programming Languages](https://www.cs.cmu.edu/~rwh/courses/typesys/).
+  2. Add type checking to your interpreter (e.g., reject `add "a" 3`).
+  3. Experiment with Haskell types for your DSL.
+- *Resources*:
+  - [Types and Programming Languages by Benjamin Pierce](https://www.cis.upenn.edu/~bcpierce/tapl/)
+  - [Haskell Type System](https://wiki.haskell.org/Type)
+
+**** Topic 6: DSLs in Functional Programming
+- *Description*: Use functional programming (Haskell) to design DSLs.
+- *Key Ideas*:
+  - Embedded DSLs (eDSLs) leverage host language features.
+  - Monads/applicatives model DSL behavior.
+  - Functional techniques simplify implementation.
+- *Activities*:
+  1. Read [Embedded DSLs in Haskell](https://wiki.haskell.org/Embedded_domain_specific_languages).
+  2. Refactor your DSL into an eDSL using Haskell monads.
+  3. Compare standalone vs. embedded approaches.
+- *Resources*:
+  - [Haskell eDSLs](https://wiki.haskell.org/Embedded_domain_specific_languages)
+  - [Monadic Parsing in Haskell](https://www.cs.nott.ac.uk/~pszgmh/monparsing.pdf)
+
+**** Topic 7: Practical DSL Design
+- *Description*: Design and implement a DSL for a domain of your choice.
+- *Key Ideas*:
+  - Define domain requirements (e.g., knowledge management, AI).
+  - Iterate on syntax and semantics.
+  - Test with real-world examples.
+- *Activities*:
+  1. Pick a domain (e.g., querying a knowledge graph).
+  2. Design syntax/semantics for key operations.
+  3. Implement the DSL (interpreter or eDSL).
+  4. Write 3-5 sample programs in your DSL.
+  5. Reflect (2-3 paragraphs): What worked? What could improve?
+- *Resources*:
+  - [DSLs for Knowledge Management](https://arxiv.org/abs/2001.03731)
+  - [Haskell DSL Examples](https://github.com/jaspervdj/hakyll-examples)
+** Language-Specific Learning
+*** Class: Python
+- *Objective*: Master Python for functional programming, knowledge management, and AI applications. This class covers fundamentals, functional techniques, testing, debugging, performance optimization, databases, web development, and machine learning, culminating in a capstone project that integrates these skills into an AI-powered knowledge management system.
+- *Setup*:
+  - **Tools**: Install via NixOS:
+    - Python: `nix-env -i python3`
+    - Pip: `nix-env -i python3Packages.pip`
+    - Virtualenv: `nix-env -i python3Packages.virtualenv`
+  - **Emacs Configuration**: Use `python-mode`, `company-mode` for autocompletion, and `flycheck` for linting.
+  - **Optional**: Install `jupyter` (`nix-env -i jupyter`) for interactive notebooks.
+
+**** Topic: Python Basics
+- *Description*: Build a solid foundation in Python by learning its syntax, data types, control structures, and functions.
+- *Key Ideas*:
+  - Variables, data types (lists, tuples, dictionaries), and operators.
+  - Control flow (if statements, loops).
+  - Functions, scope, and recursion.
+- *Activities*:
+  1. Read the Python official tutorial (sections 1-5).
+  2. Write a program to calculate factorials using both loops and recursion.
+  3. Create a simple note-taking CLI app with functions to add, list, and delete notes.
+  4. Reflect (2-3 paragraphs) on Python’s readability and ease of use compared to other languages you know.
+  5. **Bonus**: Implement a simple calculator with user input handling.
+- *Resources*:
+  - [Python Official Tutorial](https://docs.python.org/3/tutorial/)
+  - [Codecademy Python Course](https://www.codecademy.com/learn/learn-python-3)
+  - [Real Python: Python Basics](https://realpython.com/python-basics/)
+
+**** Topic: Functional Programming in Python
+- *Description*: Explore functional programming paradigms in Python, focusing on immutability, pure functions, and higher-order functions.
+- *Key Ideas*:
+  - Lambda functions, `map`, `filter`, and `reduce`.
+  - List comprehensions and generator expressions.
+  - Immutability using tuples and frozen sets.
+- *Activities*:
+  1. Read "Functional Python Programming" by Steven Lott (Chapters 1-3).
+  2. Refactor an imperative list-processing function to use `map` and `filter`.
+  3. Implement a pure function to process a dataset (e.g., filter notes by tag).
+  4. Use list comprehensions for concise data transformations.
+  5. Reflect (2-3 paragraphs) on functional vs. imperative programming styles in Python.
+  6. **Bonus**: Use `functools` and `itertools` for advanced functional operations.
+- *Resources*:
+  - ["Functional Python Programming" by Steven Lott](https://www.packtpub.com/product/functional-python-programming/9781788627061)
+  - [Python Functional Programming HOWTO](https://docs.python.org/3/howto/functional.html)
+  - [Real Python: Functional Programming](https://realpython.com/python-functional-programming/)
+
+**** Topic: Testing and Debugging
+- *Description*: Learn to ensure code reliability through unit testing and effective debugging techniques.
+- *Key Ideas*:
+  - Unit testing with `pytest`.
+  - Debugging with `pdb` and logging.
+  - Test-driven development (TDD) basics.
+- *Activities*:
+  1. Install `pytest` (`nix-env -i python3Packages.pytest`).
+  2. Write unit tests for your note-taking app (e.g., test adding and deleting notes).
+  3. Use `pdb` to debug a provided buggy program.
+  4. Implement logging to trace function calls in your app.
+  5. Reflect (2-3 paragraphs) on how testing impacts code quality.
+  6. **Bonus**: Write tests before code (TDD) for a new feature in your app.
+- *Resources*:
+  - [Pytest Documentation](https://docs.pytest.org/en/stable/)
+  - [Python Debugging with pdb](https://realpython.com/python-debugging-pdb/)
+  - [Logging in Python](https://docs.python.org/3/howto/logging.html)
+
+**** Topic: Performance Optimization
+- *Description*: Profile and optimize Python code to improve runtime efficiency.
+- *Key Ideas*:
+  - Profiling with `cProfile` and `timeit`.
+  - Optimizing loops, data structures, and algorithms.
+  - Using memoization and caching techniques.
+- *Activities*:
+  1. Profile a slow function (e.g., a naive Fibonacci calculator).
+  2. Optimize it using memoization or a better algorithm.
+  3. Use `timeit` to measure performance improvements.
+  4. Reflect (2-3 paragraphs) on the trade-offs between readability and performance.
+  5. **Bonus**: Optimize a data processing pipeline for a large dataset.
+- *Resources*:
+  - [Python Profiling](https://docs.python.org/3/library/profile.html)
+  - [Real Python: Profiling](https://realpython.com/python-profiling/)
+  - [Memoization in Python](https://www.python-course.eu/python3_memoization.php)
+
+**** Topic: Working with Databases
+- *Description*: Integrate Python with relational databases to manage and query structured data.
+- *Key Ideas*:
+  - SQL basics and CRUD operations (Create, Read, Update, Delete).
+  - Using `sqlite3` or `SQLAlchemy` for database interactions.
+  - Object-Relational Mapping (ORM) concepts.
+- *Activities*:
+  1. Install `sqlite3` or `SQLAlchemy` (`nix-env -i python3Packages.sqlalchemy`).
+  2. Create a SQLite database for your note-taking app.
+  3. Write Python functions to insert, retrieve, and update notes in the database.
+  4. Use `SQLAlchemy` to map your schema and perform queries.
+  5. Reflect (2-3 paragraphs) on how databases enhance knowledge management.
+  6. **Bonus**: Implement a tagging system with many-to-many relationships.
+- *Resources*:
+  - [SQLite Python Tutorial](https://www.sqlitetutorial.net/sqlite-python/)
+  - [SQLAlchemy Documentation](https://docs.sqlalchemy.org/en/14/)
+  - [Real Python: SQLAlchemy ORM](https://realpython.com/python-sqlalchemy-database-tutorial/)
+
+**** Topic: Introduction to Machine Learning
+- *Description*: Dive into machine learning with Python using the scikit-learn library.
+- *Key Ideas*:
+  - Supervised vs. unsupervised learning.
+  - Data preprocessing and model evaluation.
+  - Basic algorithms (e.g., linear regression, k-means clustering).
+- *Activities*:
+  1. Install `scikit-learn` (`nix-env -i python3Packages.scikit-learn`).
+  2. Follow the scikit-learn getting started guide.
+  3. Train a linear regression model on a dataset (e.g., predicting note popularity based on length).
+  4. Use k-means to cluster notes by content or tags.
+  5. Reflect (2-3 paragraphs) on potential AI applications in knowledge management.
+  6. **Bonus**: Experiment with a classification model (e.g., spam detection for notes).
+- *Resources*:
+  - [Scikit-learn Getting Started](https://scikit-learn.org/stable/getting_started.html)
+  - [Machine Learning Mastery: First ML Project](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
+  - [Coursera: Machine Learning](https://www.coursera.org/learn/machine-learning)
+
+**** Topic: Web Development with Flask
+- *Description*: Build web applications with Flask to create user-friendly interfaces for your knowledge management system.
+- *Key Ideas*:
+  - Routing, templates, and forms in Flask.
+  - Integrating with databases and APIs.
+  - Basic web security practices.
+- *Activities*:
+  1. Install Flask (`nix-env -i python3Packages.flask`).
+  2. Follow the Flask quickstart guide.
+  3. Build a web app to display and search your notes from the database.
+  4. Add a form to create new notes with tags via the web interface.
+  5. Reflect (2-3 paragraphs) on the role of web development in knowledge sharing.
+  6. **Bonus**: Add user authentication using Flask-Login.
+- *Resources*:
+  - [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/)
+  - [Real Python: Flask by Example](https://realpython.com/flask-by-example-part-1-project-setup/)
+  - [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+
+*** Class: Haskell
+- *Objective*: Master Haskell for functional programming, with a focus on syntax, types, functions, recursion, higher-order functions, type classes, monads, functors, applicatives, practical applications, and domain-specific languages (DSLs). The class culminates in a capstone project: a functional knowledge management tool.
+- *Setup*:
+  - **Tools**: Install via NixOS:
+    - Haskell: `nix-env -i ghc`
+    - Stack or Cabal: `nix-env -i stack` or `nix-env -i cabal-install`
+    - Criterion: `nix-env -i haskellPackages.criterion` (for benchmarking)
+  - **Emacs Configuration**: Use `haskell-mode`, `intero` (or `dante`), and `company-mode` for autocompletion.
+  - **Optional**: Install `hlint` (`nix-env -i haskellPackages.hlint`) for linting.
+
+**** Topic: Basic Syntax and Types
+- *Description*: Learn Haskell’s foundational syntax, basic types, and type inference.
+- *Key Ideas*:
+  - Expressions, variables, and basic types (Int, Float, Char, Bool).
+  - Lists and tuples.
+  - Type inference and explicit type annotations.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapters 1-3.
+  2. Write simple expressions and functions in GHCi (e.g., arithmetic, list operations).
+  3. Define a custom data type (e.g., `data Note = Note String [String]` for notes with tags).
+  4. Reflect (2-3 paragraphs) on Haskell’s type system vs. other languages.
+  5. **Bonus**: Write functions without type annotations and check inferred types in GHCi.
+- *Resources*:
+  - ["Learn You a Haskell" Chapters 1-3](http://learnyouahaskell.com/chapters)
+  - [Haskell Documentation](https://www.haskell.org/documentation/)
+  - [Haskell Wiki: Types](https://wiki.haskell.org/Types)
+
+**** Topic: Functions and Recursion
+- *Description*: Explore function definitions, pattern matching, and recursion as a core functional programming technique.
+- *Key Ideas*:
+  - Function definition, pattern matching, and guards.
+  - Recursion instead of loops.
+  - Tail recursion for efficiency.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapter 5.
+  2. Implement recursive functions (e.g., factorial, Fibonacci).
+  3. Use pattern matching to process different cases (e.g., note types).
+  4. Optimize a recursive function with tail recursion.
+  5. Reflect (2-3 paragraphs) on recursion vs. iteration.
+  6. **Bonus**: Write a recursive function to traverse a tree (e.g., a knowledge hierarchy).
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 5](http://learnyouahaskell.com/recursion)
+  - [Haskell Wiki: Recursion](https://wiki.haskell.org/Recursion)
+  - [Tail Recursion in Haskell](https://wiki.haskell.org/Tail_recursion)
+
+**** Topic: Higher-Order Functions
+- *Description*: Use higher-order functions to write abstract, composable code.
+- *Key Ideas*:
+  - Functions as first-class citizens.
+  - `map`, `filter`, `fold`, and function composition.
+  - Partial application and currying.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapter 6.
+  2. Use `map` and `filter` to process lists (e.g., filter notes by tag).
+  3. Implement a fold to aggregate data (e.g., count tagged notes).
+  4. Create a function composition pipeline for data transformation.
+  5. Reflect (2-3 paragraphs) on higher-order functions and modularity.
+  6. **Bonus**: Write a higher-order function to generate queries for a knowledge base.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 6](http://learnyouahaskell.com/higher-order-functions)
+  - [Haskell Wiki: Higher-Order Functions](https://wiki.haskell.org/Higher_order_function)
+  - [Functional Programming in Haskell (YouTube)](https://www.youtube.com/watch?v=OiC26GmscFA)
+
+**** Topic: Type Classes
+- *Description*: Understand type classes for polymorphism and reusable code.
+- *Key Ideas*:
+  - Type classes as interfaces (e.g., `Eq`, `Show`).
+  - Instances for specific types.
+  - Constraints and default implementations.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapter 8.
+  2. Define a custom type class (e.g., `Serializable` for data conversion).
+  3. Implement instances for custom types (e.g., `Note`).
+  4. Use type class constraints in functions (e.g., `showNote :: Show a => a -> String`).
+  5. Reflect (2-3 paragraphs) on type class flexibility.
+  6. **Bonus**: Explore the `lens` library’s type class usage.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 8](http://learnyouahaskell.com/making-our-own-types-and-typeclasses)
+  - [Typeclassopedia](https://wiki.haskell.org/Typeclassopedia)
+  - [Haskell Type Classes](https://wiki.haskell.org/Typeclass)
+
+**** Topic: Monads
+- *Description*: Master monads for sequencing computations and handling side effects.
+- *Key Ideas*:
+  - Monads as a pattern for effectful programming.
+  - `Maybe`, `State`, and `IO` monads.
+  - Do-notation for cleaner syntax.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapter 12.
+  2. Use `Maybe` for a query engine handling missing data.
+  3. Use `State` to simulate knowledge graph updates.
+  4. Write an `IO` function to read/write notes from a file.
+  5. Reflect (2-3 paragraphs) on monads and side effects.
+  6. **Bonus**: Create a custom monad for logging knowledge operations.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 12](http://learnyouahaskell.com/a-fistful-of-monads)
+  - [Monads in Haskell](https://wiki.haskell.org/Monad)
+  - [Haskell Wiki: Monads](https://wiki.haskell.org/Monad)
+
+**** Topic: Functors and Applicatives
+- *Description*: Learn functors and applicatives for functional data transformations.
+- *Key Ideas*:
+  - Functors for mapping over structures.
+  - Applicatives for applying functions in contexts.
+  - Traversable for effectful mapping.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapter 11.
+  2. Implement a functor for a custom type (e.g., `KnowledgeBase`).
+  3. Use applicatives to validate/combine properties.
+  4. Use `Traversable` to process lists of `Maybe` values.
+  5. Reflect (2-3 paragraphs) on functors vs. monads.
+  6. **Bonus**: Implement a traversable tree structure.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 11](http://learnyouahaskell.com/functors-applicative-functors-and-monoids)
+  - [Functors, Applicatives, and Monads (YouTube)](https://www.youtube.com/watch?v=OiC26GmscFA)
+  - [Haskell Wiki: Functor](https://wiki.haskell.org/Functor)
+
+**** Topic: Practical Haskell: IO and Libraries
+- *Description*: Apply Haskell to real-world tasks like file I/O, networking, and databases.
+- *Key Ideas*:
+  - `IO` monad for side effects.
+  - Libraries: `aeson` (JSON), `http-client` (networking), `postgresql-simple` (databases).
+- *Activities*:
+  1. Install libraries (`cabal install aeson http-client postgresql-simple`).
+  2. Parse a JSON file of notes.
+  3. Fetch data from an API (e.g., a knowledge base API).
+  4. Perform CRUD operations with PostgreSQL.
+  5. Reflect (2-3 paragraphs) on Haskell’s side-effect handling.
+  6. **Bonus**: Build a web scraper with `http-client` and `tagsoup`.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 9](http://learnyouahaskell.com/input-and-output)
+  - [Haskell IO](https://wiki.haskell.org/IO)
+  - [postgresql-simple Documentation](https://hackage.haskell.org/package/postgresql-simple)
+
+**** Topic: Building DSLs in Haskell
+- *Description*: Create domain-specific languages for tasks like querying or knowledge management.
+- *Key Ideas*:
+  - Embedded DSLs using Haskell’s features.
+  - Monads and applicatives for DSL composition.
+- *Activities*:
+  1. Read "Learn You a Haskell" Chapter 10.
+  2. Study the Haskell Wiki on embedded DSLs.
+  3. Design a DSL for ontology schemas (e.g., classes, properties).
+  4. Implement the DSL with monads or applicatives.
+  5. Define and generate data with the DSL.
+  6. Reflect (2-3 paragraphs) on DSLs in knowledge management.
+  7. **Bonus**: Add querying to the DSL.
+- *Resources*:
+  - ["Learn You a Haskell" Chapter 10](http://learnyouahaskell.com/functionally-solving-problems)
+  - [Haskell Wiki: Embedded DSLs](https://wiki.haskell.org/Embedded_domain_specific_languages)
+  - [DSLs in Haskell (School of Haskell)](https://www.schoolofhaskell.com/school/starting-with-haskell/basics-of-haskell/14-creating-a-simple-dsl)
+
+*** Class: Rust
+- *Objective*: Master Rust for systems programming, emphasizing its ownership model, concurrency, and interoperability with other languages or tools. This class progresses from foundational concepts to advanced features, culminating in a capstone project: a Rust-based knowledge management tool.
+- *Setup*:
+  - **Tools**: Install via NixOS:
+    - Rust: `nix-env -i rustc cargo`
+    - Optional: `nix-env -i rust-analyzer` for enhanced IDE support.
+  - **Emacs Configuration**: Use `rust-mode` and `racer` (or `rust-analyzer`) for code completion and linting.
+    - Add to `.emacs`: `(require 'rust-mode) (add-hook 'rust-mode-hook #'racer-mode)`
+  - **Optional**: Install `cargo-edit` (`cargo install cargo-edit`) for dependency management.
+
+**** Topic: Introduction to Rust
+- *Description*: Get acquainted with Rust’s philosophy, syntax, and core features, particularly its approach to memory safety and performance.
+- *Key Ideas*:
+  - Ownership, borrowing, and lifetimes as pillars of memory management.
+  - The borrow checker’s role in ensuring safety.
+  - Basic syntax, variables, and control flow.
+- *Activities*:
+  1. Read "The Rust Programming Language" (Chapters 1-3).
+  2. Install Rust using Nix and write a "Hello, World!" program with Cargo.
+  3. Create a new project with `cargo new` and explore its structure.
+  4. Write a function that demonstrates ownership (e.g., moving a string).
+  5. Reflect (2-3 paragraphs) on how Rust’s safety features differ from languages you’ve used before.
+  6. **Bonus**: Browse the Rust standard library docs to identify useful modules.
+- *Resources*:
+  - ["The Rust Programming Language" Book](https://doc.rust-lang.org/book/title-page.html)
+  - [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
+  - [Rustlings](https://github.com/rust-lang/rustlings)
+
+**** Topic: Ownership and Borrowing
+- *Description*: Dive deep into Rust’s ownership model to manage memory safely and efficiently without a garbage collector.
+- *Key Ideas*:
+  - Ownership rules: single owner per value, ownership transfer.
+  - Borrowing: shared (`&`) and mutable (`&mut`) references.
+  - Lifetimes: ensuring reference validity.
+- *Activities*:
+  1. Read "The Rust Book" Chapter 4.
+  2. Write a function that takes ownership of a value and returns a modified version.
+  3. Use borrowing to access data without ownership (e.g., printing a string).
+  4. Debug and fix borrow checker errors in sample code.
+  5. Reflect (2-3 paragraphs) on how ownership prevents common bugs.
+  6. **Bonus**: Use `Rc` to experiment with shared ownership.
+- *Resources*:
+  - ["The Rust Book" Chapter 4](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
+  - [Rust by Example: Scope and Ownership](https://doc.rust-lang.org/rust-by-example/scope.html)
+  - [Rustlings: Ownership Exercises](https://github.com/rust-lang/rustlings/tree/main/exercises/ownership)
+
+**** Topic: Structs and Enums
+- *Description*: Learn to define custom data types with structs and enums, using pattern matching for expressive control flow.
+- *Key Ideas*:
+  - Structs for structured data (e.g., a `Note` with fields).
+  - Enums for representing multiple states or types.
+  - Pattern matching for handling variants.
+- *Activities*:
+  1. Read "The Rust Book" Chapters 5 and 6.
+  2. Define a `Note` struct with `title`, `content`, and `tags`.
+  3. Create a `NoteStatus` enum (e.g., `Draft`, `Published`) and integrate it into `Note`.
+  4. Add methods to `Note` (e.g., `publish`, `add_tag`).
+  5. Use pattern matching to process different `NoteStatus` values.
+  6. Reflect (2-3 paragraphs) on the power of enums and pattern matching.
+  7. **Bonus**: Build a mini state machine for note transitions.
+- *Resources*:
+  - ["The Rust Book" Chapter 5](https://doc.rust-lang.org/book/ch05-00-structs.html)
+  - ["The Rust Book" Chapter 6](https://doc.rust-lang.org/book/ch06-00-enums.html)
+  - [Rust by Example: Structs](https://doc.rust-lang.org/rust-by-example/custom_types/structs.html)
+
+**** Topic: Error Handling
+- *Description*: Build robust programs with Rust’s error handling mechanisms, focusing on `Result` and `Option`.
+- *Key Ideas*:
+  - `Result` for recoverable errors, `Option` for optional values.
+  - `panic!` for unrecoverable failures.
+  - Custom error types for specific use cases.
+- *Activities*:
+  1. Read "The Rust Book" Chapter 9.
+  2. Write a function returning `Result` (e.g., parsing a note from text).
+  3. Use `Option` for optional fields in a `Note` struct.
+  4. Define a custom error type for note operations.
+  5. Reflect (2-3 paragraphs) on Rust’s error handling approach.
+  6. **Bonus**: Use `thiserror` for easier error management.
+- *Resources*:
+  - ["The Rust Book" Chapter 9](https://doc.rust-lang.org/book/ch09-00-error-handling.html)
+  - [Error Handling in Rust](https://doc.rust-lang.org/rust-by-example/error.html)
+  - [thiserror Crate](https://crates.io/crates/thiserror)
+
+**** Topic: Generics and Traits
+- *Description*: Create reusable, type-safe code using generics and traits, drawing parallels to functional programming.
+- *Key Ideas*:
+  - Generics for parameterized types.
+  - Traits for defining shared behavior.
+  - Trait bounds for type constraints.
+- *Activities*:
+  1. Read "The Rust Book" Chapter 10.
+  2. Write a generic function (e.g., finding the largest item in a list).
+  3. Define a `Serializable` trait for converting data to strings.
+  4. Implement `Serializable` for `Note` and another type.
+  5. Use trait bounds in a function (e.g., `fn print<T: Serializable>`).
+  6. Reflect (2-3 paragraphs) on generics vs. polymorphism in other languages.
+  7. **Bonus**: Explore trait objects for dynamic dispatch.
+- *Resources*:
+  - ["The Rust Book" Chapter 10](https://doc.rust-lang.org/book/ch10-00-generics.html)
+  - [Traits in Rust](https://doc.rust-lang.org/rust-by-example/trait.html)
+  - [Rust Generics and Traits](https://blog.rust-lang.org/2015/05/11/traits.html)
+
+**** Topic: Concurrency
+- *Description*: Utilize Rust’s concurrency features for safe, efficient parallel programming.
+- *Key Ideas*:
+  - Threads for parallel execution.
+  - Channels for message passing.
+  - `Arc` and `Mutex` for shared state.
+- *Activities*:
+  1. Read "The Rust Book" Chapter 16.
+  2. Spawn threads to process notes in parallel (e.g., tagging).
+  3. Use channels to send data between threads.
+  4. Build a concurrent queue with `Arc` and `Mutex`.
+  5. Reflect (2-3 paragraphs) on Rust’s concurrency safety.
+  6. **Bonus**: Use `rayon` for parallel iteration.
+- *Resources*:
+  - ["The Rust Book" Chapter 16](https://doc.rust-lang.org/book/ch16-00-concurrency.html)
+  - [Concurrency in Rust](https://doc.rust-lang.org/rust-by-example/concurrency.html)
+  - [Rayon Crate](https://crates.io/crates/rayon)
+
+**** Topic: Testing
+- *Description*: Ensure code quality with Rust’s testing tools and practices.
+- *Key Ideas*:
+  - Unit tests within modules.
+  - Integration tests for crates.
+  - Documentation tests for examples.
+- *Activities*:
+  1. Read "The Rust Book" Chapter 11.
+  2. Write unit tests for a `Note` struct’s methods.
+  3. Create integration tests for a note management crate.
+  4. Run tests with `cargo test` and fix failures.
+  5. Reflect (2-3 paragraphs) on testing workflows in Rust.
+  6. **Bonus**: Practice TDD for a small feature.
+- *Resources*:
+  - ["The Rust Book" Chapter 11](https://doc.rust-lang.org/book/ch11-00-testing.html)
+  - [Testing in Rust](https://doc.rust-lang.org/rust-by-example/testing.html)
+  - [Rust Testing Guide](https://rust-lang.github.io/async-book/09_testing/00_chapter.html)
+
+**** Topic: Interfacing with Other Languages
+- *Description*: Extend Rust’s capabilities by integrating with C or Python, useful for AI or tool development.
+- *Key Ideas*:
+  - FFI for C interoperability.
+  - Bindings for Python (e.g., `ctypes`, `pyo3`).
+- *Activities*:
+  1. Read "The Rust Book" Chapter 19 on unsafe Rust and FFI.
+  2. Call a C function from Rust (e.g., a math operation).
+  3. Expose a Rust function to Python with `ctypes`.
+  4. Optionally, use `pyo3` for a Python module.
+  5. Reflect (2-3 paragraphs) on Rust’s interoperability strengths.
+  6. **Bonus**: Integrate Rust into a Python AI script.
+- *Resources*:
+  - ["The Rust Book" Chapter 19](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html)
+  - [Rust FFI](https://doc.rust-lang.org/nomicon/ffi.html)
+  - [PyO3 Documentation](https://pyo3.rs/)
+
+** Web Development
+*** Class: General Web Development
+- *Objective*: Gain a comprehensive understanding of web development, covering front-end (HTML, CSS, JavaScript), back-end (Node.js, databases), web security, and deployment. This class builds practical skills through hands-on activities, culminating in a capstone project: a fully functional web application.
+- *Setup*:
+  - **Tools**: Install via NixOS:
+    - Node.js: `nix-env -i nodejs`
+    - npm: `nix-env -i npm`
+    - PostgreSQL: `nix-env -i postgresql`
+    - Git: `nix-env -i git`
+  - **Emacs Configuration**: Use `web-mode` for HTML/CSS, `js-mode` for JavaScript, and `sql-mode` for database queries.
+    - Add to `.emacs`: `(require 'web-mode) (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))`
+  - **Optional**: Install `live-server` (`npm install -g live-server`) for real-time previewing.
+
+**** Topic: Introduction to Web Development
+- *Description*: Understand the basic components of web development, including client-server architecture, HTTP protocols, and the roles of front-end and back-end.
+- *Key Ideas*:
+  - Difference between front-end and back-end development.
+  - How browsers and servers communicate via HTTP.
+  - The importance of web standards and accessibility.
+- *Activities*:
+  1. Read "How the Web Works" by Mozilla.
+  2. Set up a simple web server using Node.js and serve an HTML file.
+  3. Use `curl` to send HTTP requests and analyze responses.
+  4. Reflect (2-3 paragraphs) on the client-server model and its implications for web applications.
+  5. **Bonus**: Explore the differences between HTTP/1.1 and HTTP/2.
+- *Resources*:
+  - [How the Web Works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+  - [Node.js Documentation](https://nodejs.org/en/docs/)
+  - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+**** Topic: HTML and CSS Fundamentals
+- *Description*: Learn to create structured, accessible, and visually appealing web pages using HTML and CSS.
+- *Key Ideas*:
+  - Semantic HTML for better accessibility and SEO.
+  - CSS for styling, including Flexbox and Grid for layouts.
+  - Responsive design using media queries.
+- *Activities*:
+  1. Read MDN’s "HTML Basics" and "CSS Basics".
+  2. Build a simple webpage (e.g., a personal portfolio) using semantic HTML.
+  3. Style it with CSS, including a responsive layout using Flexbox or Grid.
+  4. Test the page in Firefox and ensure it’s mobile-friendly.
+  5. Reflect (2-3 paragraphs) on the importance of accessibility in web design.
+  6. **Bonus**: Add CSS animations or transitions for interactivity.
+- *Resources*:
+  - [MDN: HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+  - [MDN: CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+  - [CSS Tricks: Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+**** Topic: JavaScript for Front-End Development
+- *Description*: Add interactivity to web pages using JavaScript, focusing on DOM manipulation, events, and asynchronous programming.
+- *Key Ideas*:
+  - DOM manipulation to dynamically update content.
+  - Event handling for user interactions.
+  - Promises and async/await for managing asynchronous operations.
+- *Activities*:
+  1. Read MDN’s "JavaScript Basics".
+  2. Add JavaScript to your portfolio to create a dynamic navigation menu.
+  3. Use `fetch` to load data from a public API (e.g., GitHub repositories).
+  4. Implement a simple form validation using JavaScript.
+  5. Reflect (2-3 paragraphs) on how JavaScript enhances user experience.
+  6. **Bonus**: Use localStorage to save user preferences.
+- *Resources*:
+  - [MDN: JavaScript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+  - [JavaScript.info](https://javascript.info/)
+  - [Eloquent JavaScript](https://eloquentjavascript.net/)
+
+**** Topic: Back-End Development with Node.js
+- *Description*: Learn to build server-side applications using Node.js, including routing, middleware, and API development.
+- *Key Ideas*:
+  - Node.js as a runtime for server-side JavaScript.
+  - Express.js for creating web servers and APIs.
+  - RESTful API design principles.
+- *Activities*:
+  1. Install Express.js (`npm install express`).
+  2. Build a simple RESTful API for a to-do list application.
+  3. Implement CRUD operations (Create, Read, Update, Delete) for to-do items.
+  4. Use Postman or `curl` to test your API endpoints.
+  5. Reflect (2-3 paragraphs) on the role of back-end development in web applications.
+  6. **Bonus**: Add middleware for logging requests.
+- *Resources*:
+  - [Express.js Documentation](https://expressjs.com/)
+  - [Node.js API Development](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
+  - [RESTful API Design](https://restfulapi.net/)
+
+**** Topic: Databases for Web Applications
+- *Description*: Integrate databases into web applications to store and manage data persistently.
+- *Key Ideas*:
+  - Relational databases (e.g., PostgreSQL) vs. NoSQL databases (e.g., MongoDB).
+  - ORM (Object-Relational Mapping) for easier database interactions.
+  - Basic SQL queries for data manipulation.
+- *Activities*:
+  1. Set up a PostgreSQL database using NixOS.
+  2. Use `pg` (Node.js PostgreSQL client) to connect your Express.js API to the database.
+  3. Modify your to-do list API to store data in the database.
+  4. Write SQL queries to retrieve and update to-do items.
+  5. Reflect (2-3 paragraphs) on the importance of databases in web development.
+  6. **Bonus**: Implement user authentication with a database.
+- *Resources*:
+  - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+  - [Node.js PostgreSQL Tutorial](https://node-postgres.com/)
+  - [Sequelize ORM](https://sequelize.org/)
+
+**** Topic: Web Security Basics
+- *Description*: Learn essential web security practices to protect your applications from common vulnerabilities.
+- *Key Ideas*:
+  - HTTPS for secure communication.
+  - Input validation and sanitization to prevent SQL injection and XSS.
+  - Authentication and authorization mechanisms.
+- *Activities*:
+  1. Read OWASP’s "Top 10 Web Security Risks".
+  2. Set up HTTPS for your Express.js server using a self-signed certificate.
+  3. Implement input validation for your API endpoints.
+  4. Add basic authentication to restrict access to certain routes.
+  5. Reflect (2-3 paragraphs) on the importance of security in web development.
+  6. **Bonus**: Use Helmet.js to add security headers to your server.
+- *Resources*:
+  - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+  - [Node.js Security Best Practices](https://developer.okta.com/blog/2019/02/28/node-js-security-best-practices)
+  - [Helmet.js Documentation](https://helmetjs.github.io/)
+
+**** Topic: Deployment and Hosting
+- *Description*: Learn to deploy your web applications to production environments, ensuring they are accessible online.
+- *Key Ideas*:
+  - Choosing a hosting provider (e.g., Heroku, AWS, DigitalOcean).
+  - Configuring environment variables for sensitive data.
+  - Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+- *Activities*:
+  1. Sign up for a free Heroku account.
+  2. Deploy your to-do list API to Heroku using Git.
+  3. Set up a CI/CD pipeline with GitHub Actions to automate deployment.
+  4. Test your deployed API with Postman or a browser.
+  5. Reflect (2-3 paragraphs) on the deployment process and challenges.
+  6. **Bonus**: Add a custom domain to your Heroku app.
+- *Resources*:
+  - [Heroku Node.js Deployment](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+  - [GitHub Actions Documentation](https://docs.github.com/en/actions)
+  - [DigitalOcean Tutorials](https://www.digitalocean.com/community/tutorials)
+
+*** Class: HTML and CSS with Accessibility
+- *Objective*: Master HTML and CSS to build structured, styled, and accessible web pages, with a focus on inclusive design principles.
+- *Target Audience*: Programmers re-entering the field, using NixOS and Emacs, with interests in functional programming, knowledge management, and AI.
+- *Setup*:
+  - **Tools** (Install via NixOS):
+    - Firefox: `nix-env -i firefox` (for testing and debugging).
+    - Node.js and npm: `nix-env -i nodejs npm` (for live-server).
+    - Sass: `nix-env -i sass` (for CSS preprocessing).
+  - **Emacs Configuration**:
+    - Install `web-mode` for HTML/CSS editing: Add `(require 'web-mode)` and `(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))` to `.emacs`.
+    - Enable `company-mode` for autocompletion and `flycheck` for linting.
+  - **Optional**: Install `live-server` globally (`npm install -g live-server`) for real-time previewing.
+
+**** Topic: Introduction to HTML and Accessibility
+- *Description*: Learn HTML basics with an emphasis on semantic structure and accessibility.
+- *Key Ideas*:
+  - HTML tags, attributes, and document structure.
+  - Semantic elements (e.g., `<header>`, `<nav>`, `<main>`) and their accessibility benefits.
+  - ARIA roles and properties for enhanced accessibility.
+- *Activities*:
+  1. Read MDN’s "HTML Basics" and WAI’s "Page Structure Tutorial".
+  2. Create an `index.html` file with semantic elements and ARIA roles.
+  3. Validate your HTML using `flycheck` or the W3C Markup Validator.
+  4. Test the page with Firefox’s Accessibility Inspector.
+  5. Reflect (2-3 paragraphs) on how semantic HTML improves accessibility.
+- *Resources*:
+  - [MDN: HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+  - [WAI: Page Structure Tutorial](https://www.w3.org/WAI/tutorials/page-structure/)
+  - [Firefox Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector)
+
+**** Topic: CSS Fundamentals and Visual Accessibility
+- *Description*: Understand CSS for styling while ensuring visual accessibility.
+- *Key Ideas*:
+  - Selectors, properties, and values.
+  - Box model and layout basics.
+  - Color theory and contrast ratios for readability.
+  - Font sizes and responsive typography.
+- *Activities*:
+  1. Read MDN’s "CSS Basics".
+  2. Style a web page with a focus on readable typography and sufficient color contrast.
+  3. Use a color contrast checker (e.g., WebAIM) to ensure accessibility.
+  4. Implement a simple responsive layout using media queries.
+  5. Reflect (2-3 paragraphs) on how CSS impacts accessibility.
+- *Resources*:
+  - [MDN: CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+  - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+  - [CSS Tricks: Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+**** Topic: Advanced HTML and CSS Techniques
+- *Description*: Explore advanced HTML and CSS concepts, integrating accessibility best practices.
+- *Key Ideas*:
+  - Forms and input validation with accessibility in mind.
+  - CSS Flexbox and Grid for accessible layouts.
+  - Media queries for responsive design.
+- *Activities*:
+  1. Read WAI’s "Forms Tutorial".
+  2. Create an accessible form with proper labels, error handling, and ARIA attributes.
+  3. Build a responsive grid layout using CSS Grid.
+  4. Test the layout on different screen sizes and with keyboard navigation.
+  5. Reflect (2-3 paragraphs) on the challenges of making advanced layouts accessible.
+- *Resources*:
+  - [WAI: Forms Tutorial](https://www.w3.org/WAI/tutorials/forms/)
+  - [CSS Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+  - [MDN: CSS Layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout)
+
+**** Topic: CSS Preprocessors and Accessibility
+- *Description*: Learn CSS preprocessors and how to maintain accessibility.
+- *Key Ideas*:
+  - Sass basics: variables, nesting, mixins.
+  - Using preprocessors to manage accessible design systems.
+- *Activities*:
+  1. Read Sass Basics guide.
+  2. Convert a CSS file to Sass, using variables for colors and fonts.
+  3. Create a mixin for accessible buttons (e.g., with proper contrast and focus styles).
+  4. Compile and test your Sass code with `live-server`.
+  5. Reflect (2-3 paragraphs) on how preprocessors can help maintain accessibility.
+- *Resources*:
+  - [Sass Basics](https://sass-lang.com/guide)
+  - [MDN: What is Sass?](https://developer.mozilla.org/en-US/docs/Glossary/Sass)
+  - [Sass Documentation](https://sass-lang.com/documentation)
+*** Class: JavaScript with Accessibility
+- *Objective*: Master JavaScript for building interactive and accessible web applications, with a focus on inclusive design principles.
+- *Target Audience*: Programmers re-entering the field, using NixOS and Emacs, with interests in functional programming, knowledge management, and AI.
+- *Setup*:
+  - **Tools** (Install via NixOS):
+    - Node.js: `nix-env -i nodejs` (includes npm for package management).
+    - Live Server: `npm install -g live-server` (for real-time previewing).
+  - **Emacs Configuration**:
+    - Use `js-mode` for JavaScript syntax highlighting.
+    - Enable `company-mode` for autocompletion and `flycheck` for linting.
+  - **Optional Tools*:
+    - Install ESLint (`npm install -g eslint`) for code quality.
+    - Install Prettier (`npm install -g prettier`) for code formatting.
+
+**** Topic: JavaScript Basics and Accessible Interactions
+- *Description*: Learn JavaScript fundamentals and how to create accessible interactions.
+- *Key Ideas*:
+  - Variables, data types, and control structures.
+  - DOM manipulation with accessibility considerations.
+  - Event handling for keyboard and screen reader users.
+- *Activities*:
+  1. Read MDN’s "JavaScript Basics".
+  2. Write a script to toggle a menu, ensuring keyboard accessibility (e.g., focus management).
+  3. Add ARIA attributes to reflect dynamic state changes (e.g., `aria-expanded`).
+  4. Test the menu with keyboard navigation.
+  5. Reflect (2-3 paragraphs) on how JavaScript can enhance or hinder accessibility.
+- *Resources*:
+  - [MDN: JavaScript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+  - [JavaScript.info](https://javascript.info/)
+  - [WAI: ARIA States and Properties](https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/)
+
+**** Topic: Advanced JavaScript and Dynamic Content Accessibility
+- *Description*: Explore advanced JavaScript concepts while maintaining accessibility in dynamic content.
+- *Key Ideas*:
+  - Asynchronous programming (promises, async/await).
+  - AJAX and API interactions.
+  - ARIA live regions for announcing dynamic updates.
+- *Activities*:
+  1. Read MDN’s "Asynchronous JavaScript" guide.
+  2. Fetch data from an API and update the DOM accessibly (e.g., using `aria-live` for updates).
+  3. Implement a simple loading indicator with ARIA attributes.
+  4. Test the dynamic content with a screen reader (e.g., NVDA or Orca).
+  5. Reflect (2-3 paragraphs) on the challenges of making asynchronous updates accessible.
+- *Resources*:
+  - [MDN: Asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous)
+  - [WAI: ARIA Live Regions](https://www.w3.org/WAI/ARIA/apg/patterns/live-region/)
+
+**** Topic: JavaScript Frameworks and Accessibility
+- *Description*: Understand how to use JavaScript frameworks while ensuring accessibility.
+- *Key Ideas*:
+  - Introduction to a framework (e.g., React).
+  - Accessible component design (e.g., focus management).
+  - Accessibility in single-page applications (SPAs).
+- *Activities*:
+  1. Read React’s accessibility documentation.
+  2. Build a simple React component (e.g., a modal) with accessible props (e.g., `aria-modal`).
+  3. Implement focus management for the modal (e.g., trapping focus).
+  4. Test the component with keyboard navigation and a screen reader.
+  5. Reflect (2-3 paragraphs) on the challenges of maintaining accessibility in SPAs.
+- *Resources*:
+  - [React Accessibility](https://reactjs.org/docs/accessibility.html)
+  - [W3C: ARIA in HTML](https://www.w3.org/TR/html-aria/)
+  - [a11y Project: Focus Management](https://www.a11yproject.com/posts/managing-focus/)
+
+**** Topic: Testing JavaScript for Accessibility
+- *Description*: Learn techniques to test JavaScript applications for accessibility issues.
+- *Key Ideas*:
+  - Manual testing with screen readers and keyboard.
+  - Automated accessibility testing tools (e.g., axe-core).
+- *Activities*:
+  1. Read WAI’s "Evaluating Accessibility" guide.
+  2. Install axe-core (`npm install axe-core`) and run it on a JavaScript-enhanced page.
+  3. Manually test the page with keyboard navigation and a screen reader.
+  4. Document and fix at least three accessibility issues.
+  5. Reflect (2-3 paragraphs) on the importance of accessibility testing in JavaScript development.
+- *Resources*:
+  - [WAI: Evaluating Accessibility](https://www.w3.org/WAI/test-evaluate/)
+  - [Axe-core Documentation](https://github.com/dequelabs/axe-core)
+  - [Lighthouse Accessibility Audits](https://developers.google.com/web/tools/lighthouse/accessibility)
+*** Class: Static Site Generation with Hakyll for psalm18.org
+- *Objective*: Build and deploy a static website to your domain, psalm18.org, using Hakyll and Org-mode, hosted on Hostinger.
+- *Prerequisites*:
+  - Basic programming knowledge.
+  - Familiarity with NixOS and Emacs (instructions are tailored to this setup).
+  - Domain (psalm18.org) and hosting (Hostinger) already set up.
+- *Setup Instructions*:
+  - **Install Tools on NixOS**:
+    - Haskell: `nix-env -i ghc`
+    - Hakyll: `nix-env -i haskellPackages.hakyll`
+    - Pandoc: `nix-env -i pandoc` (for Org-mode to HTML conversion)
+    - Git: `nix-env -i git` (for version control)
+  - **Emacs Configuration**:
+    - Use `org-mode` for writing content.
+    - Install `haskell-mode` for editing Hakyll’s Haskell files.
+    - Optional: Add `flycheck` with Haskell support for error checking.
+  - **Optional**:
+    - Install `live-server` (`npm install -g live-server`) for live previewing.
+
+**** Topic: Introduction to Hakyll and Static Site Generation
+- *Description*: Understand what static site generators are and why Hakyll is a great fit for your project.
+- *Key Concepts*:
+  - Static sites are pre-built HTML files, offering speed and security.
+  - Hakyll is a Haskell-based static site generator, leveraging functional programming principles.
+  - Benefits include simplicity and control, perfect for a site like psalm18.org.
+- *Activities*:
+  1. Read the [Hakyll documentation introduction](https://jaspervdj.be/hakyll/).
+  2. Watch a short video on static site generators (e.g., [YouTube: Static Site Generators](https://www.youtube.com/watch?v=Mi6GqKE_RTU)).
+  3. Write a brief reflection (2-3 sentences) on why Hakyll appeals to you for psalm18.org.
+- *Resources*:
+  - [Hakyll Documentation](https://jaspervdj.be/hakyll/)
+  - [Static Site Generators Video](https://www.youtube.com/watch?v=Mi6GqKE_RTU)
+
+**** Topic: Setting Up Hakyll on NixOS
+- *Description*: Set up a Hakyll development environment on your NixOS system.
+- *Key Concepts*:
+  - NixOS provides reproducible environments for Haskell and Hakyll.
+  - A Hakyll project is a Haskell program that generates your site.
+- *Activities*:
+  1. Install Haskell and Hakyll: `nix-env -i ghc haskellPackages.hakyll`.
+  2. Create a new Hakyll project: `hakyll-init psalm18-site`.
+  3. Build the project: `cd psalm18-site && stack build` (or `cabal build` if preferred).
+  4. Run the site locally: `stack exec site watch` (or `cabal exec site watch`).
+  5. Open `http://localhost:8000` in your browser to see the default site.
+- *Resources*:
+  - [Hakyll Installation Tutorial](https://jaspervdj.be/hakyll/tutorials/01-installation.html)
+  - [NixOS Haskell Guide](https://nixos.wiki/wiki/Haskell)
+
+**** Topic: Writing Content in Org-mode for Hakyll
+- *Description*: Learn to write content in Org-mode and integrate it with Hakyll using Pandoc.
+- *Key Concepts*:
+  - Org-mode is a powerful, structured markup language in Emacs.
+  - Pandoc converts Org-mode files to HTML for Hakyll to process.
+  - Metadata (e.g., titles, dates) can enhance your content.
+- *Activities*:
+  1. Create a `posts` directory in your `psalm18-site` project.
+  2. Write a sample Org-mode post (e.g., `posts/2023-01-01-welcome.org`):
+TITLE: Welcome to Psalm 18
+DATE: 2023-01-01
+
+This is my first post for psalm18.org!
+3. Edit `site.hs` to process Org-mode files with Pandoc (example configuration provided in resources).
+4. Build the site (`stack exec site build`) and check the HTML output in `_site`.
+- *Resources*:
+- [Pandoc Documentation](https://pandoc.org/MANUAL.html)
+- [Org-mode Manual](https://orgmode.org/manual/)
+- [Hakyll Pandoc Example](https://jaspervdj.be/hakyll/tutorials/02-basics.html)
+
+**** Topic: Building a Basic Hakyll Site
+- *Description*: Structure your Hakyll project with templates and content.
+- *Key Concepts*:
+- Templates define the HTML layout for your pages.
+- Hakyll’s routing and compilation rules process your content.
+- *Activities*:
+1. Create a `templates` directory and add a `default.html` file:
+   <!DOCTYPE html> <html> <head><title>$title$</title></head> <body>$body$</body> </html> ``` 2. Add more Org-mode posts (e.g., `2023-01-02-reflection.org`). 3. Update `site.hs` to compile posts with the template. 4. Build and preview the site locally with multiple pages. - *Resources*: - [Hakyll Templates](https://jaspervdj.be/hakyll/tutorials/03-templates.html) - [Hakyll Reference](https://jaspervdj.be/hakyll/reference/)
+**** Topic: Customizing Your Hakyll Site
+
+- *Description*: Personalize your site with custom CSS and templates.
+- *Key Concepts*:
+  - CSS styles your site’s appearance.
+  - Custom templates allow unique designs for psalm18.org.
+- *Activities*:
+  - Create a css directory and add style.css (e.g., basic styling for fonts and colors).
+  - Link it in default.html: <link rel="stylesheet" href="/css/style.css">.
+  - Customize the template (e.g., add a header with $date$).
+  - Build and preview your styled site.
+- *Resources*:
+  - Hakyll Assets
+  - https://css-tricks.com/
+**** Topic: Deploying to Hostinger
+
+- *Description*: Deploy your static site to psalm18.org on Hostinger.
+- *Key Concepts*:
+  - Hostinger supports static sites via FTP or file upload.
+  - The _site directory contains your generated site.
+- *Activities*:
+  - Build the site: stack exec site build.
+  - Use an FTP client (e.g., FileZilla) to upload the _site directory to   Hostinger’s public_html folder.
+  - Hostinger FTP details are in your hosting control panel.
+  - Visit psalm18.org to verify it’s live.
+- *Resources*:
+  - Hostinger FTP Guide
+  - https://filezilla-project.org/
+**** Topic: Automating Deployment
+
+- *Description*:: Streamline deployment with a simple script.
+- *Key Concepts*:
+  - Automation saves time by combining build and upload steps.
+  - A shell script can handle this process.
+- *Activities*:
+  1. Create deploy.sh in your project:
+     #!/bin/bash
+stack exec site build
+lftp -u username,password ftp://your-hostinger-domain -e "mirror -R _site/ public_html/; quit"  (Replace username, password, and your-hostinger-domain with your Hostinger FTP details.)
+  2. Make it executable: chmod +x deploy.sh.
+  3. Test it: ./deploy.sh and check psalm18.org.
+- *Resources*:
+  - https://www.gnu.org/software/bash/manual/bash.html
+  - https://lftp.yar.ru/lftp-man.html
+*** Class: Basic Web Security
+- *Objective*: Gain mastery over core web security principles, tools, and techniques to safeguard web applications against common threats. This class spans foundational topics (e.g., web vulnerabilities) to advanced practices (e.g., secure coding, authentication, data protection, web application firewalls, security testing, and incident response), with hands-on applications tied to functional programming, knowledge management, and AI.
+- *Target Audience*: Programmers re-entering web security, using NixOS and Emacs, with interests in functional programming, knowledge management, and AI.
+- *Setup*:
+  - **Tools** (Install via NixOS):
+    - OWASP ZAP: Run via Docker with `docker pull owasp/zap2docker-stable` for vulnerability scanning.
+    - ModSecurity: Use a Nix package if available, or a cloud-based WAF (e.g., AWS WAF free tier) for practice.
+    - Firefox: Install with `nix-env -i firefox` for testing web apps.
+    - Node.js and npm: Install with `nix-env -i nodejs npm` for security tools and sample apps.
+  - **Emacs Configuration**:
+    - Install `docker-mode` for managing Docker containers.
+    - Use `web-mode` for editing HTML/CSS/JS and `sql-mode` for database interactions.
+    - Enable `flycheck` with `eslint-plugin-security` (install via `npm install eslint-plugin-security`) for real-time security linting.
+  - **Optional Tools**:
+    - Sign up for a free-tier cloud account (e.g., AWS) for WAF and other services.
+
+**** Topic: Introduction to Web Security
+- *Description*: Learn why web security matters, explore common threats, and grasp foundational security principles.
+- *Key Ideas*:
+  - Web security protects confidentiality, integrity, and availability.
+  - Threats include SQL injection, XSS, CSRF, and more.
+  - Principles: defense in depth, least privilege, fail-safe defaults.
+- *Activities*:
+  1. Study OWASP’s "Top 10 Web Security Risks" and Mozilla’s "Web Security" guide.
+  2. Inspect a vulnerable app (e.g., OWASP Juice Shop) to spot potential risks.
+  3. Write a 2-3 paragraph Org-mode reflection on web security’s importance for knowledge management or AI systems.
+  4. **Bonus**: Explore how functional programming (e.g., immutability) bolsters security.
+- *Resources*:
+  - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+  - [MDN: Web Security](https://developer.mozilla.org/en-US/docs/Web/Security)
+  - [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)
+
+**** Topic: Common Web Vulnerabilities
+- *Description*: Dive into prevalent web vulnerabilities, their effects, and prevention strategies.
+- *Key Ideas*:
+  - SQL Injection: Malicious SQL via user inputs.
+  - XSS: Injecting scripts into web pages.
+  - CSRF: Forcing users into unintended actions.
+- *Activities*:
+  1. Read PortSwigger’s "Web Security Academy" on SQL Injection, XSS, and CSRF.
+  2. Scan a vulnerable app (e.g., Juice Shop) with OWASP ZAP.
+  3. Simulate an SQL injection on a SQLite database.
+  4. Reflect in Org-mode (2-3 paragraphs) on how these vulnerabilities impact knowledge management.
+  5. **Bonus**: Exploit a CSRF flaw in a sample app and document it.
+- *Resources*:
+  - [PortSwigger Web Security Academy](https://portswigger.net/web-security)
+  - [OWASP ZAP Documentation](https://www.zaproxy.org/docs/)
+  - [SQLite Documentation](https://www.sqlite.org/docs.html)
+
+**** Topic: Secure Coding Practices
+- *Description*: Adopt coding techniques to eliminate vulnerabilities in web applications.
+- *Key Ideas*:
+  - Validate and sanitize inputs to block injections.
+  - Use prepared statements or ORMs for safe database queries.
+  - Avoid risky functions (e.g., `eval`, `innerHTML`).
+- *Activities*:
+  1. Review OWASP’s "Secure Coding Practices" checklist.
+  2. Refactor a Node.js app to:
+     - Validate/sanitize inputs.
+     - Use parameterized queries.
+     - Replace `innerHTML` with `textContent`.
+  3. Test with OWASP ZAP to confirm improvements.
+  4. Reflect in Org-mode (2-3 paragraphs) on secure coding and functional programming synergy.
+  5. **Bonus**: Add a Content Security Policy (CSP) to mitigate XSS.
+- *Resources*:
+  - [OWASP Secure Coding Practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)
+  - [MDN: Secure Coding Guidelines](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Coding_Guidelines)
+  - [Node.js Security Best Practices](https://developer.okta.com/blog/2019/02/28/node-js-security-best-practices)
+
+**** Topic: Authentication and Authorization
+- *Description*: Secure user identity and access control mechanisms.
+- *Key Ideas*:
+  - Authentication: Verify users (e.g., passwords, OAuth).
+  - Authorization: Restrict access (e.g., RBAC).
+  - Secure sessions and token-based auth (e.g., JWT).
+- *Activities*:
+  1. Study Auth0’s "Authentication Guide" and OWASP’s "Authentication Cheat Sheet".
+  2. Add OAuth2 to a Node.js app with Passport.js.
+  3. Implement role-based access (e.g., admin vs. user).
+  4. Reflect in Org-mode (2-3 paragraphs) on securing auth in AI apps.
+  5. **Bonus**: Enable MFA with an authenticator app.
+- *Resources*:
+  - [Auth0: Authentication Guide](https://auth0.com/docs/get-started)
+  - [OWASP: Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+  - [Passport.js Documentation](http://www.passportjs.org/)
+
+**** Topic: Data Protection
+- *Description*: Safeguard sensitive data with encryption and secure practices.
+- *Key Ideas*:
+  - Encrypt data at rest (e.g., DB encryption) and in transit (e.g., HTTPS).
+  - Hash passwords securely (e.g., bcrypt).
+  - Minimize sensitive data storage.
+- *Activities*:
+  1. Read W3C’s "Encryption Primer" and OWASP’s "Cryptographic Storage Cheat Sheet".
+  2. Set up HTTPS with a self-signed certificate in a web app.
+  3. Use bcrypt for password hashing in a registration system.
+  4. Reflect in Org-mode (2-3 paragraphs) on data protection in knowledge management.
+  5. **Bonus**: Encrypt a DB field with `pgcrypto` (PostgreSQL).
+- *Resources*:
+  - [W3C: Encryption Primer](https://www.w3.org/2017/08/encryption-primer/)
+  - [OWASP: Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
+  - [Node.js HTTPS Guide](https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTPS-server/)
+
+**** Topic: Web Application Firewalls (WAF)
+- *Description*: Deploy WAFs to shield apps from attacks like SQL injection and XSS.
+- *Key Ideas*:
+  - WAFs filter HTTP traffic to block malicious requests.
+  - Options: local (e.g., ModSecurity) or cloud-based (e.g., AWS WAF).
+- *Activities*:
+  1. Read OWASP’s "WAF" guide and AWS WAF docs.
+  2. Set up ModSecurity (if Nix-supported) or a cloud WAF.
+  3. Configure rules to block SQL injection (e.g., OWASP CRS).
+  4. Test with malicious requests via OWASP ZAP.
+  5. Reflect in Org-mode (2-3 paragraphs) on WAFs as a defense layer.
+  6. **Bonus**: Write a custom WAF rule for an endpoint.
+- *Resources*:
+  - [OWASP WAF Project](https://owasp.org/www-project-web-application-firewall/)
+  - [AWS WAF Documentation](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html)
+  - [ModSecurity Documentation](https://github.com/SpiderLabs/ModSecurity)
+
+**** Topic: Security Testing
+- *Description*: Test web apps to uncover and fix vulnerabilities.
+- *Key Ideas*:
+  - Combine manual (e.g., pentesting) and automated (e.g., ZAP) testing.
+  - Target OWASP Top 10 vulnerabilities.
+- *Activities*:
+  1. Read OWASP’s "Testing Guide" overview.
+  2. Scan a sample app (e.g., Juice Shop) with OWASP ZAP.
+  3. Manually test XSS with `<script>alert('XSS')</script>`.
+  4. Document findings and fixes in Org-mode.
+  5. Reflect in Org-mode (2-3 paragraphs) on testing.
+  6. **Bonus**: Use Burp Suite Community Edition for advanced testing.
+- *Resources*:
+  - [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
+  - [OWASP ZAP Documentation](https://www.zaproxy.org/docs/)
+  - [Burp Suite Community Edition](https://portswigger.net/burp/communitydownload)
+
+**** Topic: Incident Response
+- *Description*: Prepare to handle security incidents effectively.
+- *Key Ideas*:
+  - Incident response: detect, contain, eradicate, recover.
+  - Importance of communication and documentation.
+- *Activities*:
+  1. Read SANS’s "Incident Handler’s Handbook".
+  2. Simulate an XSS attack on a sample app.
+  3. Execute an incident response plan:
+     - Detect: Spot the attack (e.g., logs).
+     - Contain: Block the source (e.g., IP ban).
+     - Eradicate: Patch the flaw (e.g., sanitize inputs).
+     - Recover: Restore and monitor.
+  4. Reflect in Org-mode (2-3 paragraphs) on the process.
+  5. **Bonus**: Draft an incident plan for an AI app.
+- *Resources*:
+  - [SANS Incident Handler’s Handbook](https://www.sans.org/reading-room/whitepapers/incident/incident-handlers-handbook-33901)
+  - [OWASP Incident Response Project](https://owasp.org/www-project-incident-response/)
+  - [NIST Incident Response Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf)
+
+** Graph Databases & Semantics
+*** Class: Graph Theory and Neo4j for Knowledge Management
+- *Objective*: Master graph theory concepts and apply them to build and query knowledge graphs using Neo4j and Cypher, with a focus on applications in knowledge management and AI.
+- *Target Audience*: Programmers re-entering the field, with interests in functional programming, knowledge management, AI, and using NixOS and Emacs.
+- *Structure*: 7 topics, each including descriptions, key ideas, activities, and resources.
+
+- *Setup Instructions*:
+  - **Install Neo4j on NixOS**:
+    - Direct Installation: `nix-env -i neo4j`
+    - Docker Alternative: `docker pull neo4j` and `docker run -d -p 7474:7474 -p 7687:7687 neo4j`
+  - **Start Neo4j**:
+    - Direct: `neo4j start`
+    - Docker: Already running after `docker run`
+  - **Access Neo4j Browser**: Open Firefox and navigate to `http://localhost:7474`. Set the initial password as prompted.
+  - **Emacs Configuration**: Use `org-mode` for notes and `cypher-mode` (install via MELPA: `M-x package-install RET cypher-mode RET`) for Cypher queries.
+
+**** Topic: Introduction to Graphs and Neo4j
+- *Description*: Learn the basics of graph theory and how Neo4j applies these concepts to manage connected data.
+- *Key Ideas*:
+  - Graphs consist of nodes (entities) and edges (relationships).
+  - Types: directed, undirected, weighted, unweighted.
+  - Neo4j is a graph database that stores data as nodes and relationships.
+- *Activities*:
+  1. Read [Wikipedia: Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) for an overview.
+  2. Watch [Graph Databases 101](https://www.youtube.com/watch?v=8jzbCdg5lZI).
+  3. Install Neo4j on NixOS and access the Neo4j Browser.
+  4. Create a simple graph: `CREATE (a:Person {name: 'Alice'})-[:KNOWS]->(b:Person {name: 'Bob'})`.
+- *Resources*:
+  - [Neo4j Documentation: Getting Started](https://neo4j.com/docs/getting-started/current/)
+  - [Graph Theory Basics](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+
+**** Topic: Graph Representations and Data Modeling
+- *Description*: Understand how graphs are represented theoretically and how to model data in Neo4j.
+- *Key Ideas*:
+  - Graph representations: adjacency lists, adjacency matrices.
+  - Neo4j uses a property graph model with labeled nodes and typed relationships.
+- *Activities*:
+  1. Read [GeeksforGeeks: Graph Representations](https://www.geeksforgeeks.org/graph-and-its-representations/).
+  2. Study [Neo4j Data Modeling](https://neo4j.com/developer/data-modeling/).
+  3. Design a small knowledge graph (e.g., AI concepts: `:Concept {name: 'Machine Learning'}` with `:SUBFIELD_OF` relationships).
+  4. Implement the model in Neo4j: `CREATE (ml:Concept {name: 'Machine Learning'})-[:SUBFIELD_OF]->(ai:Concept {name: 'AI'})`.
+- *Resources*:
+  - [Neo4j Data Modeling Guide](https://neo4j.com/developer/guide-data-modeling/)
+  - [Property Graph Model](https://neo4j.com/docs/getting-started/current/graphdb-concepts/)
+
+**** Topic: Traversing Graphs with BFS and DFS
+- *Description*: Learn BFS and DFS traversal algorithms and implement them in Cypher.
+- *Key Ideas*:
+  - BFS explores nodes level by level; DFS explores deeply along branches.
+  - Cypher can simulate traversals using path queries.
+- *Activities*:
+  1. Read [GeeksforGeeks: BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/).
+  2. Read [GeeksforGeeks: DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/).
+  3. Implement BFS-like traversal in Cypher: `MATCH path = (start:Person {name: 'Alice'})-[*bfs]->(end) RETURN path`.
+  4. Implement DFS-like traversal: `MATCH path = (start:Person {name: 'Alice'})-[*]->(end) RETURN path`.
+- *Resources*:
+  - [Cypher Path Queries](https://neo4j.com/docs/cypher-manual/current/clauses/match/)
+  - [Neo4j Traversal Framework](https://neo4j.com/docs/java-reference/current/traversal-framework/)
+
+**** Topic: Shortest Path Algorithms
+- *Description*: Explore shortest path algorithms theoretically and apply them in Neo4j.
+- *Key Ideas*:
+  - Dijkstra’s algorithm finds the shortest path in weighted graphs.
+  - Neo4j provides built-in shortest path functions.
+- *Activities*:
+  1. Read [GeeksforGeeks: Dijkstra’s Algorithm](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/).
+  2. Add weights to relationships: `CREATE (a)-[:KNOWS {weight: 2}]->(b)`.
+  3. Find shortest path: `MATCH path = shortestPath((a:Person {name: 'Alice'})-[*]->(b:Person {name: 'Bob'})) RETURN path`.
+  4. Experiment with weighted shortest paths using Cypher.
+- *Resources*:
+  - [Neo4j Shortest Path](https://neo4j.com/docs/cypher-manual/current/clauses/shortestpath/)
+  - [Graph Algorithms in Neo4j](https://neo4j.com/docs/graph-data-science/current/algorithms/)
+
+**** Topic: Cypher Query Language Basics
+- *Description*: Master the basics of Cypher for CRUD operations and simple queries.
+- *Key Ideas*:
+  - Cypher uses patterns to match graph structures.
+  - Commands: `CREATE`, `MATCH`, `SET`, `DELETE`, `RETURN`.
+- *Activities*:
+  1. Read [Neo4j Cypher Manual: Introduction](https://neo4j.com/docs/cypher-manual/current/introduction/).
+  2. Create nodes and relationships: `CREATE (p:Person {name: 'Charlie'})-[:KNOWS]->(a:Person {name: 'Alice'})`.
+  3. Query: `MATCH (p:Person)-[:KNOWS]->(other) RETURN p.name, other.name`.
+  4. Update: `MATCH (p:Person {name: 'Alice'}) SET p.age = 30`.
+- *Resources*:
+  - [Neo4j Cypher Manual](https://neo4j.com/docs/cypher-manual/current/)
+  - [Cypher Cheat Sheet](https://neo4j.com/docs/cypher-refcard/current/)
+
+**** Topic: Advanced Cypher Queries
+- *Description*: Learn complex Cypher techniques for deeper graph analysis.
+- *Key Ideas*:
+  - Aggregation: `COUNT`, `SUM`.
+  - Pathfinding: `shortestPath`, recursive queries.
+- *Activities*:
+  1. Count relationships: `MATCH (p:Person)-[r:KNOWS]->() RETURN p.name, COUNT(r)`.
+  2. Find all paths: `MATCH path = (a:Person {name: 'Alice'})-[*]->(b:Person {name: 'Bob'}) RETURN path`.
+  3. Use `WITH` for subqueries: `MATCH (p:Person) WITH p WHERE p.age > 25 RETURN p.name`.
+- *Resources*:
+  - [Neo4j Cypher Clauses](https://neo4j.com/docs/cypher-manual/current/clauses/)
+  - [Advanced Cypher Queries](https://neo4j.com/developer/cypher-querying/)
+
+**** Topic: Performance Optimization in Neo4j
+- *Description*: Optimize Neo4j queries and database performance.
+- *Key Ideas*:
+  - Indexing improves query speed.
+  - Query profiling with `EXPLAIN` and `PROFILE`.
+- *Activities*:
+  1. Create an index: `CREATE INDEX ON :Person(name)`.
+  2. Profile a query: `PROFILE MATCH (p:Person {name: 'Alice'}) RETURN p`.
+  3. Optimize a slow query by adding indexes or rewriting.
+- *Resources*:
+  - [Neo4j Performance Guide](https://neo4j.com/docs/operations-manual/current/performance/)
+  - [Cypher Query Tuning](https://neo4j.com/developer/guide-performance-tuning/)
+*** Class: Semantic Web and Linked Data
+- *Objective*: Master Semantic Web and linked data technologies to model, query, and integrate structured data for knowledge management and AI applications.
+- *Target Audience*: Programmers re-entering the field, interested in knowledge management, AI, and using NixOS and Emacs.
+- *Structure*: 7 topics, progressing from foundational concepts to advanced applications, with no capstone projects.
+
+- *Setup Instructions*:
+  - **Install Apache Jena** (RDF/SPARQL processing):
+    - `nix-env -i apache-jena` (check Nixpkgs or use a custom derivation).
+  - **Install Protégé** (ontology development):
+    - Download from [Protégé website](https://protege.stanford.edu/), requires `nix-env -i openjdk`.
+  - **Emacs Setup**:
+    - Install `n3-mode` for Turtle (MELPA: `M-x package-install RET n3-mode RET`).
+    - Install `sparql-mode` for SPARQL (MELPA: `M-x package-install RET sparql-mode RET`).
+  - **Optional**: `rdf2rdf` for format conversion (`nix-env -i rdf2rdf` if available).
+
+**** Topic: Introduction to the Semantic Web and Linked Data
+- *Description*: Explore the vision and principles uniting the Semantic Web and linked data.
+- *Key Ideas*:
+  - Semantic Web: machine-readable, structured data on the web.
+  - Linked data: interconnected RDF datasets using URIs and HTTP.
+  - Four principles: URIs, HTTP access, RDF, and links to other data.
+- *Activities*:
+  1. Read [W3C Semantic Web Intro](https://www.w3.org/standards/semanticweb/).
+  2. Read [Tim Berners-Lee on Linked Data](https://www.w3.org/DesignIssues/LinkedData.html).
+  3. Reflect (2-3 paragraphs): How can these concepts enhance knowledge management?
+- *Resources*:
+  - [W3C Semantic Web Intro](https://www.w3.org/standards/semanticweb/)
+  - [Linked Data Principles](https://www.w3.org/DesignIssues/LinkedData.html)
+
+**** Topic: RDF and Turtle Syntax
+- *Description*: Learn RDF’s data model and Turtle syntax for structured data representation.
+- *Key Ideas*:
+  - RDF uses triples (subject-predicate-object).
+  - Turtle provides a concise, readable RDF format.
+- *Activities*:
+  1. Read [RDF 1.1 Primer](https://www.w3.org/TR/rdf11-primer/).
+  2. Create a Turtle file (`ai.ttl`) with AI-related triples (e.g., "AI hasSubfield MachineLearning").
+  3. Validate with `riot --validate ai.ttl` (Apache Jena).
+- *Resources*:
+  - [RDF 1.1 Primer](https://www.w3.org/TR/rdf11-primer/)
+  - [Turtle Syntax](https://www.w3.org/TeamSubmission/turtle/)
+
+**** Topic: SPARQL Query Language
+- *Description*: Use SPARQL to query RDF data efficiently.
+- *Key Ideas*:
+  - SPARQL queries graph data with patterns.
+  - Supports `SELECT`, `CONSTRUCT`, `ASK`, `DESCRIBE`.
+- *Activities*:
+  1. Read [SPARQL 1.1 Query Language](https://www.w3.org/TR/sparql11-query/).
+  2. Load `ai.ttl` into Apache Jena Fuseki (`nix-env -i apache-jena-fuseki`).
+  3. Write and run a query in Emacs (`sparql-mode`): `SELECT ?subfield WHERE { :AI :hasSubfield ?subfield }`.
+- *Resources*:
+  - [SPARQL 1.1 Query Language](https://www.w3.org/TR/sparql11-query/)
+  - [Jena SPARQL Tutorial](https://jena.apache.org/tutorials/sparql.html)
+
+**** Topic: Ontology Development with OWL
+- *Description*: Build ontologies using OWL for knowledge representation.
+- *Key Ideas*:
+  - OWL extends RDF with classes, properties, and reasoning.
+  - Ontologies structure knowledge hierarchically.
+- *Activities*:
+  1. Read [OWL 2 Primer](https://www.w3.org/TR/owl2-primer/).
+  2. Use Protégé to create an ontology (e.g., classes: "AI", "Subfield"; property: "hasSubfield").
+  3. Export to RDF and query with SPARQL.
+  4. Reflect: How do ontologies aid AI explainability?
+- *Resources*:
+  - [OWL 2 Primer](https://www.w3.org/TR/owl2-primer/)
+  - [Protégé Tutorial](https://protege.stanford.edu/publications/ontology_development/ontology101.pdf)
+
+**** Topic: Publishing Linked Data
+- *Description*: Publish RDF data as linked data following best practices.
+- *Key Ideas*:
+  - Adhere to the four linked data principles.
+  - Use dereferenceable URIs for accessibility.
+- *Activities*:
+  1. Read [Linked Data Best Practices](https://www.w3.org/TR/ld-bp/).
+  2. Serve `ai.ttl` locally: `python3 -m http.server`.
+  3. Add a link to DBpedia (e.g., `my:AI owl:sameAs dbr:Artificial_intelligence`).
+- *Resources*:
+  - [Linked Data Best Practices](https://www.w3.org/TR/ld-bp/)
+  - [Publishing Guide](https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/)
+
+**** Topic: Consuming and Integrating Linked Data
+- *Description*: Access and integrate external linked data sources.
+- *Key Ideas*:
+  - SPARQL endpoints query remote data.
+  - Integration links local and external datasets.
+- *Activities*:
+  1. Install RDFLib: `nix-env -i python3Packages.rdflib`.
+  2. Query DBpedia: `SELECT ?label WHERE { dbr:Artificial_intelligence rdfs:label ?label }`.
+  3. Integrate DBpedia data into `ai.ttl`.
+- *Resources*:
+  - [RDFLib Docs](https://rdflib.readthedocs.io/en/stable/)
+  - [DBpedia SPARQL Endpoint](https://dbpedia.org/sparql)
+
+**** Topic: Advanced Topics: Federation and Reasoning
+- *Description*: Dive into federated queries and ontology reasoning.
+- *Key Ideas*:
+  - Federated SPARQL combines multiple endpoints.
+  - Reasoning infers new knowledge from ontologies.
+- *Activities*:
+  1. Write a federated query (Fuseki + DBpedia).
+  2. Use Protégé’s reasoner on your ontology.
+  3. Reflect: How do these techniques support AI?
+- *Resources*:
+  - [SPARQL Federated Query](https://www.w3.org/TR/sparql11-federated-query/)
+  - [Jena Federation](https://jena.apache.org/documentation/query/federated_query.html)
+** AI & Machine Learning
+*** Class: Machine Learning Basics
+- *Objective*: Understand foundational machine learning concepts, algorithms, and their applications, with an emphasis on functional programming and practical implementations using Haskell and Python.
+- *Target Audience*: Programmers re-entering the field, with interests in functional programming, knowledge management, AI, and using NixOS and Emacs as their development environment.
+- *Structure*: 7 topics, each including descriptions, key ideas, activities, and resources.
+
+- *Setup Instructions*:
+  - **Tools** (Install via NixOS):
+    - Haskell: `nix-env -i ghc`
+    - Python: `nix-env -i python3`
+    - Scikit-learn: `nix-env -i python3Packages.scikit-learn`
+    - Pandas: `nix-env -i python3Packages.pandas`
+    - JupyterLab: `nix-env -i jupyterlab`
+  - **Emacs Configuration**:
+    - Install `haskell-mode`, `python-mode`, and `ein` (Emacs IPython Notebook) for interactive coding.
+
+**** Topic: Introduction to Machine Learning
+- *Description*: Learn the basics of machine learning, its categories, and real-world applications.
+- *Key Ideas*:
+  - Supervised, unsupervised, and reinforcement learning.
+  - Applications in knowledge management and AI systems.
+- *Activities*:
+  1. Read "Machine Learning for Humans" (Part 1).
+  2. Watch "Machine Learning Explained" on YouTube.
+- *Resources*:
+  - [[https://medium.com/machine-learning-for-humans/part-1-introduction-c3c7e5c7c7c7][Machine Learning for Humans]]
+  - [[https://www.youtube.com/watch?v=ukzFI9rgwfU][YouTube: Machine Learning Explained]]
+
+**** Topic: Data Preprocessing
+- *Description*: Master the techniques to prepare data for machine learning models.
+- *Key Ideas*:
+  - Data cleaning, normalization, and feature engineering.
+- *Activities*:
+  1. Use Pandas to load and clean a dataset (e.g., Iris dataset).
+  2. Normalize features using Scikit-learn.
+  3. Write a Haskell function to preprocess data (e.g., scaling values).
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/preprocessing.html][Scikit-learn Preprocessing]]
+  - [[https://pandas.pydata.org/docs/user_guide/index.html][Pandas User Guide]]
+
+**** Topic: Supervised Learning: Regression
+- *Description*: Understand and implement regression models for predictive tasks.
+- *Key Ideas*:
+  - Linear regression, evaluation metrics (e.g., Mean Squared Error).
+- *Activities*:
+  1. Implement linear regression in Python using Scikit-learn.
+  2. Create a simple regression model in Haskell.
+  3. Evaluate models on a dataset (e.g., Boston Housing).
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/linear_model.html][Scikit-learn Linear Models]]
+  - [[https://hackage.haskell.org/package/Regression][Haskell Regression Package]]
+
+**** Topic: Supervised Learning: Classification
+- *Description*: Explore classification algorithms for categorical predictions.
+- *Key Ideas*:
+  - Logistic regression, decision trees, Support Vector Machines (SVM).
+- *Activities*:
+  1. Train a logistic regression model on the Titanic dataset.
+  2. Implement a decision tree in Haskell.
+  3. Compare performance metrics (accuracy, precision, recall).
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html][Scikit-learn Logistic Regression]]
+  - [[https://hackage.haskell.org/package/decision-tree][Haskell Decision Tree]]
+
+**** Topic: Unsupervised Learning: Clustering
+- *Description*: Dive into clustering techniques for discovering patterns in data.
+- *Key Ideas*:
+  - K-means clustering, hierarchical clustering.
+- *Activities*:
+  1. Apply K-means to a customer segmentation dataset.
+  2. Implement a simple clustering algorithm in Haskell.
+  3. Visualize clusters using matplotlib or a Haskell plotting library.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/clustering.html][Scikit-learn Clustering]]
+  - [[https://hackage.haskell.org/package/clustering][Haskell Clustering]]
+
+**** Topic: Model Evaluation and Validation
+- *Description*: Learn how to assess and validate machine learning models effectively.
+- *Key Ideas*:
+  - Train-test split, cross-validation, hyperparameter tuning.
+- *Activities*:
+  1. Perform cross-validation on a classification model.
+  2. Tune hyperparameters using grid search in Scikit-learn.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/model_evaluation.html][Scikit-learn Model Evaluation]]
+  - [[https://www.kaggle.com/alexisbcook/model-validation][Kaggle: Model Validation]]
+
+**** Topic: Introduction to Neural Networks
+- *Description*: Get started with the fundamentals of neural networks.
+- *Key Ideas*:
+  - Perceptrons, activation functions, backpropagation.
+- *Activities*:
+  1. Build a simple neural network in Python (e.g., for MNIST digit classification).
+  2. Experiment with Haskell neural network libraries.
+- *Resources*:
+  - [[https://www.tensorflow.org/tutorials/quickstart/beginner][TensorFlow Quickstart]]
+  - [[https://hackage.haskell.org/package/hnn][Haskell Neural Networks]]
+*** Class: Natural Language Processing
+- *Objective*: Understand foundational natural language processing concepts, techniques, and their applications, with an emphasis on functional programming and practical implementations using Haskell and Python.
+- *Target Audience*: Programmers re-entering the field, with interests in functional programming, knowledge management, AI, and using NixOS and Emacs as their development environment.
+- *Structure*: 6 topics, each including descriptions, key ideas, activities, and resources.
+
+- *Setup Instructions*:
+  - **Tools** (Install via NixOS):
+    - Haskell: `nix-env -i ghc`
+    - Python: `nix-env -i python3`
+    - NLTK: `nix-env -i python3Packages.nltk`
+    - SpaCy: `nix-env -i python3Packages.spacy`
+    - Transformers: `nix-env -i python3Packages.transformers`
+  - **Emacs Configuration**:
+    - Install `haskell-mode`, `python-mode`, and `ein` (Emacs IPython Notebook) for interactive coding.
+
+**** Topic: Introduction to NLP
+- *Description*: Learn the basics of NLP, its history, and current applications.
+- *Key Ideas*:
+  - NLP bridges human language and machine understanding.
+  - Applications in knowledge management and AI systems.
+- *Activities*:
+  1. Read the Wikipedia page on NLP.
+  2. Watch "NLP Explained" on YouTube.
+- *Resources*:
+  - [[https://en.wikipedia.org/wiki/Natural_language_processing][Wikipedia: Natural Language Processing]]
+  - [[https://www.youtube.com/watch?v=OiC26GmscFA][YouTube: NLP Explained]]
+
+**** Topic: Text Preprocessing
+- *Description*: Master techniques for cleaning and preparing text data.
+- *Key Ideas*:
+  - Tokenization, stemming, lemmatization, stop word removal.
+- *Activities*:
+  1. Use NLTK to tokenize and lemmatize a sample text.
+  2. Implement a simple stemmer in Haskell.
+- *Resources*:
+  - [[https://www.nltk.org/book/ch03.html][NLTK Book: Processing Raw Text]]
+  - [[https://hackage.haskell.org/package/nlp][Haskell NLP Package]]
+
+**** Topic: Text Representation
+- *Description*: Understand how to represent text for machine learning models.
+- *Key Ideas*:
+  - Bag-of-words, TF-IDF, word embeddings.
+- *Activities*:
+  1. Create a TF-IDF representation using Scikit-learn.
+  2. Implement a simple bag-of-words model in Haskell.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction][Scikit-learn: Text Feature Extraction]]
+  - [[https://hackage.haskell.org/package/text][Haskell Text Package]]
+
+**** Topic: Linguistic Annotation
+- *Description*: Learn about part-of-speech tagging and named entity recognition.
+- *Key Ideas*:
+  - POS tagging identifies word types.
+  - NER extracts entities like names and locations.
+- *Activities*:
+  1. Use SpaCy to annotate a news article.
+  2. Implement a simple POS tagger in Haskell.
+- *Resources*:
+  - [[https://www.nltk.org/book/ch05.html][NLTK Book: Categorizing and Tagging Words]]
+  - [[https://spacy.io/usage/linguistic-features#named-entities][SpaCy: Named Entity Recognition]]
+
+**** Topic: Sentiment Analysis
+- *Description*: Explore techniques for determining sentiment in text.
+- *Key Ideas*:
+  - Lexicon-based and machine learning approaches.
+- *Activities*:
+  1. Use VADER for sentiment analysis on tweets.
+  2. Train a sentiment classifier using Scikit-learn.
+- *Resources*:
+  - [[https://github.com/cjhutto/vaderSentiment][VADER Sentiment Analysis]]
+  - [[https://huggingface.co/blog/sentiment-analysis-python][Hugging Face: Sentiment Analysis]]
+
+**** Topic: Machine Learning for NLP
+- *Description*: Apply machine learning algorithms to NLP tasks.
+- *Key Ideas*:
+  - Text classification, topic modeling.
+- *Activities*:
+  1. Train a text classifier on the 20 Newsgroups dataset.
+  2. Implement a simple topic model in Haskell.
+- *Resources*:
+  - [[https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html][Scikit-learn: Working with Text Data]]
+  - [[https://hackage.haskell.org/package/topic-models][Haskell Topic Models]]
+*** Class: Critical Thinking with AI
+- *Objective*: Develop critical thinking skills in the context of AI, focusing on evaluating AI systems, understanding their limitations, and applying ethical considerations in AI development and deployment.
+- *Target Audience*: Programmers re-entering the field, with interests in functional programming, knowledge management, AI, and using NixOS and Emacs as their development environment.
+- *Structure*: 10 topics, each including descriptions, key ideas, activities, and resources, culminating in a capstone project.
+
+- *Setup Instructions*:
+  - **Tools** (Install via NixOS):
+    - Python: `nix-env -i python3`
+    - Pandas: `nix-env -i python3Packages.pandas`
+    - Scikit-learn: `nix-env -i python3Packages.scikit-learn`
+    - JupyterLab: `nix-env -i jupyterlab`
+  - **Emacs Configuration**:
+    - Install `python-mode` and `ein` (Emacs IPython Notebook) for interactive coding.
+
+**** Topic: Introduction to Critical Thinking and AI
+- *Description*: Understand the importance of critical thinking in the age of AI and how it applies to evaluating AI systems.
+- *Key Ideas*:
+  - Critical thinking involves analysis, evaluation, and synthesis of information.
+  - AI systems can both enhance and challenge critical thinking.
+- *Activities*:
+  1. Read "Critical Thinking: A Concise Guide" (Chapter 1).
+  2. Watch "AI and Critical Thinking" on YouTube.
+  3. Reflect in Org-mode: How can critical thinking improve your approach to AI development?
+- *Resources*:
+  - [[https://www.routledge.com/Critical-Thinking-A-Concise-Guide/Bowell-Kemp/p/book/9780415820929][Critical Thinking: A Concise Guide]]
+  - [[https://www.youtube.com/watch?v=OiC26GmscFA][YouTube: AI and Critical Thinking]]
+
+**** Topic: Understanding AI Systems
+- *Description*: Gain a foundational understanding of AI systems, their capabilities, and limitations.
+- *Key Ideas*:
+  - Types of AI: narrow vs. general AI.
+  - Machine learning, deep learning, and their applications.
+- *Activities*:
+  1. Read "AI Superpowers" by Kai-Fu Lee (Chapter 1).
+  2. Explore an AI model (e.g., a pre-trained model from Hugging Face).
+  3. Write a summary in Org-mode of AI's current capabilities.
+- *Resources*:
+  - [[https://aisuperpowers.com/][AI Superpowers]]
+  - [[https://huggingface.co/models][Hugging Face Models]]
+
+**** Topic: Using AI Tools for Research
+- *Description*: Learn how to use AI tools for efficient research and information gathering.
+- *Key Ideas*:
+  - AI-powered search engines and summarization tools.
+  - Evaluating the reliability of AI-generated information.
+- *Activities*:
+  1. Use an AI tool (e.g., ChatGPT) to summarize a research paper.
+  2. Compare the summary with your own reading.
+  3. Reflect on the accuracy and potential biases in AI summaries.
+- *Resources*:
+  - [[https://openai.com/blog/chatgpt][ChatGPT]]
+  - [[https://www.semanticscholar.org/][Semantic Scholar]]
+
+**** Topic: Evaluating AI-Generated Content
+- *Description*: Develop skills to critically assess the credibility and reliability of AI outputs.
+- *Key Ideas*:
+  - Identifying factual errors, hallucinations, and biases.
+  - Cross-verification with trusted sources.
+- *Activities*:
+  1. Generate a piece of content using an AI tool.
+  2. Fact-check the content using multiple sources.
+  3. Document your findings in Org-mode.
+- *Resources*:
+  - [[https://www.poynter.org/fact-checking/][Poynter: Fact-Checking]]
+  - [[https://www.snopes.com/][Snopes]]
+
+**** Topic: Identifying Biases in AI Systems
+- *Description*: Understand how biases can be introduced into AI systems and how to mitigate them.
+- *Key Ideas*:
+  - Types of biases: data bias, algorithmic bias.
+  - Techniques for detecting and reducing bias.
+- *Activities*:
+  1. Analyze a dataset for potential biases (e.g., gender bias in job descriptions).
+  2. Use tools like Fairlearn to assess fairness.
+  3. Reflect on strategies to reduce bias in AI models.
+- *Resources*:
+  - [[https://fairlearn.org/][Fairlearn]]
+  - [[https://developers.google.com/machine-learning/fairness-overview/][Google: Fairness in ML]]
+
+**** Topic: Ethical Considerations in AI
+- *Description*: Explore ethical issues in AI development and deployment.
+- *Key Ideas*:
+  - Privacy, transparency, and accountability.
+  - Ethical frameworks for AI.
+- *Activities*:
+  1. Read the "AI Ethics Guidelines" by the European Commission.
+  2. Discuss a case study (e.g., facial recognition ethics).
+  3. Write a reflection on ethical AI development.
+- *Resources*:
+  - [[https://ec.europa.eu/digital-single-market/en/news/ethics-guidelines-trustworthy-ai][EU AI Ethics Guidelines]]
+  - [[https://www.youtube.com/watch?v=QxuyfWoVV98][YouTube: Ethics in AI]]
+
+**** Topic: Applying Critical Thinking to AI Applications
+- *Description*: Use critical thinking to evaluate real-world AI applications.
+- *Key Ideas*:
+  - Assessing AI's impact on society and individuals.
+  - Balancing innovation with ethical considerations.
+- *Activities*:
+  1. Choose an AI application (e.g., autonomous vehicles).
+  2. Analyze its benefits and potential risks.
+  3. Propose improvements or mitigations.
+- *Resources*:
+  - [[https://www.wired.com/category/artificial-intelligence/][Wired: AI Articles]]
+  - [[https://www.technologyreview.com/topic/artificial-intelligence/][MIT Technology Review: AI]]
+
+**** Topic: AI and Functional Programming
+- *Description*: Explore how functional programming principles can enhance AI development.
+- *Key Ideas*:
+  - Immutability, pure functions, and type safety in AI.
+- *Activities*:
+  1. Implement a simple ML algorithm in Haskell.
+  2. Compare it to a Python implementation.
+  3. Reflect on the benefits of functional programming in AI.
+- *Resources*:
+  - [[https://hackage.haskell.org/package/hnn][Haskell Neural Networks]]
+  - [[https://wiki.haskell.org/Machine_learning][Haskell Wiki: Machine Learning]]
+
+**** Topic: Critical Analysis of AI Research
+- *Description*: Learn to critically evaluate AI research papers and methodologies.
+- *Key Ideas*:
+  - Understanding research design, results, and implications.
+- *Activities*:
+  1. Select a recent AI research paper.
+  2. Analyze its methodology and conclusions.
+  3. Write a critique in Org-mode.
+- *Resources*:
+  - [[https://arxiv.org/list/cs.AI/recent][arXiv: AI Papers]]
+  - [[https://www.acm.org/publications/authors/guidance-for-authors][ACM Author Guidelines]]
+   
+** Capstone - Knowledge Definition DSL and Website
+- *Objective*: Design and implement a Domain-Specific Language (DSL) for knowledge definition inspired by RDF, manage dependencies between knowledge modules using Nix, and create a static website to display and explore the defined knowledge.
+- *Target Audience*: Programmers who have completed the curriculum and are ready to synthesize their skills into a comprehensive project.
+- *Structure*: 6 phases, each with specific goals, activities, and resources.
+
+*** Setup Instructions
+- Ensure all necessary tools from the curriculum are installed:
+  - Haskell: `nix-env -i ghc` (for DSL implementation)
+  - Nix: Pre-installed on NixOS (for dependency management)
+  - Hakyll: `nix-env -i haskellPackages.hakyll` (for website generation)
+  - Neo4j: `nix-env -i neo4j` or Docker (`docker run -d -p 7474:7474 -p 7687:7687 neo4j`) (for knowledge storage)
+  - Git: `nix-env -i git` (for version control)
+- Create a new project directory for the capstone: `mkdir capstone-project && cd capstone-project`
+
+*** Phase 1: DSL Design
+- *Description*: Define the syntax and semantics of your DSL, modeled after RDF for knowledge definition.
+- *Goals*: Create a clear, expressive language for defining knowledge as triples (subject-predicate-object) with modular support.
+- *Activities*:
+  1. Study RDF to understand its triple-based structure and modularity (e.g., namespaces).
+  2. Design a simple grammar for your DSL (e.g., "entity predicate value" or Turtle-like syntax).
+  3. Plan how knowledge modules will depend on each other (e.g., importing shared definitions).
+  4. Write a sample DSL file for a small knowledge domain (e.g., programming concepts).
+- *Resources*:
+  - [RDF 1.1 Primer](https://www.w3.org/TR/rdf11-primer/)
+  - [Turtle Syntax](https://www.w3.org/TeamSubmission/turtle/)
+
+*** Phase 2: DSL Implementation
+- *Description*: Implement the DSL in Haskell, creating a parser and interpreter.
+- *Goals*: Build a working DSL that can parse and process knowledge definitions.
+- *Activities*:
+  1. Use Megaparsec to write a parser for your DSL syntax.
+  2. Define an Abstract Syntax Tree (AST) in Haskell to represent parsed DSL statements.
+  3. Implement an interpreter to convert the AST into an in-memory knowledge graph.
+  4. Test the parser and interpreter with your sample DSL file.
+- *Note*: You asked about implementing the DSL *in Nix*. Nix is excellent for dependency management but not suited for DSL implementation (it’s a build system, not a programming language for parsing/interpreting). Haskell is a better choice due to its strong type system and parser libraries, which align with curriculum skills.
+- *Resources*:
+  - [Megaparsec Tutorial](https://markkarpov.com/tutorial/megaparsec.html)
+  - [Haskell AST Design](https://wiki.haskell.org/Abstract_syntax_tree)
+
+*** Phase 3: Knowledge Module Management with Nix
+- *Description*: Use Nix to manage dependencies between knowledge modules.
+- *Goals*: Ensure knowledge modules are modular, reproducible, and dependency-aware.
+- *Activities*:
+  1. Define each knowledge module as a Nix derivation (e.g., a DSL file or Haskell package).
+  2. Use Nix’s dependency system (e.g., `import`) to link modules that depend on each other.
+  3. Write a top-level Nix expression to build the full knowledge base reproducibly.
+  4. Test by building a multi-module knowledge base with dependencies.
+- *Resources*:
+  - [Nix Pills](https://nixos.org/guides/nix-pills/)
+  - [NixOS Wiki: Haskell](https://nixos.wiki/wiki/Haskell)
+
+*** Phase 4: Integrating with Neo4j
+- *Description*: Store and query your DSL-defined knowledge in Neo4j.
+- *Goals*: Persist the knowledge graph and enable querying.
+- *Activities*:
+  1. Map DSL constructs (e.g., triples) to Neo4j nodes and relationships.
+  2. Use the Neo4j Haskell driver to insert parsed DSL data into Neo4j.
+  3. Write Cypher queries to retrieve and explore the knowledge graph.
+  4. Validate the integration with your sample knowledge base.
+- *Resources*:
+  - [Neo4j Cypher Manual](https://neo4j.com/docs/cypher-manual/current/)
+  - [Neo4j Haskell Driver](https://github.com/neo4j/neo4j-haskell)
+
+*** Phase 5: Building the Website with Hakyll
+- *Description*: Create a static website to display and explore the knowledge graph.
+- *Goals*: Make the knowledge accessible and interactive online.
+- *Activities*:
+  1. Use Hakyll to generate HTML pages from your Neo4j-stored knowledge base.
+  2. Add a basic JavaScript interface for searching or browsing the knowledge graph.
+  3. Incorporate a graph visualization library (e.g., Cytoscape.js) to display relationships.
+  4. Style the site with CSS for usability and accessibility.
+- *Resources*:
+  - [Hakyll Documentation](https://jaspervdj.be/hakyll/)
+  - [Cytoscape.js](https://js.cytoscape.org/)
+  - [CSS Tricks](https://css-tricks.com/)
+
+*** Phase 6: Deployment and Reflection
+- *Description*: Deploy the website and reflect on the project.
+- *Goals*: Share your work publicly and evaluate your learning experience.
+- *Activities*:
+  1. Build the static site using Hakyll (`hakyll build`).
+  2. Deploy to a hosting provider (e.g., Hostinger) via FTP or Git.
+  3. Write a 3-4 page reflection in Org-mode, addressing:
+     - Design choices and challenges faced.
+     - How curriculum skills supported the project.
+     - Ideas for future enhancements.
+- *Resources*:
+  - [Hostinger FTP Guide](https://www.hostinger.com/tutorials/how-to-use-ftp)
+  - [Org-mode Documentation](https://orgmode.org/manual/)
+
+*** Skill Gaps to Address
+- *Haskell Proficiency*: Ensure you’re comfortable with Haskell’s type system and monads (used heavily in DSL implementation). Add practice if needed earlier in the curriculum.
+- *Parser Combinators*: Learn Megaparsec or Parsec for DSL parsing—include a tutorial or exercise in the Haskell section.
+- *Nix Dependency Management*: Gain experience defining and linking dependencies in Nix. Add a small Nix-based project earlier in the curriculum.
+- *Web Development Basics*: Brush up on HTML, CSS, and JavaScript if rusty—consider a mini-project in the web development section.
+- *Graph Visualization*: Explore Cytoscape.js or similar tools for the website. Include an optional intro in the web or graph theory section.
+
+*** Additional Resources
+- [Haskell Programming from First Principles](https://haskellbook.com/) (for Haskell depth)
+- [NixOS Wiki](https://nixos.wiki/) (for Nix mastery)
+- [Web Development Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) (for web skills)
