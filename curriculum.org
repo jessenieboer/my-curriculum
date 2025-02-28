@@ -2252,21 +2252,24 @@ lftp -u username,password ftp://your-hostinger-domain -e "mirror -R _site/ publi
   - [[https://arxiv.org/list/cs.AI/recent][arXiv: AI Papers]]
   - [[https://www.acm.org/publications/authors/guidance-for-authors][ACM Author Guidelines]]
    
-** Capstone - Knowledge Definition DSL and Website
-- *Objective*: Design and implement a Domain-Specific Language (DSL) for knowledge definition inspired by RDF, manage dependencies between knowledge modules using Nix, and create a static website to display and explore the defined knowledge.
+*** Class: Capstone - Knowledge Definition DSL, Machine Learning, and Interactive Website
+- *Objective*: Design and implement a Domain-Specific Language (DSL) for knowledge definition, manage dependencies with Nix, apply machine learning to analyze the knowledge graph, and create an interactive website to visualize and explore the knowledge.
 - *Target Audience*: Programmers who have completed the curriculum and are ready to synthesize their skills into a comprehensive project.
-- *Structure*: 6 phases, each with specific goals, activities, and resources.
+- *Structure*: 7 phases, each with specific goals, activities, and resources.
 
-*** Setup Instructions
+**** Setup Instructions
 - Ensure all necessary tools from the curriculum are installed:
   - Haskell: `nix-env -i ghc` (for DSL implementation)
   - Nix: Pre-installed on NixOS (for dependency management)
   - Hakyll: `nix-env -i haskellPackages.hakyll` (for website generation)
   - Neo4j: `nix-env -i neo4j` or Docker (`docker run -d -p 7474:7474 -p 7687:7687 neo4j`) (for knowledge storage)
+  - Python: `nix-env -i python3` (for machine learning integration)
+  - Scikit-learn: `nix-env -i python3Packages.scikit-learn` (for machine learning)
+  - Cytoscape.js: Include via CDN or npm for data visualization
   - Git: `nix-env -i git` (for version control)
 - Create a new project directory for the capstone: `mkdir capstone-project && cd capstone-project`
 
-*** Phase 1: DSL Design
+**** Phase 1: DSL Design
 - *Description*: Define the syntax and semantics of your DSL, modeled after RDF for knowledge definition.
 - *Goals*: Create a clear, expressive language for defining knowledge as triples (subject-predicate-object) with modular support.
 - *Activities*:
@@ -2278,7 +2281,7 @@ lftp -u username,password ftp://your-hostinger-domain -e "mirror -R _site/ publi
   - [RDF 1.1 Primer](https://www.w3.org/TR/rdf11-primer/)
   - [Turtle Syntax](https://www.w3.org/TeamSubmission/turtle/)
 
-*** Phase 2: DSL Implementation
+**** Phase 2: DSL Implementation
 - *Description*: Implement the DSL in Haskell, creating a parser and interpreter.
 - *Goals*: Build a working DSL that can parse and process knowledge definitions.
 - *Activities*:
@@ -2286,12 +2289,11 @@ lftp -u username,password ftp://your-hostinger-domain -e "mirror -R _site/ publi
   2. Define an Abstract Syntax Tree (AST) in Haskell to represent parsed DSL statements.
   3. Implement an interpreter to convert the AST into an in-memory knowledge graph.
   4. Test the parser and interpreter with your sample DSL file.
-- *Note*: You asked about implementing the DSL *in Nix*. Nix is excellent for dependency management but not suited for DSL implementation (it’s a build system, not a programming language for parsing/interpreting). Haskell is a better choice due to its strong type system and parser libraries, which align with curriculum skills.
 - *Resources*:
   - [Megaparsec Tutorial](https://markkarpov.com/tutorial/megaparsec.html)
   - [Haskell AST Design](https://wiki.haskell.org/Abstract_syntax_tree)
 
-*** Phase 3: Knowledge Module Management with Nix
+**** Phase 3: Knowledge Module Management with Nix
 - *Description*: Use Nix to manage dependencies between knowledge modules.
 - *Goals*: Ensure knowledge modules are modular, reproducible, and dependency-aware.
 - *Activities*:
@@ -2303,7 +2305,7 @@ lftp -u username,password ftp://your-hostinger-domain -e "mirror -R _site/ publi
   - [Nix Pills](https://nixos.org/guides/nix-pills/)
   - [NixOS Wiki: Haskell](https://nixos.wiki/wiki/Haskell)
 
-*** Phase 4: Integrating with Neo4j
+**** Phase 4: Integrating with Neo4j
 - *Description*: Store and query your DSL-defined knowledge in Neo4j.
 - *Goals*: Persist the knowledge graph and enable querying.
 - *Activities*:
@@ -2315,41 +2317,46 @@ lftp -u username,password ftp://your-hostinger-domain -e "mirror -R _site/ publi
   - [Neo4j Cypher Manual](https://neo4j.com/docs/cypher-manual/current/)
   - [Neo4j Haskell Driver](https://github.com/neo4j/neo4j-haskell)
 
-*** Phase 5: Building the Website with Hakyll
-- *Description*: Create a static website to display and explore the knowledge graph.
-- *Goals*: Make the knowledge accessible and interactive online.
+**** Phase 5: Machine Learning Integration
+- *Description*: Apply machine learning to analyze the knowledge graph for insights (e.g., classification, clustering).
+- *Goals*: Use machine learning to derive new insights from the knowledge graph.
 - *Activities*:
-  1. Use Hakyll to generate HTML pages from your Neo4j-stored knowledge base.
-  2. Add a basic JavaScript interface for searching or browsing the knowledge graph.
-  3. Incorporate a graph visualization library (e.g., Cytoscape.js) to display relationships.
-  4. Style the site with CSS for usability and accessibility.
+  1. Choose an ML task (e.g., node classification, link prediction, or community detection).
+  2. Extract relevant data from Neo4j (e.g., node features, relationships).
+  3. Use Python with Scikit-learn to implement a simple ML model (e.g., logistic regression for classification).
+  4. Train the model on your knowledge graph data.
+  5. Apply the model to generate insights (e.g., predict categories for new nodes).
+  6. Store the ML-generated insights (e.g., predicted labels) back into Neo4j or prepare them for visualization.
 - *Resources*:
-  - [Hakyll Documentation](https://jaspervdj.be/hakyll/)
-  - [Cytoscape.js](https://js.cytoscape.org/)
-  - [CSS Tricks](https://css-tricks.com/)
+  - [Scikit-learn Documentation](https://scikit-learn.org/stable/)
+  - [Machine Learning with Graphs](https://towardsdatascience.com/machine-learning-on-graphs-5e3e2b6c1e6e)
+  - [Neo4j Graph Data Science](https://neo4j.com/docs/graph-data-science/current/)
 
-*** Phase 6: Deployment and Reflection
-- *Description*: Deploy the website and reflect on the project.
-- *Goals*: Share your work publicly and evaluate your learning experience.
+**** Phase 6: Data Visualization
+- *Description*: Create interactive visualizations of the knowledge graph and ML insights on the website.
+- *Goals*: Make the knowledge graph and machine learning insights accessible and explorable through visualizations.
+- *Activities*:
+  1. Integrate Cytoscape.js (or another library like D3.js) into your Hakyll-generated website.
+  2. Fetch knowledge graph data and ML insights from Neo4j or precomputed files.
+  3. Create an interactive graph visualization (e.g., nodes colored by ML-predicted categories).
+  4. Add additional visualizations (e.g., bar charts for cluster sizes or heatmaps for relationship strengths).
+  5. Ensure visualizations are responsive and accessible.
+- *Resources*:
+  - [Cytoscape.js Documentation](https://js.cytoscape.org/)
+  - [D3.js Gallery](https://observablehq.com/@d3/gallery)
+  - [Hakyll Documentation](https://jaspervdj.be/hakyll/)
+
+**** Phase 7: Deployment and Reflection
+- *Description*: Deploy the website and reflect on the project, including the integration of machine learning and data visualization.
+- *Goals*: Share your work publicly and evaluate the impact of machine learning and visualization on the project.
 - *Activities*:
   1. Build the static site using Hakyll (`hakyll build`).
   2. Deploy to a hosting provider (e.g., Hostinger) via FTP or Git.
   3. Write a 3-4 page reflection in Org-mode, addressing:
-     - Design choices and challenges faced.
-     - How curriculum skills supported the project.
-     - Ideas for future enhancements.
+     - Design choices and challenges faced in integrating machine learning and visualization.
+     - How machine learning added value to the knowledge graph (e.g., insights, automation).
+     - The role of data visualization in making the knowledge accessible.
+     - Ideas for future enhancements (e.g., more advanced ML models, real-time updates).
 - *Resources*:
   - [Hostinger FTP Guide](https://www.hostinger.com/tutorials/how-to-use-ftp)
   - [Org-mode Documentation](https://orgmode.org/manual/)
-
-*** Skill Gaps to Address
-- *Haskell Proficiency*: Ensure you’re comfortable with Haskell’s type system and monads (used heavily in DSL implementation). Add practice if needed earlier in the curriculum.
-- *Parser Combinators*: Learn Megaparsec or Parsec for DSL parsing—include a tutorial or exercise in the Haskell section.
-- *Nix Dependency Management*: Gain experience defining and linking dependencies in Nix. Add a small Nix-based project earlier in the curriculum.
-- *Web Development Basics*: Brush up on HTML, CSS, and JavaScript if rusty—consider a mini-project in the web development section.
-- *Graph Visualization*: Explore Cytoscape.js or similar tools for the website. Include an optional intro in the web or graph theory section.
-
-*** Additional Resources
-- [Haskell Programming from First Principles](https://haskellbook.com/) (for Haskell depth)
-- [NixOS Wiki](https://nixos.wiki/) (for Nix mastery)
-- [Web Development Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/) (for web skills)
