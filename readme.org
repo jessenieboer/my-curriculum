@@ -195,18 +195,34 @@ Me
   - Analyze AI research papers critically.
 - [ ] Topic: Critical Thinking with AI: Ethical Considerations in AI (advanced) (~10 hours)
   - Dive deeper into advanced ethical challenges in AI.
-- [ ] Topic: Capstone: Knowledge Definition DSL and Website - Phase 1: DSL Design (~20 hours)
-  - Design a DSL for defining knowledge (builds on DSL topics).
-- [ ] Topic: Capstone: Knowledge Definition DSL and Website - Phase 2: DSL Implementation (~30 hours)
-  - Implement the DSL using Haskell.
-- [ ] Topic: Capstone: Knowledge Definition DSL and Website - Phase 3: Knowledge Module Management with Nix (~20 hours)
-  - Manage project dependencies with Nix.
-- [ ] Topic: Capstone: Knowledge Definition DSL and Website - Phase 4: Integrating with Neo4j (~20 hours)
-  - Store DSL-defined knowledge in Neo4j (requires graph skills).
-- [ ] Topic: Capstone: Knowledge Definition DSL and Website - Phase 5: Building the Website with Hakyll (~20 hours)
-  - Create a static site to display your knowledge graph.
-- [ ] Topic: Capstone: Knowledge Definition DSL and Website - Phase 6: Deployment and Reflection (~20 hours)
-  - Deploy your site and reflect on the project’s outcomes.
+- [ ] Capstone: Phase 1: DSL Design (~20-30 hours)
+  - Study RDF to understand its structure and modularity.
+  - Design a simple grammar for your DSL (e.g., "entity predicate value").
+  - Plan how knowledge modules will depend on each other (e.g., shared definitions).
+- [ ] Capstone: Phase 2: DSL Implementation (~30-40 hours)
+  - Use Haskell (with Megaparsec) to implement the DSL parser and interpreter.
+  - Define an Abstract Syntax Tree (AST) and map it to an in-memory knowledge graph.
+  - Test the DSL with a sample knowledge domain (e.g., programming concepts).
+- [ ] Capstone: Phase 3: Knowledge Module Management with Nix (~10-20 hours)
+  - Define each knowledge module as a Nix derivation.
+  - Use Nix’s dependency system to link modules that rely on each other.
+  - Write a top-level Nix expression to build the full knowledge base reproducibly.
+- [ ] Capstone: Phase 4: Integrating with Neo4j (~20-30 hours)
+  - Map DSL constructs (e.g., triples) to Neo4j nodes and relationships.
+  - Use the Neo4j Haskell driver to insert and query data.
+  - Write Cypher queries to explore and validate the knowledge graph.
+- [ ] Capstone: Phase 5: Machine Learning Integration (~30-40 hours)
+  - Extract relevant data from Neo4j for machine learning (e.g., node features).
+  - Use Python (with Scikit-learn) to train a model (e.g., classification or clustering).
+  - Integrate ML insights back into the knowledge graph (e.g., predicted labels).
+- [ ] Capstone: Phase 6: Data Visualization (~20-30 hours)
+  - Integrate Cytoscape.js (or another library) into your Hakyll-generated website.
+  - Fetch knowledge graph and ML insights to create interactive visualizations.
+  - Ensure visualizations are responsive and accessible.
+- [ ] Capstone: Phase 7: Deployment and Reflection (~10-20 hours)
+  - Build the static site using Hakyll (`hakyll build`).
+  - Deploy to a hosting provider (e.g., Hostinger) via FTP or Git.
+  - Write a 3-4 page reflection in Org-mode on the project’s challenges, successes, and future ideas.
 *** License
 This learning program is for personal use but can be freely adapted by others.
 
