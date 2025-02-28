@@ -1,7 +1,5 @@
 * Curriculum
 ** Foundational Skills
-i'm going to start by fleshing out the leveraging ai class. i'm uploading a template for you to fill out. look at the content for this class in my github and fit it into the template i give you, making edits as necessary. produce an org mode code block with the results
-
 *** Class: Leveraging AI for Learning and Productivity
 - *Objective*: Learn how to effectively use AI tools to enhance your understanding of the curriculum, boost your productivity, and support your goals in functional programming, knowledge management, and AI, while being mindful of ethical considerations and practical limitations.
 - *Setup*: Use Emacs for activities and note-taking, and install tools via NixOS where applicable.
