@@ -23,8 +23,9 @@
   6. Write a detailed reflection (2-3 paragraphs) analyzing how AI helped or hindered your understanding, including any surprises or limitations you encountered.
   7. Bonus: Create a simple visual representation (e.g., a mind map in `org-mode` or a diagram using Graphviz) of the concept, with AI assistance if desired.
 - *Resources*:
-  - [Nature: AI and the Future of Learning](https://www.nature.com/articles/d41586-021-01882-5)
-  - [AI in Education: A Review of the Literature](https://www.frontiersin.org/articles/10.3389/frai.2020.00043/full)
+  - The Future is Already Here: AI and Education in 2025 - https://acceleratelearning.stanford.edu/story/the-future-is-already-here-ai-and-education-in-2025/
+  - How AI Search Is Shaping The Future Of Education And Research - https://www.forbes.com/sites/garydrenik/2025/03/06/how-ai-search-is-shaping-the-future-of-education-and-research/
+  - The AI Future Is Here - https://www.scientificamerican.com/article/the-ai-future-is-here/
   - [Graphviz](https://graphviz.org/) for visualizations
 
 **** Topic: AI Tools for Learning Functional Programming and Knowledge Management
