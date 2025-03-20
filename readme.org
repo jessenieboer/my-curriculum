@@ -47,11 +47,11 @@ Me
 ** Use
 - Follow curriculum.org according to the schedule below
 *** Schedule
-- [ ] Topic: Leveraging AI for Learning and Productivity (~20 hours)
+- [X] Topic: Leveraging AI for Learning and Productivity (~20 hours)
   - Learn to use AI tools (e.g., ChatGPT, GitHub Copilot) to accelerate your learning and coding efficiency.
-- [ ]  Topic: Testing and Debugging
+- [-]  Topic: Testing and Debugging
   - Learn to ensure code reliability through unit testing and effective debugging techniques.
-- [ ] Topic: Python Basics (~20 hours)
+- [-] Topic: Python Basics (~20 hours)
   - Master Python syntax, data types, control flow, and functions for immediate job readiness.
 - [ ] Topic: Functional Programming in Python (~20 hours)
   - Explore functional techniques in Python (e.g., map, filter, reduce) to enhance coding skills.
